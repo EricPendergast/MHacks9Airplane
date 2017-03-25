@@ -16,9 +16,8 @@ public class Airplane {
     ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
     
     //EFFECTS: returns the distance from 'this' to 'airplane'
-    double getDistance(Airplane airplane) {
-        return Math.sqrt(Math.pow(x+airplane.x,2) + Math.pow(y+airplane.y,2));
-        
+    double getDistance(double x, double y) {
+        return Math.sqrt(Math.pow(this.x+x,2) + Math.pow(this.y+y,2));
     }
     
     //returns true if distance is in critial threshold and false otherwise
