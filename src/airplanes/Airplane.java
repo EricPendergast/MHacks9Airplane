@@ -11,10 +11,21 @@ import java.awt.geom.GeneralPath;
 public class Airplane {
     //x pos and y pos
     double x = 0;
-    double y = 0;;
+    double y = 0;
+    double speed = 0;
+    // Theta is zero 
+    double theta = 0;
     // The radius of the plane
     double girth = 0;
     
+    
+    Airplane(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+    Airplane(double x, double y, double theta) {
+        
+    }
     // Queue of positions. This is reset whenever the player draws a new path
     // for the plane.
     ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
@@ -30,6 +41,10 @@ public class Airplane {
     boolean collide(Airplane a){
         double dist = getDistance(a.x, a.y);
         return dist-girth-a.girth < 0;
+    }
+    
+    double getSpeed() {
+        return speed;
     }
     
     //MODIFIES: g2
@@ -55,6 +70,27 @@ public class Airplane {
         g2.setBackground(Color.darkGray);
         g2.draw(polygon);
         g2.fill(polygon);
-
     }
+    
+    public void update(double dt) {
+        // Update velocities
+        double dx = speed * Math.cos(theta) * dt;
+        double dy = speed * Math.sin(theta) * dt;
+        x += dx;
+        y += dy;
+        
+        if (path.size() > 0) {
+            if (getDistance(path.get(0).x, path.get(0).y) < 42)
+                path.remove(0);
+            
+            rotateTowards(path.get(0).x, path.get(0).y);
+        }
+    }
+    
+    private void rotateTowards(double x, double y) {
+        double dx = x - this.x;
+        double dy = y - this.y;
+        theta = Math.atan(dy/dx);
+    }
+    
 }
