@@ -8,6 +8,7 @@ import java.awt.event.MouseMotionListener;
 import javax.swing.JFrame;
 
 import java.util.ArrayList;
+import java.util.EventListener;
 
 public class Mouse implements MouseListener, MouseMotionListener{
 	public static Point button1At = new Point(-1,-1);
@@ -15,12 +16,14 @@ public class Mouse implements MouseListener, MouseMotionListener{
 	public static boolean button2Pressed = false;
 	public static int scale = 1;
 	public static JFrame frame;
+
+	private interface MasterMouse extends MouseMotionListener, MouseListener{}
     
-    private static ArrayList<MouseListener> listeners = new ArrayList<MouseListener>();
-    public void addMouseListener(MouseListener l) {
+    private static ArrayList<MasterMouse> listeners = new ArrayList<MasterMouse>();
+    public void addMouseListener(MasterMouse l) {
         listeners.add(l);
     }
-    public void removeMouseListener(MouseListener l) {
+    public void removeMouseListener(MasterMouse l) {
         listeners.remove(l);
     }
 	public Mouse(){
@@ -36,8 +39,8 @@ public class Mouse implements MouseListener, MouseMotionListener{
 	}
 	@Override
 	public void mouseMoved(MouseEvent e){
-        for (MouseListener l : listeners)
-            l.mouseMoved(e);
+        for (EventListener l : listeners)
+			((MouseMotionListener) l).mouseMoved(e);
 		button1At.setLocation(new Point(e.getPoint().x/scale, e.getPoint().y/scale));
 	}
 	@Override
@@ -78,8 +81,8 @@ public class Mouse implements MouseListener, MouseMotionListener{
 	}
 	@Override
 	public void mouseDragged(MouseEvent e) {
-        for (MouseListener l : listeners)
-            l.mouseDragged(e);
+        for (EventListener l : listeners)
+			((MouseMotionListener) l).mouseDragged(e);
 		button1At.setLocation(new Point(e.getPoint().x/scale, e.getPoint().y/scale));
 	}
 	public void setScale(int s){

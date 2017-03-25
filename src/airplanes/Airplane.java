@@ -17,13 +17,16 @@ public class Airplane {
     double theta = 0;
     // The radius of the plane
     double girth = 0;
+
+    public Airplane() {
+
+    }
     
-    
-    Airplane(double x, double y) {
+    public Airplane(double x, double y) {
         this.x = x;
         this.y = y;
     }
-    Airplane(double x, double y, double theta) {
+    public Airplane(double x, double y, double theta) {
         
     }
     // Queue of positions. This is reset whenever the player draws a new path
