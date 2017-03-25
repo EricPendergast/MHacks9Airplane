@@ -7,8 +7,7 @@ import java.awt.Rectangle;
 
 import nodes.*;
 
-
-import dataStructures.ArrayList;
+import java.util.ArrayList;
 
 public class NodeState extends State{
 	private boolean prevClick = false;

@@ -1,2 +1,2 @@
 cd src
-java physics.Start 2
+java main.Start 2

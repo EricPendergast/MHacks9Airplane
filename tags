@@ -4,13 +4,13 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Airplane	src/airplanes/Airplane.java	/^class Airplane {$/;"	c
+AirplaneState	src/airplanes/AirplaneState.java	/^	public AirplaneState(Game game){$/;"	m	class:AirplaneState
+AirplaneState	src/airplanes/AirplaneState.java	/^public class AirplaneState extends NodeState{$/;"	c
 AnimatedText	src/nodes/AnimatedText.java	/^	public AnimatedText(String text, int x, int y){$/;"	m	class:AnimatedText
 AnimatedText	src/nodes/AnimatedText.java	/^	public AnimatedText(String text, int x, int y, int speed){$/;"	m	class:AnimatedText
 AnimatedText	src/nodes/AnimatedText.java	/^	public AnimatedText(String text, int x, int y, int speed, Font font){$/;"	m	class:AnimatedText
 AnimatedText	src/nodes/AnimatedText.java	/^public class AnimatedText extends Node {$/;"	c
-ArrayList	src/dataStructures/ArrayList.java	/^	public ArrayList(){$/;"	m	class:ArrayList
-ArrayList	src/dataStructures/ArrayList.java	/^	public ArrayList(int size){$/;"	m	class:ArrayList
-ArrayList	src/dataStructures/ArrayList.java	/^public class ArrayList<T> {$/;"	c
 Ball	src/physics/physicsObjects/Ball.java	/^	public Ball(double x, double y){$/;"	m	class:Ball
 Ball	src/physics/physicsObjects/Ball.java	/^public class Ball extends PhysicsObj{$/;"	c
 Block	src/cells/generators/Block.java	/^public class Block implements Generator {$/;"	c
@@ -33,8 +33,6 @@ CellState	src/cells/CellState.java	/^public class CellState extends NodeState{$/
 CircleButton	src/cells/gui/CircleButton.java	/^	public CircleButton(Point l, int r, Color c){$/;"	m	class:CircleButton
 CircleButton	src/cells/gui/CircleButton.java	/^	public CircleButton(Point l, int r, Color c, String text, Point textLoc, Color textColor, Font font){$/;"	m	class:CircleButton
 CircleButton	src/cells/gui/CircleButton.java	/^public class CircleButton extends Node{$/;"	c
-Container	src/dataStructures/NumberedList.java	/^	public Container(int loc, T obj){$/;"	m	class:Container
-Container	src/dataStructures/NumberedList.java	/^class Container<T>{$/;"	c
 ControlPanel	src/cells/gui/ControlPanel.java	/^	public ControlPanel(Rectangle hitbox){$/;"	m	class:ControlPanel
 ControlPanel	src/cells/gui/ControlPanel.java	/^public class ControlPanel extends Node{$/;"	c
 ControlableMembrane	src/cells/ControlableMembrane.java	/^	public ControlableMembrane(double x, double y, ArrayList<MembranePart> others, Point p, Nucleus n) {$/;"	m	class:ControlableMembrane
@@ -68,8 +66,6 @@ GoldCell	src/cells/GoldCell.java	/^	public GoldCell(double x, double y, VeinMark
 GoldCell	src/cells/GoldCell.java	/^public class GoldCell extends RedBloodCell implements HasRadius, Infectable{$/;"	c
 Guy	src/physics/physicsObjects/Guy.java	/^public class Guy {$/;"	c
 HasRadius	src/cells/HasRadius.java	/^public interface HasRadius {$/;"	i
-HashMap	src/dataStructures/HashMap.java	/^public class HashMap<K,V>{$/;"	c
-HashSet	src/dataStructures/HashSet.java	/^public class HashSet<T>{$/;"	c
 Head	src/physics/physicsObjects/Guy.java	/^	public Head(double x, double y, PhysicsObj target) {$/;"	m	class:Head
 Head	src/physics/physicsObjects/Guy.java	/^class Head extends ControlableNodePhysObj{$/;"	c
 ImageNode	src/nodes/ImageNode.java	/^	public ImageNode(String loc, Rectangle h){$/;"	m	class:ImageNode
@@ -104,8 +100,6 @@ Nucleus	src/cells/Nucleus.java	/^public class Nucleus extends CellPart implement
 NumBox	src/nodes/NumBox.java	/^	public NumBox(Rectangle hitbox, String imageLoc, String selectedImageLoc) {$/;"	m	class:NumBox
 NumBox	src/nodes/NumBox.java	/^	public NumBox(Rectangle hitbox, String imageLoc, String selectedImageLoc, String label) {$/;"	m	class:NumBox
 NumBox	src/nodes/NumBox.java	/^public class NumBox extends Button{$/;"	c
-NumberedList	src/dataStructures/NumberedList.java	/^	public NumberedList(int low, int high){$/;"	m	class:NumberedList
-NumberedList	src/dataStructures/NumberedList.java	/^public class NumberedList<T>{$/;"	c
 Opp	src/render3D/support/Opp.java	/^public class Opp {$/;"	c
 PatrolCell	src/cells/enemyCells/PatrolCell.java	/^	public PatrolCell(double x, double y, VeinMarker n){$/;"	m	class:PatrolCell
 PatrolCell	src/cells/enemyCells/PatrolCell.java	/^public class PatrolCell extends CellPart implements HasRadius{$/;"	c
@@ -152,8 +146,6 @@ RenderNode	src/render3D/RenderNode.java	/^	public RenderNode(PolygonChunk[][] po
 RenderNode	src/render3D/RenderNode.java	/^public class RenderNode extends Node{$/;"	c
 SettingsMenu	src/cells/gui/SettingsMenu.java	/^	public SettingsMenu(BufferedReader reader, BufferedWriter writer){$/;"	m	class:SettingsMenu
 SettingsMenu	src/cells/gui/SettingsMenu.java	/^public class SettingsMenu extends NodeState{$/;"	c
-SortedMatrix	src/dataStructures/SortedMatrix.java	/^	public SortedMatrix(int x, int y, int width, int height){$/;"	m	class:SortedMatrix
-SortedMatrix	src/dataStructures/SortedMatrix.java	/^public class SortedMatrix<T> {$/;"	c
 Start	src/physics/Start.java	/^public class Start {$/;"	c
 StartMenu	src/cells/gui/StartMenu.java	/^	public StartMenu(CellRunner r, Game g){$/;"	m	class:StartMenu
 StartMenu	src/cells/gui/StartMenu.java	/^public class StartMenu extends NodeState{$/;"	c
@@ -222,15 +214,9 @@ add	src/cells/Point.java	/^	public void add(Vector v){$/;"	m	class:Point
 add	src/cells/Point.java	/^	public void add(double a, double b){$/;"	m	class:Point
 add	src/cells/Vector.java	/^	public void add(Vector v){$/;"	m	class:Vector
 add	src/cells/VirusCluster.java	/^	public void add(Virus virus){$/;"	m	class:VirusCluster
-add	src/dataStructures/ArrayList.java	/^	public void add(ArrayList<T> a){$/;"	m	class:ArrayList
-add	src/dataStructures/ArrayList.java	/^	public void add(T o){$/;"	m	class:ArrayList
-add	src/dataStructures/HashSet.java	/^	public void add(T obj){$/;"	m	class:HashSet
-add	src/dataStructures/NumberedList.java	/^	public void add(T obj){$/;"	m	class:Container
 add	src/render3D/support/Opp.java	/^	public static double[] add(double[] a, double[] b){$/;"	m	class:Opp
 add	src/render3D/support/Opp.java	/^	public static int[] add(int[] a, int[] b){$/;"	m	class:Opp
 add	src/render3D/support/PolygonChunk.java	/^	public void add(Polygon3D p){$/;"	m	class:PolygonChunk
-addAll	src/dataStructures/ArrayList.java	/^	public void addAll(ArrayList<T> list){$/;"	m	class:ArrayList
-addAll	src/dataStructures/HashSet.java	/^	public void addAll(ArrayList<T> list){$/;"	m	class:HashSet
 addFromCell	src/cells/CellRegion.java	/^	public void addFromCell(CellPart p){$/;"	m	class:CellRegion
 addImage	src/nodes/Node.java	/^	public static void addImage(String imageName, String fileLoc, Rectangle r){$/;"	m	class:Node
 addImage	src/nodes/Node.java	/^	public static void addImage(String imageName, String fileLoc, int x, int y, int width, int height){$/;"	m	class:Node
@@ -239,6 +225,9 @@ addImageOverride	src/nodes/Node.java	/^	public static void addImageOverride(Stri
 addNode	src/states/NodeState.java	/^	public void addNode(Node n){$/;"	m	class:NodeState
 addState	src/states/Game.java	/^	public void addState(State s){$/;"	m	class:Game
 addTarget	src/physics/physicsObjects/Guy.java	/^	public void addTarget(PhysicsObj p){$/;"	m	class:BodyPart
+airplanes	src/airplanes/Airplane.java	/^package airplanes;$/;"	p
+airplanes	src/airplanes/AirplaneState.java	/^    ArrayList<Airplane> airplanes = new ArrayList<Airplane>();$/;"	f	class:AirplaneState
+airplanes	src/airplanes/AirplaneState.java	/^package airplanes;$/;"	p
 approach	src/cells/CellPart.java	/^	public void approach(Point p, double speed, double dist){$/;"	m	class:CellPart
 arrToString	src/render3D/support/Opp.java	/^	public static String arrToString(double[] arr){$/;"	m	class:Opp
 arrToString	src/render3D/support/Opp.java	/^	public static String arrToString(int[] arr){$/;"	m	class:Opp
@@ -299,8 +288,6 @@ charge	src/physics/physicsObjects/ESPhysicsObj.java	/^	protected double charge =
 chunk	src/cells/CellPart.java	/^	protected CellRegion chunk = null;$/;"	f	class:CellPart
 chunkLoc	src/render3D/support/Polygon3D.java	/^	private int[] chunkLoc = null;$/;"	f	class:Polygon3D	file:
 chunkSize	src/render3D/RenderNode.java	/^	public static final double chunkSize = 100;$/;"	f	class:RenderNode
-clear	src/dataStructures/NumberedList.java	/^	public void clear(){$/;"	m	class:NumberedList
-clear	src/dataStructures/SortedMatrix.java	/^	public void clear(){$/;"	m	class:SortedMatrix
 clearPartners	src/cells/MembranePart.java	/^	public void clearPartners(){$/;"	m	class:MembranePart
 clicked	src/cells/gui/CircleButton.java	/^	boolean clicked = false;$/;"	f	class:CircleButton
 clicked	src/nodes/Button.java	/^	public boolean clicked;$/;"	f	class:Button
@@ -310,7 +297,6 @@ closest	src/cells/enemyCells/WhiteBloodCell.java	/^	VirusCluster closest = null;
 color	src/cells/gui/CircleButton.java	/^	Color color;$/;"	f	class:CircleButton
 color	src/render3D/support/Polygon3D.java	/^	protected Color color;$/;"	f	class:Polygon3D
 combine	src/cells/VirusCluster.java	/^	public static boolean combine = false;$/;"	f	class:VirusCluster
-combine	src/dataStructures/NumberedList.java	/^	public void combine(Container<T> c){$/;"	m	class:Container
 compareTo	src/render3D/support/Polygon3D.java	/^	public int compareTo(Object polygon) {$/;"	m	class:Polygon3D
 comparitiveDistance	src/render3D/support/Opp.java	/^	public static double comparitiveDistance(double[] a, double[] b){$/;"	m	class:Opp
 construct	src/cells/generators/Veins.java	/^	public void construct(int maxDepth){$/;"	m	class:VeinMaker
@@ -320,7 +306,6 @@ container	src/render3D/support/Polygon3D.java	/^	protected PolygonChunk[][] cont
 containingNode	src/render3D/Viewer.java	/^	Node containingNode;$/;"	f	class:Viewer
 contains	src/cells/CellRegion.java	/^	public boolean contains(CellPart p){$/;"	m	class:CellRegion
 contains	src/cells/gui/ControlPanel.java	/^	public boolean contains(Point p){$/;"	m	class:ControlPanel
-contains	src/dataStructures/HashSet.java	/^	public boolean contains(T obj){$/;"	m	class:HashSet
 contains	src/physics/physicsObjects/Guy.java	/^	public boolean contains(PhysicsObj p){$/;"	m	class:BodyPart
 controler	src/cells/CellRunner.java	/^	ControlPanel controler;$/;"	f	class:CellRunner
 coordSys	src/render3D/Viewer.java	/^	double[][] coordSys;$/;"	f	class:Viewer
@@ -333,11 +318,6 @@ counter	src/nodes/AnimatedText.java	/^	int counter = 0;$/;"	f	class:AnimatedText
 crossProduct	src/render3D/support/Opp.java	/^	public static double[] crossProduct(double[] a, double[] b){$/;"	m	class:Opp
 curr	src/cells/CellRunner.java	/^	long curr;$/;"	f	class:CellRunner
 currentStateIndex	src/states/Game.java	/^	private int currentStateIndex = 0;$/;"	f	class:Game	file:
-dataStructures	src/dataStructures/ArrayList.java	/^package dataStructures;$/;"	p
-dataStructures	src/dataStructures/HashMap.java	/^package dataStructures;$/;"	p
-dataStructures	src/dataStructures/HashSet.java	/^package dataStructures;$/;"	p
-dataStructures	src/dataStructures/NumberedList.java	/^package dataStructures;$/;"	p
-dataStructures	src/dataStructures/SortedMatrix.java	/^package dataStructures;$/;"	p
 debug	src/cells/CellRunner.java	/^	boolean debug = false;$/;"	f	class:CellRunner
 def	src/nodes/NumBox.java	/^	private int def = 0;$/;"	f	class:NumBox	file:
 degreesTurned	src/render3D/ControllableViewer.java	/^	double degreesTurned = 0;$/;"	f	class:ControllableViewer
@@ -456,6 +436,7 @@ frame	src/states/Game.java	/^	private JFrame frame;$/;"	f	class:Game	file:
 g	src/cells/CellState.java	/^	Generator g;$/;"	f	class:CellState
 g	src/physics/PhysicsObj.java	/^	static double g = .0001;$/;"	f	class:PhysicsObj
 g	src/physics/physicsObjects/PhysicsObj.java	/^	static double g = .0001;$/;"	f	class:PhysicsObj
+game	src/airplanes/AirplaneState.java	/^	Game game;$/;"	f	class:AirplaneState
 game	src/cells/CellState.java	/^	Game game;$/;"	f	class:CellState
 game	src/cells/gui/StartMenu.java	/^	Game game;$/;"	f	class:StartMenu
 genBranch	src/cells/generators/Veins.java	/^	private void genBranch(int i){$/;"	m	class:VeinMaker	file:
@@ -466,16 +447,6 @@ generate	src/cells/generators/Empty.java	/^	public Point generate(CellRegion[][]
 generate	src/cells/generators/Tutorial.java	/^	public Point generate(CellRegion[][] cellParts) {$/;"	m	class:Tutorial
 generate	src/cells/generators/Veins.java	/^	public Point generate(CellRegion[][] cellParts){$/;"	m	class:Veins
 generate	src/cells/generators/VeinsFast.java	/^	public Point generate(CellRegion[][] cellParts){$/;"	m	class:VeinsFast
-get	src/dataStructures/ArrayList.java	/^	public T get(int index){$/;"	m	class:ArrayList
-get	src/dataStructures/HashMap.java	/^	public V get(K key){$/;"	m	class:HashMap
-get	src/dataStructures/NumberedList.java	/^	public ArrayList<T> get(int index){$/;"	m	class:NumberedList
-get	src/dataStructures/NumberedList.java	/^	public ArrayList<T> get(int start, int end){$/;"	m	class:NumberedList
-get	src/dataStructures/SortedMatrix.java	/^	public ArrayList<T> get(int x, int y, int width, int height){$/;"	m	class:SortedMatrix
-get	src/dataStructures/SortedMatrix.java	/^	public HashSet<T> get(int x, int y){$/;"	m	class:SortedMatrix
-getArrayList	src/dataStructures/HashMap.java	/^	public ArrayList<V> getArrayList(){$/;"	m	class:HashMap
-getArrayList	src/dataStructures/HashSet.java	/^	public ArrayList<T> getArrayList(){$/;"	m	class:HashSet
-getArrayList	src/dataStructures/NumberedList.java	/^	public ArrayList<T> getArrayList(){$/;"	m	class:NumberedList
-getArrayList	src/dataStructures/SortedMatrix.java	/^	public ArrayList<T> getArrayList(){$/;"	m	class:SortedMatrix
 getAveragePoint	src/render3D/support/Polygon3D.java	/^	public double[] getAveragePoint(){$/;"	m	class:Polygon3D
 getAveragePoint	src/render3D/support/PolygonEditor.java	/^	public double[] getAveragePoint() {$/;"	m	class:PolygonEditor
 getAveragePoint	src/render3D/support/PolygonList.java	/^	public double[] getAveragePoint() {$/;"	m	class:PolygonList
@@ -494,17 +465,14 @@ getFurthest	src/cells/generators/VeinsFast.java	/^	public VeinMakerFast getFurth
 getHitbox	src/nodes/Node.java	/^	public Rectangle getHitbox(){$/;"	m	class:Node
 getImage	src/input/FileRead.java	/^	public static BufferedImage getImage(String fileLoc){$/;"	m	class:FileRead
 getImage	src/nodes/Node.java	/^	protected BufferedImage getImage(String img){$/;"	m	class:Node
-getIndexLoc	src/dataStructures/NumberedList.java	/^	public int getIndexLoc(int loc){$/;"	m	class:NumberedList
 getLeftChainLength	src/cells/MembranePart.java	/^	public int getLeftChainLength(){$/;"	m	class:MembranePart
 getLength	src/cells/Vector.java	/^	public double getLength(){$/;"	m	class:Vector
 getLength	src/nodes/NumBox.java	/^	public int getLength(){$/;"	m	class:NumBox
 getLength	src/nodes/TextBox.java	/^	public int getLength(){$/;"	m	class:TextBox
-getLoc	src/dataStructures/NumberedList.java	/^	public int getLoc(){$/;"	m	class:Container
 getLocation	src/cells/CellRunner.java	/^	public Point getLocation(){$/;"	m	class:CellRunner
 getLocation	src/render3D/Viewer.java	/^	public double[] getLocation(){$/;"	m	class:Viewer
 getNearest	src/cells/CellRegion.java	/^	public VirusCluster getNearest(Point p){$/;"	m	class:CellRegion
 getNumber	src/nodes/NumBox.java	/^	public int getNumber(){$/;"	m	class:NumBox
-getOverlap	src/dataStructures/HashSet.java	/^	public HashSet<T> getOverlap(HashSet<T> setB){$/;"	m	class:HashSet
 getParent	src/cells/VeinMarker.java	/^	public VeinMarker getParent(){$/;"	m	class:VeinMarker
 getPath	src/cells/enemyCells/PatrolCell.java	/^	public ArrayList<Integer> getPath(){$/;"	m	class:PatrolCell
 getPoint	src/cells/CellPart.java	/^	public Point getPoint(){$/;"	m	class:CellPart
@@ -521,8 +489,6 @@ getReader	src/input/FileRead.java	/^	public static BufferedReader getReader(Stri
 getReader	src/physics/Start.java	/^	public static BufferedReader getReader(String fileLoc){$/;"	m	class:Start
 getRightChainLength	src/cells/MembranePart.java	/^	public int getRightChainLength(){$/;"	m	class:MembranePart
 getRunner	src/cells/CellState.java	/^	public CellRunner getRunner(){$/;"	m	class:CellState
-getSet	src/dataStructures/NumberedList.java	/^	public HashSet<T> getSet(int start, int end){$/;"	m	class:NumberedList
-getSet	src/dataStructures/SortedMatrix.java	/^	public HashSet<T> getSet(int x, int y, int width, int height){$/;"	m	class:SortedMatrix
 getSize	src/cells/VirusCluster.java	/^	public int getSize(){$/;"	m	class:VirusCluster
 getSubRadius	src/cells/Nucleus.java	/^	public double getSubRadius(){return subRadius;}$/;"	m	class:Nucleus
 getTarget	src/physics/physicsObjects/NodePhysObj.java	/^	public PhysicsObj getTarget(){$/;"	m	class:NodePhysObj
@@ -535,7 +501,6 @@ gravity	src/physics/physicsObjects/ESPhysicsObj.java	/^	public void gravity(Phys
 gravity	src/physics/physicsObjects/PhysicsObj.java	/^	public void gravity(PhysicsObj p){$/;"	m	class:PhysicsObj
 head	src/physics/physicsObjects/Guy.java	/^	Head head;$/;"	f	class:Guy
 height	src/render3D/Viewer.java	/^	double height = c;$/;"	f	class:Viewer
-highestLoc	src/dataStructures/NumberedList.java	/^	private int highestLoc;$/;"	f	class:NumberedList	file:
 highlight	src/cells/VirusCluster.java	/^	public static boolean highlight = false;$/;"	f	class:VirusCluster
 hitbox	src/nodes/Node.java	/^	protected Rectangle hitbox;$/;"	f	class:Node
 ignoreReselect	src/cells/gui/ControlPanel.java	/^	boolean ignoreReselect = false;$/;"	f	class:ControlPanel
@@ -588,34 +553,24 @@ lastClicked	src/nodes/TextBox.java	/^	private boolean lastClicked = false;$/;"	f
 lastTarget	src/cells/enemyCells/WhiteBloodCell.java	/^	int lastTarget = 0;$/;"	f	class:WhiteBloodCell
 lastVirus	src/cells/enemyCells/WhiteBloodCell.java	/^	int lastVirus = absorbRate;$/;"	f	class:WhiteBloodCell
 left	src/cells/MembranePart.java	/^	MembranePart left, right;$/;"	f	class:MembranePart
-length	src/dataStructures/ArrayList.java	/^	private int length = 0;$/;"	f	class:ArrayList	file:
-length	src/dataStructures/NumberedList.java	/^	private int length = 0;$/;"	f	class:NumberedList	file:
 length	src/nodes/NumBox.java	/^	private int length = 17;$/;"	f	class:NumBox	file:
 length	src/nodes/TextBox.java	/^	private int length = 17;$/;"	f	class:TextBox	file:
 limitDist	src/cells/CellPart.java	/^	public void limitDist(Point p, double distance){$/;"	m	class:CellPart
 limitSpeed	src/cells/CellPart.java	/^	public void limitSpeed(double speedLimit){$/;"	m	class:CellPart
-list	src/dataStructures/HashMap.java	/^	private NumberedList<V> list = new NumberedList<V>(-100000,100000);$/;"	f	class:HashMap	file:
-list	src/dataStructures/HashSet.java	/^	private NumberedList<T> list = new NumberedList<T>(-1000000,1000000);$/;"	f	class:HashSet	file:
-listX	src/dataStructures/SortedMatrix.java	/^	NumberedList<T> listX;$/;"	f	class:SortedMatrix
-listY	src/dataStructures/SortedMatrix.java	/^	NumberedList<T> listY;$/;"	f	class:SortedMatrix
 loc	src/cells/gui/CircleButton.java	/^	Point loc;$/;"	f	class:CircleButton
-loc	src/dataStructures/NumberedList.java	/^	private int loc;$/;"	f	class:Container	file:
 location	src/render3D/Viewer.java	/^	double[] location = {0,0,0,1};$/;"	f	class:Viewer
 locations	src/render3D/support/Polygon3D.java	/^	private double[][] locations;$/;"	f	class:Polygon3D	file:
 lookRight	src/render3D/ControllableViewer.java	/^	public void lookRight(double rad){$/;"	m	class:ControllableViewer
 lookUp	src/render3D/ControllableViewer.java	/^	public void lookUp(double rad){$/;"	m	class:ControllableViewer
 lose	src/cells/CellRunner.java	/^	public static boolean lose = false;$/;"	f	class:CellRunner
-lowestLoc	src/dataStructures/NumberedList.java	/^	private int lowestLoc;$/;"	f	class:NumberedList	file:
 main	src/physics/Start.java	/^	public static void main(String[] args) throws IOException{$/;"	m	class:Start
 main	src/render3D/_RenderTest.java	/^	public static void main(String[] args){$/;"	m	class:_RenderTest
 marked	src/cells/MembranePart.java	/^	private boolean marked = false;$/;"	f	class:MembranePart	file:
 mass	src/physics/PhysicsObj.java	/^	double mass;$/;"	f	class:PhysicsObj
 mass	src/physics/physicsObjects/PhysicsObj.java	/^	double mass;$/;"	f	class:PhysicsObj
 matrixMult	src/render3D/support/Opp.java	/^	public static double[][] matrixMult(double[][] a, double[][] b){$/;"	m	class:Opp
-max	src/dataStructures/NumberedList.java	/^	public int max(){$/;"	m	class:NumberedList
 membrane	src/cells/Nucleus.java	/^	protected ArrayList<MembranePart> membrane;$/;"	f	class:Nucleus
 membraneSize	src/cells/Nucleus.java	/^	public int membraneSize(){return membrane.size();}$/;"	m	class:Nucleus
-min	src/dataStructures/NumberedList.java	/^	public int min(){$/;"	m	class:NumberedList
 mouse	src/states/Game.java	/^	private Mouse mouse;$/;"	f	class:Game	file:
 mouseClicked	src/input/Mouse.java	/^	public void mouseClicked(MouseEvent e) {$/;"	m	class:Mouse
 mouseControl	src/render3D/ControllableViewer.java	/^	Robot mouseControl;$/;"	f	class:ControllableViewer
@@ -659,8 +614,6 @@ nodes	src/states/NodeState.java	/^	private ArrayList<Node> nodes;$/;"	f	class:No
 normalize	src/cells/Vector.java	/^	public void normalize(){$/;"	m	class:Vector
 nucleus	src/cells/MembranePart.java	/^	Nucleus nucleus;$/;"	f	class:MembranePart
 numBranches	src/cells/VeinMarker.java	/^	public int numBranches(){$/;"	m	class:VeinMarker
-objects	src/dataStructures/ArrayList.java	/^	public Object[] objects;$/;"	f	class:ArrayList
-objects	src/dataStructures/NumberedList.java	/^	private Object[] objects;$/;"	f	class:NumberedList	file:
 onClick	src/physics/physicsObjects/Guy.java	/^	public void onClick(Boolean onClick){$/;"	m	class:Head
 onClick	src/physics/physicsObjects/PhysicsObj.java	/^	public void onClick(Boolean b){};$/;"	m	class:PhysicsObj
 origin	src/cells/CellRunner.java	/^	Point origin = new Point(0,0);$/;"	f	class:CellRunner
@@ -713,16 +666,10 @@ prevKey	src/cells/gui/ControlPanel.java	/^	boolean prevKey = false;$/;"	f	class:
 prevKey2	src/cells/gui/ControlPanel.java	/^	boolean prevKey2 = false;$/;"	f	class:ControlPanel
 project	src/render3D/Viewer.java	/^	public double[] project(double[] point){$/;"	m	class:Viewer
 push	src/physics/physicsObjects/Ball.java	/^	public void push(PhysicsObj p, double distance){$/;"	m	class:Ball
-put	src/dataStructures/HashMap.java	/^	public void put(K key, V obj){$/;"	m	class:HashMap
-put	src/dataStructures/NumberedList.java	/^	public void put(int loc, T obj){$/;"	m	class:NumberedList
-put	src/dataStructures/SortedMatrix.java	/^	public void put(int x, int y, T obj){$/;"	m	class:SortedMatrix
-putContainer	src/dataStructures/NumberedList.java	/^	private void putContainer(Container<T> c){$/;"	m	class:NumberedList	file:
 putInGrid	src/cells/CellPart.java	/^	public static void putInGrid(CellPart p, CellRegion[][] grid){$/;"	m	class:CellPart
-putSelfInArrayList	src/dataStructures/NumberedList.java	/^	public void putSelfInArrayList(ArrayList<T> list){$/;"	m	class:Container
 putSelfInArrayList	src/physics/physicsObjects/Guy.java	/^	public void putSelfInArrayList(ArrayList<PhysicsObj> array){$/;"	m	class:Guy
 putSelfInGrid	src/render3D/support/Polygon3D.java	/^	public void putSelfInGrid(PolygonChunk[][] container){$/;"	m	class:Polygon3D
 putSelfInGrid	src/render3D/support/PolygonList.java	/^	public void putSelfInGrid(PolygonChunk[][] container){$/;"	m	class:PolygonList
-putSelfInSet	src/dataStructures/NumberedList.java	/^	public void putSelfInSet(HashSet<T> set){$/;"	m	class:Container
 r	src/cells/gui/SettingsMenu.java	/^	BufferedReader r;$/;"	f	class:SettingsMenu
 rArm	src/physics/physicsObjects/Guy.java	/^	BodyPart rArm;$/;"	f	class:Guy
 rLeg	src/physics/physicsObjects/Guy.java	/^	BodyPart rLeg;$/;"	f	class:Guy
@@ -738,17 +685,8 @@ radius	src/cells/generators/VeinsFast.java	/^	double radius;$/;"	f	class:VeinMak
 radius	src/cells/gui/CircleButton.java	/^	int radius;$/;"	f	class:CircleButton
 radius	src/physics/physicsObjects/Ball.java	/^	int radius = 80;$/;"	f	class:Ball
 rand	src/cells/CellRegion.java	/^	Color rand = new Color((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));$/;"	f	class:CellRegion
-range	src/dataStructures/NumberedList.java	/^	private int range;$/;"	f	class:NumberedList	file:
-range	src/dataStructures/NumberedList.java	/^	public int range(){$/;"	m	class:NumberedList
 regions	src/cells/CellRegion.java	/^	private CellRegion[] regions = new CellRegion[8];$/;"	f	class:CellRegion	file:
 remove	src/cells/VirusCluster.java	/^	public void remove(){$/;"	m	class:VirusCluster
-remove	src/dataStructures/ArrayList.java	/^	public void remove(int index){$/;"	m	class:ArrayList
-remove	src/dataStructures/HashSet.java	/^	public void remove(T obj){$/;"	m	class:HashSet
-remove	src/dataStructures/NumberedList.java	/^	public void remove(T obj){$/;"	m	class:Container
-remove	src/dataStructures/NumberedList.java	/^	public void remove(int loc){$/;"	m	class:NumberedList
-remove	src/dataStructures/NumberedList.java	/^	public void remove(int loc, T obj){$/;"	m	class:NumberedList
-remove	src/dataStructures/SortedMatrix.java	/^	public void remove(int x, int y){$/;"	m	class:SortedMatrix
-remove	src/dataStructures/SortedMatrix.java	/^	public void remove(int x, int y, T obj){$/;"	m	class:SortedMatrix
 remove	src/render3D/support/PolygonChunk.java	/^	public void remove(Polygon3D p){$/;"	m	class:PolygonChunk
 render	src/cells/gui/StartMenu.java	/^	public void render(Graphics2D g2){$/;"	m	class:StartMenu
 render	src/states/Game.java	/^	private void render(){$/;"	m	class:Game	file:
@@ -806,7 +744,6 @@ setDistance	src/render3D/support/Polygon3D.java	/^	public void setDistance(doubl
 setDistance	src/render3D/support/PolygonList.java	/^	public void setDistance(double dist) {$/;"	m	class:PolygonList
 setLength	src/nodes/NumBox.java	/^	public void setLength(int l){$/;"	m	class:NumBox
 setLength	src/nodes/TextBox.java	/^	public void setLength(int l){$/;"	m	class:TextBox
-setLoc	src/dataStructures/NumberedList.java	/^	public void setLoc(int loc){$/;"	m	class:Container
 setLocation	src/cells/CellPart.java	/^	public void setLocation(int x, int y){this.x = x; this.y = y;};$/;"	m	class:CellPart
 setLocation	src/cells/CellRunner.java	/^	public void setLocation(int x, int y){$/;"	m	class:CellRunner
 setLocation	src/physics/PhysicsObj.java	/^	public void setLocation(int x, int y){this.x = x; this.y = y;};$/;"	m	class:PhysicsObj
@@ -825,10 +762,6 @@ setTarget	src/physics/physicsObjects/NodePhysObj.java	/^	public void setTarget(P
 setVirusSelected	src/cells/gui/ControlPanel.java	/^	public void setVirusSelected(boolean b){$/;"	m	class:ControlPanel
 shift	src/cells/generators/VeinsFast.java	/^	public static int shift = 5000;$/;"	f	class:VeinsFast
 size	src/cells/CellRegion.java	/^	public int size(){$/;"	m	class:CellRegion
-size	src/dataStructures/ArrayList.java	/^	public int size(){$/;"	m	class:ArrayList
-size	src/dataStructures/HashMap.java	/^	public int size(){$/;"	m	class:HashMap
-size	src/dataStructures/HashSet.java	/^	public int size(){$/;"	m	class:HashSet
-size	src/dataStructures/NumberedList.java	/^	public int size(){$/;"	m	class:NumberedList
 size	src/render3D/support/PolygonChunk.java	/^	public int size(){$/;"	m	class:PolygonChunk
 solidify	src/cells/MembranePart.java	/^	public void solidify(){$/;"	m	class:MembranePart
 sort	src/render3D/Viewer.java	/^	public void sort(PolygonChunk[][] list){$/;"	m	class:Viewer
@@ -843,7 +776,6 @@ split	src/cells/VirusCluster.java	/^	public static boolean split = false;$/;"	f	
 start	src/nodes/AnimatedText.java	/^	public void start(){$/;"	m	class:AnimatedText
 start	src/render3D/ControllableViewer.java	/^	public void start(){$/;"	m	class:ControllableViewer
 start	src/states/Game.java	/^	public void start(){$/;"	m	class:Game
-startValue	src/dataStructures/NumberedList.java	/^	private int startValue;$/;"	f	class:NumberedList	file:
 states	src/states/Game.java	/^	private ArrayList<State> states = new ArrayList<State>();$/;"	f	class:Game	file:
 states	src/states/Game.java	/^package states;$/;"	p
 states	src/states/NodeState.java	/^package states;$/;"	p
@@ -855,7 +787,6 @@ stopUpdate	src/cells/WallCell.java	/^	int stopUpdate = 22;$/;"	f	class:WallCell
 strA	src/cells/gui/SettingsMenu.java	/^	String strA;$/;"	f	class:SettingsMenu
 subRadius	src/cells/Nucleus.java	/^	protected double subRadius = 13;$/;"	f	class:Nucleus
 subRadius	src/cells/WallCellFast.java	/^	double subRadius = 10;$/;"	f	class:WallCellFast
-sublist	src/dataStructures/ArrayList.java	/^	private ArrayList<T> sublist;$/;"	f	class:ArrayList	file:
 subtract	src/cells/Point.java	/^	public void subtract(Vector v){$/;"	m	class:Point
 subtract	src/cells/Point.java	/^	public void subtract(double a, double b){$/;"	m	class:Point
 subtract	src/cells/Vector.java	/^	public void subtract(Vector v){$/;"	m	class:Vector
@@ -879,12 +810,6 @@ toBufferedImage	src/input/FileRead.java	/^	public static BufferedImage toBuffere
 toString	src/cells/CellPart.java	/^	public String toString(){$/;"	m	class:CellPart
 toString	src/cells/Point.java	/^	public String toString(){$/;"	m	class:Point
 toString	src/cells/Vector.java	/^	public String toString(){$/;"	m	class:Vector
-toString	src/dataStructures/ArrayList.java	/^	public String toString(){$/;"	m	class:ArrayList
-toString	src/dataStructures/HashMap.java	/^	public String toString(){$/;"	m	class:HashMap
-toString	src/dataStructures/HashSet.java	/^	public String toString(){$/;"	m	class:HashSet
-toString	src/dataStructures/NumberedList.java	/^	public String toString(){$/;"	m	class:Container
-toString	src/dataStructures/NumberedList.java	/^	public String toString(){$/;"	m	class:NumberedList
-toString	src/dataStructures/SortedMatrix.java	/^	public String toString(){$/;"	m	class:SortedMatrix
 toString	src/physics/PhysicsObj.java	/^	public String toString(){$/;"	m	class:PhysicsObj
 toString	src/physics/physicsObjects/PhysicsObj.java	/^	public String toString(){$/;"	m	class:PhysicsObj
 toString	src/render3D/support/Line.java	/^	public String toString(){$/;"	m	class:Line
@@ -892,6 +817,7 @@ toString	src/render3D/support/Plane.java	/^	public String toString(){$/;"	m	clas
 torso	src/physics/physicsObjects/Guy.java	/^	BodyPart torso;$/;"	f	class:Guy
 tracking	src/render3D/ControllableViewer.java	/^	double tracking = .005;$/;"	f	class:ControllableViewer
 upVector	src/render3D/ControllableViewer.java	/^	double[] upVector = {0,0,1,0};$/;"	f	class:ControllableViewer
+update	src/airplanes/AirplaneState.java	/^	public void update(){$/;"	m	class:AirplaneState
 update	src/cells/CellPart.java	/^	public void update(){$/;"	m	class:CellPart
 update	src/cells/CellRegion.java	/^	public void update(Rectangle hitbox){$/;"	m	class:CellRegion
 update	src/cells/CellRunner.java	/^	public void update(Boolean onClick){$/;"	m	class:CellRunner
@@ -949,8 +875,8 @@ updateChunk	src/render3D/support/PolygonEditor.java	/^	public void updateChunk()
 updateChunk	src/render3D/support/PolygonList.java	/^	public void updateChunk(){$/;"	m	class:PolygonList
 updateChunk	src/render3D/support/PolygonTest.java	/^		public void updateChunk(){$/;"	m	class:PolygonTest
 updatePartners	src/cells/MembranePart.java	/^	public void updatePartners(){$/;"	m	class:MembranePart
+updated	src/airplanes/AirplaneState.java	/^	boolean updated = false;$/;"	f	class:AirplaneState
 updated	src/cells/CellState.java	/^	boolean updated = false;$/;"	f	class:CellState
-values	src/dataStructures/NumberedList.java	/^	private ArrayList<T> values;$/;"	f	class:Container	file:
 vecMatrixMult	src/render3D/support/Opp.java	/^	public static double[] vecMatrixMult(double[] vec, double[][] mat){$/;"	m	class:Opp
 view	src/render3D/RenderNode.java	/^	Viewer view;$/;"	f	class:RenderNode
 view	src/render3D/support/PolygonEditor.java	/^	Viewer view;$/;"	f	class:PolygonEditor

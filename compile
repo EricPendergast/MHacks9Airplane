@@ -1,2 +1,2 @@
 cd src
-javac physics/Start.java
+javac main/Start.java
