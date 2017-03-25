@@ -1,88 +1,109 @@
+	src/main/Session.vim	/^nnoremap  :sh$/;"	m
+	src/main/Session.vim	/^noremap  h$/;"	m
+		src/main/Session.vim	/^imap 	 <Plug>SuperTabForward$/;"	m
+		src/main/Session.vim	/^nnoremap 	 gt$/;"	m
+	src/main/Session.vim	/^nmap  P "+P$/;"	m
+	src/main/Session.vim	/^nmap  c  <Plug>NERDCommenterToggle$/;"	m
+	src/main/Session.vim	/^nmap  c$ <Plug>NERDCommenterToEOL$/;"	m
+	src/main/Session.vim	/^nmap  cA <Plug>NERDCommenterAppend$/;"	m
+	src/main/Session.vim	/^nmap  ca <Plug>NERDCommenterAltDelims$/;"	m
+	src/main/Session.vim	/^nmap  cb <Plug>NERDCommenterAlignBoth$/;"	m
+	src/main/Session.vim	/^nmap  cc <Plug>NERDCommenterComment$/;"	m
+	src/main/Session.vim	/^nmap  ci <Plug>NERDCommenterInvert$/;"	m
+	src/main/Session.vim	/^nmap  cl <Plug>NERDCommenterAlignLeft$/;"	m
+	src/main/Session.vim	/^nmap  cm <Plug>NERDCommenterMinimal$/;"	m
+	src/main/Session.vim	/^nmap  cn <Plug>NERDCommenterNested$/;"	m
+	src/main/Session.vim	/^nmap  cs <Plug>NERDCommenterSexy$/;"	m
+	src/main/Session.vim	/^nmap  cu <Plug>NERDCommenterUncomment$/;"	m
+	src/main/Session.vim	/^nmap  cy <Plug>NERDCommenterYank$/;"	m
+	src/main/Session.vim	/^nmap  p "+p$/;"	m
+	src/main/Session.vim	/^nnoremap    za$/;"	m
+	src/main/Session.vim	/^nnoremap  $/;"	m
+	src/main/Session.vim	/^nnoremap  a A$/;"	m
+	src/main/Session.vim	/^nnoremap  h :update$/;"	m
+	src/main/Session.vim	/^nnoremap  i i r$/;"	m
+	src/main/Session.vim	/^nnoremap  o :CtrlP$/;"	m
+	src/main/Session.vim	/^nnoremap  r :SyntasticReset$/;"	m
+	src/main/Session.vim	/^nnoremap  t :NERDTreeTabsToggle$/;"	m
+	src/main/Session.vim	/^noremap  s :wa$/;"	m
+	src/main/Session.vim	/^vmap  P "+P$/;"	m
+	src/main/Session.vim	/^vmap  d "+d$/;"	m
+	src/main/Session.vim	/^vmap  p "+p$/;"	m
+	src/main/Session.vim	/^vmap  y "+y$/;"	m
+	src/main/Session.vim	/^vnoremap  $/;"	m
+	src/main/Session.vim	/^nnoremap <buffer> <silent>  :call nerdtree#ui_glue#invokeKeyMap("<C-k>")$/;"	m
+	src/main/Session.vim	/^noremap  k$/;"	m
+	src/main/Session.vim	/^noremap  l$/;"	m
+	src/main/Session.vim	/^inoremap $/;"	m
+	src/main/Session.vim	/^nnoremap <buffer> <silent> $/;"	m
+	src/main/Session.vim	/^map  <Plug>(ctrlp)$/;"	m
+	src/main/Session.vim	/^inoremap  :update$/;"	m
+	src/main/Session.vim	/^nnoremap  :update$/;"	m
+	src/main/Session.vim	/^onoremap  :update$/;"	m
+	src/main/Session.vim	/^vnoremap  :update$/;"	m
+	src/main/Session.vim	/^inoremap  :call NERDComment(0,"toggle")$/;"	m
+	src/main/Session.vim	/^nnoremap  :call NERDComment(0,"toggle")$/;"	m
+	src/main/Session.vim	/^vnoremap  :call NERDComment(0,"toggle")$/;"	m
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+,	src/main/Session.vim	/^nnoremap , za$/;"	m
+0	src/main/Session.vim	/^normal! 0$/;"	m
+011|	src/main/Session.vim	/^normal! 011|$/;"	m
+<2-LeftMouse>	src/main/Session.vim	/^nnoremap <buffer> <silent> <2-LeftMouse> :call nerdtree#ui_glue#invokeKeyMap("<2-LeftMouse>")$/;"	m
+<C-Tab>	src/main/Session.vim	/^inoremap <C-Tab> 	$/;"	m
+<F11>	src/main/Session.vim	/^nnoremap <silent> <F11> :call conque_term#exec_file()$/;"	m
+<F4>	src/main/Session.vim	/^map <F4> :wa$/;"	m
+<F5>	src/main/Session.vim	/^map <F5> :wa$/;"	m
+<LeftRelease>	src/main/Session.vim	/^nnoremap <buffer> <silent> <LeftRelease> <LeftRelease>:call nerdtree#ui_glue#invokeKeyMap("<LeftRelease>")$/;"	m
+<MiddleRelease>	src/main/Session.vim	/^nnoremap <buffer> <silent> <MiddleRelease> :call nerdtree#ui_glue#invokeKeyMap("<MiddleRelease>")$/;"	m
+<NL>	src/main/Session.vim	/^nnoremap <buffer> <silent> <NL> :call nerdtree#ui_glue#invokeKeyMap("<C-j>")$/;"	m
+<NL>	src/main/Session.vim	/^noremap <NL> j$/;"	m
+<Plug>(ctrlp)	src/main/Session.vim	/^nnoremap <silent> <Plug>(ctrlp) :CtrlP$/;"	m
+<Plug>NERDCommenterAlignBoth	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterAlignBoth :call NERDComment("n", "AlignBoth")$/;"	m
+<Plug>NERDCommenterAlignLeft	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterAlignLeft :call NERDComment("n", "AlignLeft")$/;"	m
+<Plug>NERDCommenterAppend	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterAppend :call NERDComment("n", "Append")$/;"	m
+<Plug>NERDCommenterComment	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterComment :call NERDComment("n", "Comment")$/;"	m
+<Plug>NERDCommenterInsert	src/main/Session.vim	/^inoremap <silent> <Plug>NERDCommenterInsert  <BS>:call NERDComment('i', "insert")$/;"	m
+<Plug>NERDCommenterInvert	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterInvert :call NERDComment("n", "Invert")$/;"	m
+<Plug>NERDCommenterMinimal	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterMinimal :call NERDComment("n", "Minimal")$/;"	m
+<Plug>NERDCommenterNested	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterNested :call NERDComment("n", "Nested")$/;"	m
+<Plug>NERDCommenterSexy	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterSexy :call NERDComment("n", "Sexy")$/;"	m
+<Plug>NERDCommenterToEOL	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterToEOL :call NERDComment("n", "ToEOL")$/;"	m
+<Plug>NERDCommenterToggle	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterToggle :call NERDComment("n", "Toggle")$/;"	m
+<Plug>NERDCommenterUncomment	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterUncomment :call NERDComment("n", "Uncomment")$/;"	m
+<Plug>NERDCommenterYank	src/main/Session.vim	/^nnoremap <silent> <Plug>NERDCommenterYank :call NERDComment("n", "Yank")$/;"	m
+<Plug>NetrwBrowseX	src/main/Session.vim	/^nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(expand((exists("g:netrw_gx")? g:netrw_gx : '<cfile>')),netrw#CheckIfRemote())$/;"	m
+<Plug>NetrwBrowseXVis	src/main/Session.vim	/^vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()$/;"	m
+<S-Tab>	src/main/Session.vim	/^imap <S-Tab> <Plug>SuperTabBackward$/;"	m
+<S-Tab>	src/main/Session.vim	/^nnoremap <S-Tab> gT$/;"	m
+?	src/main/Session.vim	/^nnoremap <buffer> <silent> ? :call nerdtree#ui_glue#invokeKeyMap("?")$/;"	m
+A	src/main/Session.vim	/^nnoremap <buffer> <silent> A :call nerdtree#ui_glue#invokeKeyMap("A")$/;"	m
 Airplane	src/airplanes/Airplane.java	/^class Airplane {$/;"	c
 AirplaneState	src/airplanes/AirplaneState.java	/^	public AirplaneState(Game game){$/;"	m	class:AirplaneState
 AirplaneState	src/airplanes/AirplaneState.java	/^public class AirplaneState extends NodeState{$/;"	c
-AnimatedText	src/nodes/AnimatedText.java	/^	public AnimatedText(String text, int x, int y){$/;"	m	class:AnimatedText
-AnimatedText	src/nodes/AnimatedText.java	/^	public AnimatedText(String text, int x, int y, int speed){$/;"	m	class:AnimatedText
-AnimatedText	src/nodes/AnimatedText.java	/^	public AnimatedText(String text, int x, int y, int speed, Font font){$/;"	m	class:AnimatedText
-AnimatedText	src/nodes/AnimatedText.java	/^public class AnimatedText extends Node {$/;"	c
-Ball	src/physics/physicsObjects/Ball.java	/^	public Ball(double x, double y){$/;"	m	class:Ball
-Ball	src/physics/physicsObjects/Ball.java	/^public class Ball extends PhysicsObj{$/;"	c
-Block	src/cells/generators/Block.java	/^public class Block implements Generator {$/;"	c
-BodyPart	src/physics/physicsObjects/Guy.java	/^	public BodyPart(double x, double y, PhysicsObj target, double length) {$/;"	m	class:BodyPart
-BodyPart	src/physics/physicsObjects/Guy.java	/^class BodyPart extends NodePhysObj{$/;"	c
+B	src/main/Session.vim	/^nnoremap <buffer> <silent> B :call nerdtree#ui_glue#invokeKeyMap("B")$/;"	m
 Button	src/nodes/Button.java	/^	public Button(Rectangle hitbox, String loc, String selectedImageLoc, String label){$/;"	m	class:Button
 Button	src/nodes/Button.java	/^public class Button extends Node{$/;"	c
+C	src/main/Session.vim	/^nnoremap <buffer> <silent> C :call nerdtree#ui_glue#invokeKeyMap("C")$/;"	m
+CD	src/main/Session.vim	/^nnoremap <buffer> <silent> CD :call nerdtree#ui_glue#invokeKeyMap("CD")$/;"	m
 CENTER	src/nodes/Node.java	/^	protected static final int CENTER = 1;$/;"	f	class:Node
-CellPart	src/cells/CellPart.java	/^	public CellPart(){$/;"	m	class:CellPart
-CellPart	src/cells/CellPart.java	/^	public CellPart(double x, double y){$/;"	m	class:CellPart
-CellPart	src/cells/CellPart.java	/^	public CellPart(double x, double y, double dx, double dy){$/;"	m	class:CellPart
-CellPart	src/cells/CellPart.java	/^public class CellPart {$/;"	c
-CellRegion	src/cells/CellRegion.java	/^	public CellRegion(int x, int y, double d){$/;"	m	class:CellRegion
-CellRegion	src/cells/CellRegion.java	/^public class CellRegion extends CellPart{$/;"	c
-CellRunner	src/cells/CellRunner.java	/^	public CellRunner(Rectangle hitbox, Generator generator, ControlPanel controler){$/;"	m	class:CellRunner
-CellRunner	src/cells/CellRunner.java	/^public class CellRunner extends Node{$/;"	c
-CellState	src/cells/CellState.java	/^	public CellState(Game game){$/;"	m	class:CellState
-CellState	src/cells/CellState.java	/^	public CellState(Game game, Generator g){$/;"	m	class:CellState
-CellState	src/cells/CellState.java	/^public class CellState extends NodeState{$/;"	c
-CircleButton	src/cells/gui/CircleButton.java	/^	public CircleButton(Point l, int r, Color c){$/;"	m	class:CircleButton
-CircleButton	src/cells/gui/CircleButton.java	/^	public CircleButton(Point l, int r, Color c, String text, Point textLoc, Color textColor, Font font){$/;"	m	class:CircleButton
-CircleButton	src/cells/gui/CircleButton.java	/^public class CircleButton extends Node{$/;"	c
-ControlPanel	src/cells/gui/ControlPanel.java	/^	public ControlPanel(Rectangle hitbox){$/;"	m	class:ControlPanel
-ControlPanel	src/cells/gui/ControlPanel.java	/^public class ControlPanel extends Node{$/;"	c
-ControlableMembrane	src/cells/ControlableMembrane.java	/^	public ControlableMembrane(double x, double y, ArrayList<MembranePart> others, Point p, Nucleus n) {$/;"	m	class:ControlableMembrane
-ControlableMembrane	src/cells/ControlableMembrane.java	/^public class ControlableMembrane extends MembranePart{$/;"	c
-ControlableNodePhysObj	src/physics/physicsObjects/ControlableNodePhysObj.java	/^	public ControlableNodePhysObj(double x, double y, PhysicsObj target){$/;"	m	class:ControlableNodePhysObj
-ControlableNodePhysObj	src/physics/physicsObjects/ControlableNodePhysObj.java	/^public class ControlableNodePhysObj extends NodePhysObj{$/;"	c
-ControllableViewer	src/render3D/ControllableViewer.java	/^	public ControllableViewer(PolygonChunk[][] polygons, Node containingNode) {$/;"	m	class:ControllableViewer
-ControllableViewer	src/render3D/ControllableViewer.java	/^public class ControllableViewer extends Viewer{$/;"	c
-D	src/cells/CellRegion.java	/^	private int LU=0,U=1,RU=2,L=3,R=4,LD=5,D=6,RD=7;$/;"	f	class:CellRegion	file:
-ESPhysicsObj	src/physics/ESPhysicsObj.java	/^	public ESPhysicsObj(double x, double y, double charge){$/;"	m	class:ESPhysicsObj
-ESPhysicsObj	src/physics/ESPhysicsObj.java	/^	public ESPhysicsObj(double x, double y, double dx, double dy, double charge){$/;"	m	class:ESPhysicsObj
-ESPhysicsObj	src/physics/ESPhysicsObj.java	/^	public ESPhysicsObj(double x, double y, double dx, double dy, double mass, double charge){$/;"	m	class:ESPhysicsObj
-ESPhysicsObj	src/physics/ESPhysicsObj.java	/^public class ESPhysicsObj extends PhysicsObj{$/;"	c
-ESPhysicsObj	src/physics/physicsObjects/ESPhysicsObj.java	/^	public ESPhysicsObj(double x, double y, double charge){$/;"	m	class:ESPhysicsObj
-ESPhysicsObj	src/physics/physicsObjects/ESPhysicsObj.java	/^	public ESPhysicsObj(double x, double y, double dx, double dy, double charge){$/;"	m	class:ESPhysicsObj
-ESPhysicsObj	src/physics/physicsObjects/ESPhysicsObj.java	/^	public ESPhysicsObj(double x, double y, double dx, double dy, double mass, double charge){$/;"	m	class:ESPhysicsObj
-ESPhysicsObj	src/physics/physicsObjects/ESPhysicsObj.java	/^public class ESPhysicsObj extends PhysicsObj{$/;"	c
-Electron	src/physics/Electron.java	/^	public Electron(double x, double y){$/;"	m	class:Electron
-Electron	src/physics/Electron.java	/^	public Electron(double x, double y, double dx, double dy){$/;"	m	class:Electron
-Electron	src/physics/Electron.java	/^public class Electron extends ESPhysicsObj{$/;"	c
-Electron	src/physics/physicsObjects/Electron.java	/^	public Electron(double x, double y){$/;"	m	class:Electron
-Electron	src/physics/physicsObjects/Electron.java	/^	public Electron(double x, double y, double dx, double dy){$/;"	m	class:Electron
-Electron	src/physics/physicsObjects/Electron.java	/^public class Electron extends ESPhysicsObj{$/;"	c
-Empty	src/cells/generators/Empty.java	/^public class Empty implements Generator {$/;"	c
+D	src/main/Session.vim	/^nnoremap <buffer> <silent> D :call nerdtree#ui_glue#invokeKeyMap("D")$/;"	m
+F	src/main/Session.vim	/^nnoremap <buffer> <silent> F :call nerdtree#ui_glue#invokeKeyMap("F")$/;"	m
 FileRead	src/input/FileRead.java	/^public class FileRead{$/;"	c
 Game	src/states/Game.java	/^	public Game(){$/;"	m	class:Game
 Game	src/states/Game.java	/^	public Game(int w, int h, int s){$/;"	m	class:Game
 Game	src/states/Game.java	/^public class Game extends Canvas implements Runnable{$/;"	c
-Generator	src/cells/Generator.java	/^public interface Generator {$/;"	i
-GoldCell	src/cells/GoldCell.java	/^	public GoldCell(double x, double y, VeinMarker origin, double radius){$/;"	m	class:GoldCell
-GoldCell	src/cells/GoldCell.java	/^public class GoldCell extends RedBloodCell implements HasRadius, Infectable{$/;"	c
-Guy	src/physics/physicsObjects/Guy.java	/^public class Guy {$/;"	c
-HasRadius	src/cells/HasRadius.java	/^public interface HasRadius {$/;"	i
-Head	src/physics/physicsObjects/Guy.java	/^	public Head(double x, double y, PhysicsObj target) {$/;"	m	class:Head
-Head	src/physics/physicsObjects/Guy.java	/^class Head extends ControlableNodePhysObj{$/;"	c
-ImageNode	src/nodes/ImageNode.java	/^	public ImageNode(String loc, Rectangle h){$/;"	m	class:ImageNode
-ImageNode	src/nodes/ImageNode.java	/^public class ImageNode extends Node{$/;"	c
-Infectable	src/cells/Infectable.java	/^public interface Infectable {$/;"	i
+I	src/main/Session.vim	/^nnoremap <buffer> <silent> I :call nerdtree#ui_glue#invokeKeyMap("I")$/;"	m
+J	src/main/Session.vim	/^nnoremap <buffer> <silent> J :call nerdtree#ui_glue#invokeKeyMap("J")$/;"	m
+J	src/main/Session.vim	/^nnoremap J 5$/;"	m
+K	src/main/Session.vim	/^nnoremap <buffer> <silent> K :call nerdtree#ui_glue#invokeKeyMap("K")$/;"	m
+K	src/main/Session.vim	/^nnoremap K 5$/;"	m
 Keyboard	src/input/Keyboard.java	/^public class Keyboard implements KeyListener {$/;"	c
-L	src/cells/CellRegion.java	/^	private int LU=0,U=1,RU=2,L=3,R=4,LD=5,D=6,RD=7;$/;"	f	class:CellRegion	file:
-LD	src/cells/CellRegion.java	/^	private int LU=0,U=1,RU=2,L=3,R=4,LD=5,D=6,RD=7;$/;"	f	class:CellRegion	file:
 LEFT	src/nodes/Node.java	/^	protected static final int LEFT = 0;$/;"	f	class:Node
-LU	src/cells/CellRegion.java	/^	private int LU=0,U=1,RU=2,L=3,R=4,LD=5,D=6,RD=7;$/;"	f	class:CellRegion	file:
-Line	src/render3D/support/Line.java	/^	public Line(double[] start, double[] end){$/;"	m	class:Line
-Line	src/render3D/support/Line.java	/^public class Line {$/;"	c
-MasterCell	src/cells/enemyCells/MasterCell.java	/^	public MasterCell(VeinMarker o){$/;"	m	class:MasterCell
-MasterCell	src/cells/enemyCells/MasterCell.java	/^public class MasterCell extends CellPart implements HasRadius{$/;"	c
-MembranePart	src/cells/MembranePart.java	/^	public MembranePart(double x, double y, ArrayList<MembranePart> others, Point prefLoc, Nucleus n){$/;"	m	class:MembranePart
-MembranePart	src/cells/MembranePart.java	/^	public MembranePart(double x, double y, ArrayList<MembranePart> others, Point prefLoc, Nucleus n, double prefDist, double rough, double stiff){$/;"	m	class:MembranePart
-MembranePart	src/cells/MembranePart.java	/^public class MembranePart extends CellPart{$/;"	c
 Mouse	src/input/Mouse.java	/^	public Mouse(){$/;"	m	class:Mouse
 Mouse	src/input/Mouse.java	/^	public Mouse(int scale){$/;"	m	class:Mouse
 Mouse	src/input/Mouse.java	/^	public Mouse(int scale, JFrame frame){$/;"	m	class:Mouse
@@ -90,823 +111,140 @@ Mouse	src/input/Mouse.java	/^public class Mouse implements MouseListener, MouseM
 MouseWheel	src/input/MouseWheel.java	/^public class MouseWheel implements MouseWheelListener{$/;"	c
 Node	src/nodes/Node.java	/^	public Node(){$/;"	m	class:Node
 Node	src/nodes/Node.java	/^public abstract class Node {$/;"	c
-NodePhysObj	src/physics/physicsObjects/NodePhysObj.java	/^	public NodePhysObj(double x, double y, PhysicsObj target){$/;"	m	class:NodePhysObj
-NodePhysObj	src/physics/physicsObjects/NodePhysObj.java	/^public class NodePhysObj extends PhysicsObj{$/;"	c
 NodeState	src/states/NodeState.java	/^	public NodeState(){$/;"	m	class:NodeState
 NodeState	src/states/NodeState.java	/^public class NodeState extends State{$/;"	c
-Nucleus	src/cells/Nucleus.java	/^	public Nucleus(double x, double y, int m){$/;"	m	class:Nucleus
-Nucleus	src/cells/Nucleus.java	/^	public Nucleus(double x, double y, int m, double dx, double dy){$/;"	m	class:Nucleus
-Nucleus	src/cells/Nucleus.java	/^public class Nucleus extends CellPart implements HasRadius{$/;"	c
-NumBox	src/nodes/NumBox.java	/^	public NumBox(Rectangle hitbox, String imageLoc, String selectedImageLoc) {$/;"	m	class:NumBox
-NumBox	src/nodes/NumBox.java	/^	public NumBox(Rectangle hitbox, String imageLoc, String selectedImageLoc, String label) {$/;"	m	class:NumBox
-NumBox	src/nodes/NumBox.java	/^public class NumBox extends Button{$/;"	c
-Opp	src/render3D/support/Opp.java	/^public class Opp {$/;"	c
-PatrolCell	src/cells/enemyCells/PatrolCell.java	/^	public PatrolCell(double x, double y, VeinMarker n){$/;"	m	class:PatrolCell
-PatrolCell	src/cells/enemyCells/PatrolCell.java	/^public class PatrolCell extends CellPart implements HasRadius{$/;"	c
-PhysicsNode	src/physics/PhysicsNode.java	/^	public PhysicsNode(Rectangle hitbox){$/;"	m	class:PhysicsNode
-PhysicsNode	src/physics/PhysicsNode.java	/^public class PhysicsNode extends Node{$/;"	c
-PhysicsObj	src/physics/PhysicsObj.java	/^	public PhysicsObj(){$/;"	m	class:PhysicsObj
-PhysicsObj	src/physics/PhysicsObj.java	/^	public PhysicsObj(double x, double y){$/;"	m	class:PhysicsObj
-PhysicsObj	src/physics/PhysicsObj.java	/^	public PhysicsObj(double x, double y, double dx, double dy){$/;"	m	class:PhysicsObj
-PhysicsObj	src/physics/PhysicsObj.java	/^	public PhysicsObj(double x, double y, double dx, double dy, double mass){$/;"	m	class:PhysicsObj
-PhysicsObj	src/physics/PhysicsObj.java	/^public class PhysicsObj {$/;"	c
-PhysicsObj	src/physics/physicsObjects/PhysicsObj.java	/^	public PhysicsObj(){$/;"	m	class:PhysicsObj
-PhysicsObj	src/physics/physicsObjects/PhysicsObj.java	/^	public PhysicsObj(double x, double y){$/;"	m	class:PhysicsObj
-PhysicsObj	src/physics/physicsObjects/PhysicsObj.java	/^	public PhysicsObj(double x, double y, double dx, double dy){$/;"	m	class:PhysicsObj
-PhysicsObj	src/physics/physicsObjects/PhysicsObj.java	/^	public PhysicsObj(double x, double y, double dx, double dy, double mass){$/;"	m	class:PhysicsObj
-PhysicsObj	src/physics/physicsObjects/PhysicsObj.java	/^public class PhysicsObj {$/;"	c
-PhysicsState	src/physics/PhysicsState.java	/^	public PhysicsState(){$/;"	m	class:PhysicsState
-PhysicsState	src/physics/PhysicsState.java	/^public class PhysicsState extends NodeState{$/;"	c
-Plane	src/render3D/support/Plane.java	/^	public Plane(){}$/;"	m	class:Plane
-Plane	src/render3D/support/Plane.java	/^	public Plane(double[] normal, double[] point){$/;"	m	class:Plane
-Plane	src/render3D/support/Plane.java	/^public class Plane {$/;"	c
-Point	src/cells/Point.java	/^	public Point(){}$/;"	m	class:Point
-Point	src/cells/Point.java	/^	public Point(double x, double y){$/;"	m	class:Point
-Point	src/cells/Point.java	/^public class Point {$/;"	c
-Polygon3D	src/render3D/support/Polygon3D.java	/^	public Polygon3D(){$/;"	m	class:Polygon3D
-Polygon3D	src/render3D/support/Polygon3D.java	/^	public Polygon3D(double[][] locations, Color color){$/;"	m	class:Polygon3D
-Polygon3D	src/render3D/support/Polygon3D.java	/^public class Polygon3D implements Comparable{$/;"	c
-PolygonChunk	src/render3D/support/PolygonChunk.java	/^	public PolygonChunk(){$/;"	m	class:PolygonChunk
-PolygonChunk	src/render3D/support/PolygonChunk.java	/^	public PolygonChunk(Polygon3D ... polygons){$/;"	m	class:PolygonChunk
-PolygonChunk	src/render3D/support/PolygonChunk.java	/^public class PolygonChunk {$/;"	c
-PolygonControler	src/render3D/support/PolygonControler.java	/^public abstract class PolygonControler extends Polygon3D{$/;"	c
-PolygonEditor	src/render3D/support/PolygonEditor.java	/^	public PolygonEditor(ArrayList<Polygon3D> polys, PolygonChunk[][] container, Viewer v){$/;"	m	class:PolygonEditor
-PolygonEditor	src/render3D/support/PolygonEditor.java	/^public class PolygonEditor extends PolygonControler{$/;"	c
-PolygonList	src/render3D/support/PolygonList.java	/^	public PolygonList(ArrayList<Polygon3D> polys){$/;"	m	class:PolygonList
-PolygonList	src/render3D/support/PolygonList.java	/^public class PolygonList extends Polygon3D{$/;"	c
-PolygonTest	src/render3D/support/PolygonTest.java	/^		public PolygonTest(ArrayList<Polygon3D> polys, PolygonChunk[][] container){$/;"	m	class:PolygonTest
-PolygonTest	src/render3D/support/PolygonTest.java	/^public class PolygonTest extends PolygonControler{$/;"	c
-R	src/cells/CellRegion.java	/^	private int LU=0,U=1,RU=2,L=3,R=4,LD=5,D=6,RD=7;$/;"	f	class:CellRegion	file:
-RD	src/cells/CellRegion.java	/^	private int LU=0,U=1,RU=2,L=3,R=4,LD=5,D=6,RD=7;$/;"	f	class:CellRegion	file:
-RU	src/cells/CellRegion.java	/^	private int LU=0,U=1,RU=2,L=3,R=4,LD=5,D=6,RD=7;$/;"	f	class:CellRegion	file:
-RedBloodCell	src/cells/enemyCells/RedBloodCell.java	/^	public RedBloodCell(double x, double y, VeinMarker origin){$/;"	m	class:RedBloodCell
-RedBloodCell	src/cells/enemyCells/RedBloodCell.java	/^public class RedBloodCell extends CellPart implements HasRadius, Infectable{$/;"	c
-RenderNode	src/render3D/RenderNode.java	/^	public RenderNode(PolygonChunk[][] polygons){$/;"	m	class:RenderNode
-RenderNode	src/render3D/RenderNode.java	/^	public RenderNode(PolygonChunk[][] polygons, Viewer v){$/;"	m	class:RenderNode
-RenderNode	src/render3D/RenderNode.java	/^public class RenderNode extends Node{$/;"	c
-SettingsMenu	src/cells/gui/SettingsMenu.java	/^	public SettingsMenu(BufferedReader reader, BufferedWriter writer){$/;"	m	class:SettingsMenu
-SettingsMenu	src/cells/gui/SettingsMenu.java	/^public class SettingsMenu extends NodeState{$/;"	c
-Start	src/physics/Start.java	/^public class Start {$/;"	c
-StartMenu	src/cells/gui/StartMenu.java	/^	public StartMenu(CellRunner r, Game g){$/;"	m	class:StartMenu
-StartMenu	src/cells/gui/StartMenu.java	/^public class StartMenu extends NodeState{$/;"	c
+O	src/main/Session.vim	/^nnoremap <buffer> <silent> O :call nerdtree#ui_glue#invokeKeyMap("O")$/;"	m
+O	src/main/Session.vim	/^nnoremap O Ox<BS>$/;"	m
+P	src/main/Session.vim	/^nnoremap <buffer> <silent> P :call nerdtree#ui_glue#invokeKeyMap("P")$/;"	m
+R	src/main/Session.vim	/^nnoremap <buffer> <silent> R :call nerdtree#ui_glue#invokeKeyMap("R")$/;"	m
+SessionLoad	src/main/Session.vim	/^let SessionLoad = 1$/;"	v
+Start	src/main/Start.java	/^public class Start {$/;"	c
 State	src/states/State.java	/^public abstract class State {$/;"	c
-StaticCell	src/cells/StaticCell.java	/^public interface StaticCell {$/;"	i
-StaticESPhysObj	src/physics/StaticESPhysObj.java	/^	public StaticESPhysObj(double x, double y, double charge) {$/;"	m	class:StaticESPhysObj
-StaticESPhysObj	src/physics/StaticESPhysObj.java	/^public class StaticESPhysObj extends ESPhysicsObj{$/;"	c
-StaticESPhysObj	src/physics/physicsObjects/StaticESPhysObj.java	/^	public StaticESPhysObj(double x, double y, double charge) {$/;"	m	class:StaticESPhysObj
-StaticESPhysObj	src/physics/physicsObjects/StaticESPhysObj.java	/^public class StaticESPhysObj extends ESPhysicsObj{$/;"	c
-StaticPhysObj	src/physics/StaticPhysObj.java	/^	public StaticPhysObj(double x, double y){$/;"	m	class:StaticPhysObj
-StaticPhysObj	src/physics/StaticPhysObj.java	/^	public StaticPhysObj(double x, double y, double mass){$/;"	m	class:StaticPhysObj
-StaticPhysObj	src/physics/StaticPhysObj.java	/^public class StaticPhysObj extends PhysicsObj{$/;"	c
-StaticPhysObj	src/physics/physicsObjects/StaticPhysObj.java	/^	public StaticPhysObj(double x, double y){$/;"	m	class:StaticPhysObj
-StaticPhysObj	src/physics/physicsObjects/StaticPhysObj.java	/^	public StaticPhysObj(double x, double y, double mass){$/;"	m	class:StaticPhysObj
-StaticPhysObj	src/physics/physicsObjects/StaticPhysObj.java	/^public class StaticPhysObj extends PhysicsObj{$/;"	c
-TestButton	src/nodes/TestButton.java	/^	public TestButton(Rectangle hitbox, String loc, String selectedImageLoc, String label) {$/;"	m	class:TestButton
-TestButton	src/nodes/TestButton.java	/^public class TestButton extends Button{$/;"	c
-TestState	src/states/TestState.java	/^	public TestState(){$/;"	m	class:TestState
-TestState	src/states/TestState.java	/^public class TestState extends NodeState{$/;"	c
-TextBox	src/nodes/TextBox.java	/^	public TextBox(Rectangle hitbox, String imageLoc, String selectedImageLoc) {$/;"	m	class:TextBox
-TextBox	src/nodes/TextBox.java	/^	public TextBox(Rectangle hitbox, String imageLoc, String selectedImageLoc, String label) {$/;"	m	class:TextBox
-TextBox	src/nodes/TextBox.java	/^public class TextBox extends Button{$/;"	c
-TextCell	src/cells/generators/Tutorial.java	/^	public TextCell(double x, double y, String text, Font f){$/;"	m	class:TextCell
-TextCell	src/cells/generators/Tutorial.java	/^class TextCell extends CellPart{$/;"	c
-Tutorial	src/cells/generators/Tutorial.java	/^public class Tutorial implements Generator{$/;"	c
-U	src/cells/CellRegion.java	/^	private int LU=0,U=1,RU=2,L=3,R=4,LD=5,D=6,RD=7;$/;"	f	class:CellRegion	file:
-Vector	src/cells/Vector.java	/^	public Vector(){}$/;"	m	class:Vector
-Vector	src/cells/Vector.java	/^	public Vector(double x, double y){$/;"	m	class:Vector
-Vector	src/cells/Vector.java	/^public class Vector {$/;"	c
-VeinMaker	src/cells/generators/Veins.java	/^	public VeinMaker(double x, double y, double dx, double dy, double radius, VeinMaker parent, int depth){$/;"	m	class:VeinMaker
-VeinMaker	src/cells/generators/Veins.java	/^class VeinMaker extends CellPart{$/;"	c
-VeinMakerFast	src/cells/generators/VeinsFast.java	/^	public VeinMakerFast(double x, double y, double dx, double dy, double radius, VeinMakerFast parent, int depth){$/;"	m	class:VeinMakerFast
-VeinMakerFast	src/cells/generators/VeinsFast.java	/^class VeinMakerFast extends CellPart{$/;"	c
-VeinMarker	src/cells/VeinMarker.java	/^	public VeinMarker(double x, double y, VeinMarker parent, VeinMarker[] branches){$/;"	m	class:VeinMarker
-VeinMarker	src/cells/VeinMarker.java	/^public class VeinMarker extends CellPart {$/;"	c
-Veins	src/cells/generators/Veins.java	/^public class Veins implements Generator {$/;"	c
-VeinsFast	src/cells/generators/VeinsFast.java	/^public class VeinsFast implements Generator {$/;"	c
-Viewer	src/render3D/Viewer.java	/^	public Viewer(PolygonChunk[][] polygons, Node containingNode){$/;"	m	class:Viewer
-Viewer	src/render3D/Viewer.java	/^public class Viewer {$/;"	c
-Virus	src/cells/Virus.java	/^	public Virus(double x, double y) {$/;"	m	class:Virus
-Virus	src/cells/Virus.java	/^	public Virus(double x, double y, double dx, double dy){$/;"	m	class:Virus
-Virus	src/cells/Virus.java	/^public class Virus extends CellPart{$/;"	c
-VirusCluster	src/cells/VirusCluster.java	/^	public VirusCluster(double x, double y){$/;"	m	class:VirusCluster
-VirusCluster	src/cells/VirusCluster.java	/^	public VirusCluster(double x, double y, double dx, double dy){$/;"	m	class:VirusCluster
-VirusCluster	src/cells/VirusCluster.java	/^public class VirusCluster extends CellPart implements HasRadius{$/;"	c
-WallCell	src/cells/WallCell.java	/^	public WallCell(double x, double y, int m) {$/;"	m	class:WallCell
-WallCell	src/cells/WallCell.java	/^	public WallCell(double x, double y, int m, int dx, int dy) {$/;"	m	class:WallCell
-WallCell	src/cells/WallCell.java	/^public class WallCell extends Nucleus implements StaticCell, HasRadius{$/;"	c
-WallCellFast	src/cells/WallCellFast.java	/^	public WallCellFast(double x, double y, double r) {$/;"	m	class:WallCellFast
-WallCellFast	src/cells/WallCellFast.java	/^	public WallCellFast(double x, double y, double r, int dx, int dy) {$/;"	m	class:WallCellFast
-WallCellFast	src/cells/WallCellFast.java	/^public class WallCellFast extends CellPart implements StaticCell, HasRadius{$/;"	c
-WhiteBloodCell	src/cells/enemyCells/WhiteBloodCell.java	/^	public WhiteBloodCell(double x, double y, int m) {$/;"	m	class:WhiteBloodCell
-WhiteBloodCell	src/cells/enemyCells/WhiteBloodCell.java	/^	public WhiteBloodCell(double x, double y, int m, ArrayList<Integer> p, VeinMarker o) {$/;"	m	class:WhiteBloodCell
-WhiteBloodCell	src/cells/enemyCells/WhiteBloodCell.java	/^	public WhiteBloodCell(double x, double y, int m, double dx, double dy) {$/;"	m	class:WhiteBloodCell
-WhiteBloodCell	src/cells/enemyCells/WhiteBloodCell.java	/^public class WhiteBloodCell extends Nucleus{$/;"	c
-_RenderTest	src/render3D/_RenderTest.java	/^public class _RenderTest {$/;"	c
-absorbRate	src/cells/enemyCells/WhiteBloodCell.java	/^	int absorbRate = 3;$/;"	f	class:WhiteBloodCell
-accell	src/cells/enemyCells/WhiteBloodCell.java	/^	double accell = .3;$/;"	f	class:WhiteBloodCell
-action	src/render3D/support/PolygonEditor.java	/^	int action = 1;$/;"	f	class:PolygonEditor
-activate	src/cells/WallCell.java	/^	public void activate(boolean b){$/;"	m	class:WallCell
-activate	src/cells/WallCellFast.java	/^	public void activate(boolean b){$/;"	m	class:WallCellFast
-activated	src/cells/WallCell.java	/^	private boolean activated;$/;"	f	class:WallCell	file:
-activated	src/cells/WallCellFast.java	/^	private boolean activated;$/;"	f	class:WallCellFast	file:
-add	src/cells/CellRegion.java	/^	public void add(CellPart p){$/;"	m	class:CellRegion
-add	src/cells/Point.java	/^	public void add(Vector v){$/;"	m	class:Point
-add	src/cells/Point.java	/^	public void add(double a, double b){$/;"	m	class:Point
-add	src/cells/Vector.java	/^	public void add(Vector v){$/;"	m	class:Vector
-add	src/cells/VirusCluster.java	/^	public void add(Virus virus){$/;"	m	class:VirusCluster
-add	src/render3D/support/Opp.java	/^	public static double[] add(double[] a, double[] b){$/;"	m	class:Opp
-add	src/render3D/support/Opp.java	/^	public static int[] add(int[] a, int[] b){$/;"	m	class:Opp
-add	src/render3D/support/PolygonChunk.java	/^	public void add(Polygon3D p){$/;"	m	class:PolygonChunk
-addFromCell	src/cells/CellRegion.java	/^	public void addFromCell(CellPart p){$/;"	m	class:CellRegion
+T	src/main/Session.vim	/^nnoremap <buffer> <silent> T :call nerdtree#ui_glue#invokeKeyMap("T")$/;"	m
+U	src/main/Session.vim	/^nnoremap <buffer> <silent> U :call nerdtree#ui_glue#invokeKeyMap("U")$/;"	m
+X	src/main/Session.vim	/^nnoremap <buffer> <silent> X :call nerdtree#ui_glue#invokeKeyMap("X")$/;"	m
+\b	src/main/Session.vim	/^nnoremap <silent> \\b :call conque_gdb#toggle_breakpoint(expand("%:p"), line("."))$/;"	m
+\c	src/main/Session.vim	/^nnoremap <silent> \\c :call conque_gdb#command("continue")$/;"	m
+\f	src/main/Session.vim	/^nnoremap <silent> \\f :call conque_gdb#command("finish")$/;"	m
+\n	src/main/Session.vim	/^nnoremap <silent> \\n :call conque_gdb#command("next")$/;"	m
+\p	src/main/Session.vim	/^nnoremap <silent> \\p :call conque_gdb#print_word(expand("<cword>"))$/;"	m
+\r	src/main/Session.vim	/^nnoremap <silent> \\r :call conque_gdb#command("run")$/;"	m
+\s	src/main/Session.vim	/^nnoremap <silent> \\s :call conque_gdb#command("step")$/;"	m
+\t	src/main/Session.vim	/^nnoremap <silent> \\t :call conque_gdb#command("backtrace")$/;"	m
 addImage	src/nodes/Node.java	/^	public static void addImage(String imageName, String fileLoc, Rectangle r){$/;"	m	class:Node
 addImage	src/nodes/Node.java	/^	public static void addImage(String imageName, String fileLoc, int x, int y, int width, int height){$/;"	m	class:Node
 addImageOverride	src/nodes/Node.java	/^	public static void addImageOverride(String imageName, String fileLoc, Rectangle r){$/;"	m	class:Node
 addImageOverride	src/nodes/Node.java	/^	public static void addImageOverride(String imageName, String fileLoc, int x, int y, int width, int height){$/;"	m	class:Node
 addNode	src/states/NodeState.java	/^	public void addNode(Node n){$/;"	m	class:NodeState
 addState	src/states/Game.java	/^	public void addState(State s){$/;"	m	class:Game
-addTarget	src/physics/physicsObjects/Guy.java	/^	public void addTarget(PhysicsObj p){$/;"	m	class:BodyPart
 airplanes	src/airplanes/Airplane.java	/^package airplanes;$/;"	p
 airplanes	src/airplanes/AirplaneState.java	/^    ArrayList<Airplane> airplanes = new ArrayList<Airplane>();$/;"	f	class:AirplaneState
 airplanes	src/airplanes/AirplaneState.java	/^package airplanes;$/;"	p
-approach	src/cells/CellPart.java	/^	public void approach(Point p, double speed, double dist){$/;"	m	class:CellPart
-arrToString	src/render3D/support/Opp.java	/^	public static String arrToString(double[] arr){$/;"	m	class:Opp
-arrToString	src/render3D/support/Opp.java	/^	public static String arrToString(int[] arr){$/;"	m	class:Opp
-asdf	src/render3D/support/Polygon3D.java	/^	public void asdf(){$/;"	m	class:Polygon3D
-average	src/cells/Point.java	/^	public static Point average(Point ... parray){$/;"	m	class:Point
-averagePoint	src/render3D/support/Opp.java	/^	public static double[] averagePoint(double[][] points){$/;"	m	class:Opp
-bottomTorso	src/physics/physicsObjects/Guy.java	/^	BodyPart bottomTorso;$/;"	f	class:Guy
-branches	src/cells/VeinMarker.java	/^	VeinMarker[] branches;$/;"	f	class:VeinMarker
-branches	src/cells/generators/Veins.java	/^	VeinMaker[] branches;$/;"	f	class:VeinMaker
-branches	src/cells/generators/VeinsFast.java	/^	VeinMakerFast[] branches;$/;"	f	class:VeinMakerFast
 button1At	src/input/Mouse.java	/^	public static Point button1At = new Point(-1,-1);$/;"	f	class:Mouse
 button1Pressed	src/input/Mouse.java	/^	public static boolean button1Pressed = false;$/;"	f	class:Mouse
 button2Pressed	src/input/Mouse.java	/^	public static boolean button2Pressed = false;$/;"	f	class:Mouse
-buttonA	src/cells/gui/SettingsMenu.java	/^	Rectangle buttonA;$/;"	f	class:SettingsMenu
-buttonHeight	src/cells/gui/ControlPanel.java	/^	int buttonHeight = 50;$/;"	f	class:ControlPanel
-buttonWidth	src/cells/gui/ControlPanel.java	/^	int buttonWidth = 200;$/;"	f	class:ControlPanel
-buttons	src/cells/gui/ControlPanel.java	/^	String[] buttons;$/;"	f	class:ControlPanel
-buttons	src/cells/gui/StartMenu.java	/^	CircleButton[] buttons = new CircleButton[10];$/;"	f	class:StartMenu
-c	src/physics/physicsObjects/Guy.java	/^	Color c = Color.RED;$/;"	f	class:Head
-c	src/render3D/Viewer.java	/^	double c = 1000000;$/;"	f	class:Viewer
-cellParts	src/cells/CellRegion.java	/^	private LinkedList<CellPart> cellParts;$/;"	f	class:CellRegion	file:
-cellParts	src/cells/CellRunner.java	/^	CellRegion[][] cellParts;$/;"	f	class:CellRunner
-cells	src/cells/CellPart.java	/^package cells;$/;"	p
-cells	src/cells/CellRegion.java	/^package cells;$/;"	p
-cells	src/cells/CellRunner.java	/^package cells;$/;"	p
-cells	src/cells/CellState.java	/^	private CellRunner cells;$/;"	f	class:CellState	file:
-cells	src/cells/CellState.java	/^package cells;$/;"	p
-cells	src/cells/ControlableMembrane.java	/^package cells;$/;"	p
-cells	src/cells/Generator.java	/^package cells;$/;"	p
-cells	src/cells/GoldCell.java	/^package cells;$/;"	p
-cells	src/cells/HasRadius.java	/^package cells;$/;"	p
-cells	src/cells/Infectable.java	/^package cells;$/;"	p
-cells	src/cells/MembranePart.java	/^package cells;$/;"	p
-cells	src/cells/Nucleus.java	/^package cells;$/;"	p
-cells	src/cells/Point.java	/^package cells;$/;"	p
-cells	src/cells/StaticCell.java	/^package cells;$/;"	p
-cells	src/cells/Vector.java	/^package cells;$/;"	p
-cells	src/cells/VeinMarker.java	/^package cells;$/;"	p
-cells	src/cells/Virus.java	/^package cells;$/;"	p
-cells	src/cells/VirusCluster.java	/^package cells;$/;"	p
-cells	src/cells/WallCell.java	/^package cells;$/;"	p
-cells	src/cells/WallCellFast.java	/^package cells;$/;"	p
-cells.enemyCells	src/cells/enemyCells/MasterCell.java	/^package cells.enemyCells;$/;"	p
-cells.enemyCells	src/cells/enemyCells/PatrolCell.java	/^package cells.enemyCells;$/;"	p
-cells.enemyCells	src/cells/enemyCells/RedBloodCell.java	/^package cells.enemyCells;$/;"	p
-cells.enemyCells	src/cells/enemyCells/WhiteBloodCell.java	/^package cells.enemyCells;$/;"	p
-cells.generators	src/cells/generators/Block.java	/^package cells.generators;$/;"	p
-cells.generators	src/cells/generators/Empty.java	/^package cells.generators;$/;"	p
-cells.generators	src/cells/generators/Tutorial.java	/^package cells.generators;$/;"	p
-cells.generators	src/cells/generators/Veins.java	/^package cells.generators;$/;"	p
-cells.generators	src/cells/generators/VeinsFast.java	/^package cells.generators;$/;"	p
-cells.gui	src/cells/gui/CircleButton.java	/^package cells.gui;$/;"	p
-cells.gui	src/cells/gui/ControlPanel.java	/^package cells.gui;$/;"	p
-cells.gui	src/cells/gui/SettingsMenu.java	/^package cells.gui;$/;"	p
-cells.gui	src/cells/gui/StartMenu.java	/^package cells.gui;$/;"	p
-charge	src/physics/ESPhysicsObj.java	/^	protected double charge = 1;$/;"	f	class:ESPhysicsObj
-charge	src/physics/physicsObjects/ESPhysicsObj.java	/^	protected double charge = 1;$/;"	f	class:ESPhysicsObj
-chunk	src/cells/CellPart.java	/^	protected CellRegion chunk = null;$/;"	f	class:CellPart
-chunkLoc	src/render3D/support/Polygon3D.java	/^	private int[] chunkLoc = null;$/;"	f	class:Polygon3D	file:
-chunkSize	src/render3D/RenderNode.java	/^	public static final double chunkSize = 100;$/;"	f	class:RenderNode
-clearPartners	src/cells/MembranePart.java	/^	public void clearPartners(){$/;"	m	class:MembranePart
-clicked	src/cells/gui/CircleButton.java	/^	boolean clicked = false;$/;"	f	class:CircleButton
+cd	src/main/Session.vim	/^nnoremap <buffer> <silent> cd :call nerdtree#ui_glue#invokeKeyMap("cd")$/;"	m
 clicked	src/nodes/Button.java	/^	public boolean clicked;$/;"	f	class:Button
-closest	src/cells/GoldCell.java	/^	VirusCluster closest;$/;"	f	class:GoldCell
-closest	src/cells/VirusCluster.java	/^	VirusCluster closest = null;$/;"	f	class:VirusCluster
-closest	src/cells/enemyCells/WhiteBloodCell.java	/^	VirusCluster closest = null;$/;"	f	class:WhiteBloodCell
-color	src/cells/gui/CircleButton.java	/^	Color color;$/;"	f	class:CircleButton
-color	src/render3D/support/Polygon3D.java	/^	protected Color color;$/;"	f	class:Polygon3D
-combine	src/cells/VirusCluster.java	/^	public static boolean combine = false;$/;"	f	class:VirusCluster
-compareTo	src/render3D/support/Polygon3D.java	/^	public int compareTo(Object polygon) {$/;"	m	class:Polygon3D
-comparitiveDistance	src/render3D/support/Opp.java	/^	public static double comparitiveDistance(double[] a, double[] b){$/;"	m	class:Opp
-construct	src/cells/generators/Veins.java	/^	public void construct(int maxDepth){$/;"	m	class:VeinMaker
-construct	src/cells/generators/VeinsFast.java	/^	public void construct(int maxDepth){$/;"	m	class:VeinMakerFast
-constructMarkers	src/cells/generators/VeinsFast.java	/^	public VeinMarker constructMarkers(){$/;"	m	class:VeinMakerFast
-container	src/render3D/support/Polygon3D.java	/^	protected PolygonChunk[][] container;$/;"	f	class:Polygon3D
-containingNode	src/render3D/Viewer.java	/^	Node containingNode;$/;"	f	class:Viewer
-contains	src/cells/CellRegion.java	/^	public boolean contains(CellPart p){$/;"	m	class:CellRegion
-contains	src/cells/gui/ControlPanel.java	/^	public boolean contains(Point p){$/;"	m	class:ControlPanel
-contains	src/physics/physicsObjects/Guy.java	/^	public boolean contains(PhysicsObj p){$/;"	m	class:BodyPart
-controler	src/cells/CellRunner.java	/^	ControlPanel controler;$/;"	f	class:CellRunner
-coordSys	src/render3D/Viewer.java	/^	double[][] coordSys;$/;"	f	class:Viewer
-count	src/render3D/ControllableViewer.java	/^	int count = 0;$/;"	f	class:ControllableViewer
-counter	src/cells/GoldCell.java	/^	int counter = 0;$/;"	f	class:GoldCell
-counter	src/cells/Nucleus.java	/^	int counter = 0;$/;"	f	class:Nucleus
-counter	src/cells/enemyCells/MasterCell.java	/^	int counter = 0;$/;"	f	class:MasterCell
-counter	src/cells/enemyCells/WhiteBloodCell.java	/^	int counter = 0;$/;"	f	class:WhiteBloodCell
-counter	src/nodes/AnimatedText.java	/^	int counter = 0;$/;"	f	class:AnimatedText
-crossProduct	src/render3D/support/Opp.java	/^	public static double[] crossProduct(double[] a, double[] b){$/;"	m	class:Opp
-curr	src/cells/CellRunner.java	/^	long curr;$/;"	f	class:CellRunner
 currentStateIndex	src/states/Game.java	/^	private int currentStateIndex = 0;$/;"	f	class:Game	file:
-debug	src/cells/CellRunner.java	/^	boolean debug = false;$/;"	f	class:CellRunner
-def	src/nodes/NumBox.java	/^	private int def = 0;$/;"	f	class:NumBox	file:
-degreesTurned	src/render3D/ControllableViewer.java	/^	double degreesTurned = 0;$/;"	f	class:ControllableViewer
-depth	src/cells/VeinMarker.java	/^	int depth;$/;"	f	class:VeinMarker
-depth	src/cells/generators/Veins.java	/^	int depth;$/;"	f	class:VeinMaker
-depth	src/cells/generators/VeinsFast.java	/^	int depth;$/;"	f	class:VeinMakerFast
-die	src/cells/CellPart.java	/^	public void die(){$/;"	m	class:CellPart
-die	src/cells/generators/Veins.java	/^	public void die(){$/;"	m	class:VeinMaker
-die	src/cells/generators/VeinsFast.java	/^	public void die(){$/;"	m	class:VeinMakerFast
-dim	src/cells/CellRegion.java	/^	private double dim;$/;"	f	class:CellRegion	file:
-direction	src/render3D/Viewer.java	/^	double[] direction = {1,0,0,0};$/;"	f	class:Viewer
-distFromTarget	src/physics/physicsObjects/NodePhysObj.java	/^	double distFromTarget = 5;$/;"	f	class:NodePhysObj
-distance	src/cells/CellPart.java	/^	public double distance(CellPart a){$/;"	m	class:CellPart
-distance	src/cells/Point.java	/^	public static double distance(Point a, Point b){$/;"	m	class:Point
-distance	src/render3D/support/Polygon3D.java	/^	public double distance = 0;$/;"	f	class:Polygon3D
-distance	src/render3D/support/PolygonList.java	/^	double distance;$/;"	f	class:PolygonList
-distanceBetween	src/render3D/support/Opp.java	/^	public static double distanceBetween(double[] a, double[] b){$/;"	m	class:Opp
-distanceCompare	src/cells/CellPart.java	/^	public double distanceCompare(CellPart a){$/;"	m	class:CellPart
-distanceCompare	src/cells/Point.java	/^	public static double distanceCompare(Point a, Point b){$/;"	m	class:Point
-doesVirusExist	src/cells/VirusCluster.java	/^	public static boolean doesVirusExist = false;$/;"	f	class:VirusCluster
-dotProduct	src/render3D/support/Opp.java	/^	public static double dotProduct(double[] a, double[] b){$/;"	m	class:Opp
-drawMembrane	src/cells/Nucleus.java	/^	protected void drawMembrane(Graphics2D g2){$/;"	m	class:Nucleus
-drawOn	src/cells/CellRunner.java	/^	public void drawOn(Graphics2D g2) {$/;"	m	class:CellRunner
-drawOn	src/cells/gui/CircleButton.java	/^	public void drawOn(Graphics2D g2) {$/;"	m	class:CircleButton
-drawOn	src/cells/gui/ControlPanel.java	/^	public void drawOn(Graphics2D g2) {$/;"	m	class:ControlPanel
-drawOn	src/cells/gui/SettingsMenu.java	/^	public void drawOn(Graphics2D g2){$/;"	m	class:SettingsMenu
-drawOn	src/nodes/AnimatedText.java	/^	public void drawOn(Graphics2D g2) {$/;"	m	class:AnimatedText
 drawOn	src/nodes/Button.java	/^	public void drawOn(Graphics2D g2){$/;"	m	class:Button
-drawOn	src/nodes/ImageNode.java	/^	public void drawOn(Graphics2D g2) {$/;"	m	class:ImageNode
 drawOn	src/nodes/Node.java	/^	public abstract void drawOn(Graphics2D g2);$/;"	m	class:Node
-drawOn	src/nodes/NumBox.java	/^	public void drawOn(Graphics2D g2){$/;"	m	class:NumBox
-drawOn	src/nodes/TextBox.java	/^	public void drawOn(Graphics2D g2){$/;"	m	class:TextBox
-drawOn	src/physics/PhysicsNode.java	/^	public void drawOn(Graphics2D g2) {$/;"	m	class:PhysicsNode
-drawOn	src/render3D/RenderNode.java	/^	public void drawOn(Graphics2D g2) {$/;"	m	class:RenderNode
-drawPolygon	src/render3D/support/Polygon3D.java	/^	public void drawPolygon(Graphics2D g2, int[] x, int[] y){$/;"	m	class:Polygon3D
-drawSelfOn	src/cells/CellPart.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:CellPart
-drawSelfOn	src/cells/CellRegion.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:CellRegion
-drawSelfOn	src/cells/GoldCell.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:GoldCell
-drawSelfOn	src/cells/MembranePart.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:MembranePart
-drawSelfOn	src/cells/Nucleus.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:Nucleus
-drawSelfOn	src/cells/VeinMarker.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:VeinMarker
-drawSelfOn	src/cells/VirusCluster.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:VirusCluster
-drawSelfOn	src/cells/WallCell.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:WallCell
-drawSelfOn	src/cells/WallCellFast.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:WallCellFast
-drawSelfOn	src/cells/enemyCells/MasterCell.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:MasterCell
-drawSelfOn	src/cells/enemyCells/PatrolCell.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:PatrolCell
-drawSelfOn	src/cells/enemyCells/RedBloodCell.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:RedBloodCell
-drawSelfOn	src/cells/enemyCells/WhiteBloodCell.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:WhiteBloodCell
-drawSelfOn	src/cells/generators/Tutorial.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:TextCell
-drawSelfOn	src/cells/generators/Veins.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:VeinMaker
-drawSelfOn	src/cells/generators/VeinsFast.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:VeinMakerFast
-drawSelfOn	src/physics/ESPhysicsObj.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:ESPhysicsObj
-drawSelfOn	src/physics/PhysicsObj.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:PhysicsObj
-drawSelfOn	src/physics/StaticESPhysObj.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:StaticESPhysObj
-drawSelfOn	src/physics/physicsObjects/Ball.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:Ball
-drawSelfOn	src/physics/physicsObjects/ESPhysicsObj.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:ESPhysicsObj
-drawSelfOn	src/physics/physicsObjects/Guy.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:BodyPart
-drawSelfOn	src/physics/physicsObjects/Guy.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:Head
-drawSelfOn	src/physics/physicsObjects/NodePhysObj.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:NodePhysObj
-drawSelfOn	src/physics/physicsObjects/PhysicsObj.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:PhysicsObj
-drawSelfOn	src/physics/physicsObjects/StaticESPhysObj.java	/^	public void drawSelfOn(Graphics2D g2){$/;"	m	class:StaticESPhysObj
-drawSelfOn	src/render3D/support/Polygon3D.java	/^	public void drawSelfOn(Graphics2D g2, Viewer view){$/;"	m	class:Polygon3D
-drawSelfOn	src/render3D/support/PolygonEditor.java	/^	public void drawSelfOn(Graphics2D g2, Viewer view){$/;"	m	class:PolygonEditor
-drawSelfOn	src/render3D/support/PolygonList.java	/^	public void drawSelfOn(Graphics2D g2, Viewer view){$/;"	m	class:PolygonList
-drawSelfOn	src/render3D/support/PolygonTest.java	/^		public void drawSelfOn(Graphics2D g2, Viewer view){}$/;"	m	class:PolygonTest
 drawString	src/nodes/Node.java	/^	protected void drawString(Graphics2D g2, String string, int position){$/;"	m	class:Node
 drawString	src/nodes/Node.java	/^	protected void drawString(Graphics2D g2, String string, int x, int y){$/;"	m	class:Node
-dx	src/cells/CellPart.java	/^	public double dx, dy;$/;"	f	class:CellPart
-dx	src/cells/CellRunner.java	/^	private double dx, dy;$/;"	f	class:CellRunner	file:
-dx	src/cells/Vector.java	/^	public double dx, dy;$/;"	f	class:Vector
-dx	src/physics/PhysicsObj.java	/^	double dx, dy;$/;"	f	class:PhysicsObj
-dx	src/physics/physicsObjects/PhysicsObj.java	/^	double dx, dy;$/;"	f	class:PhysicsObj
-dy	src/cells/CellPart.java	/^	public double dx, dy;$/;"	f	class:CellPart
-dy	src/cells/CellRunner.java	/^	private double dx, dy;$/;"	f	class:CellRunner	file:
-dy	src/cells/Vector.java	/^	public double dx, dy;$/;"	f	class:Vector
-dy	src/physics/PhysicsObj.java	/^	double dx, dy;$/;"	f	class:PhysicsObj
-dy	src/physics/physicsObjects/PhysicsObj.java	/^	double dx, dy;$/;"	f	class:PhysicsObj
-effect	src/cells/CellPart.java	/^	public void effect(CellPart p){$/;"	m	class:CellPart
-effect	src/cells/GoldCell.java	/^	public void effect(CellPart p){$/;"	m	class:GoldCell
-effect	src/cells/MembranePart.java	/^	public void effect(CellPart p){$/;"	m	class:MembranePart
-effect	src/cells/Nucleus.java	/^	public void effect(CellPart p){$/;"	m	class:Nucleus
-effect	src/cells/VirusCluster.java	/^	public void effect(CellPart p){$/;"	m	class:VirusCluster
-effect	src/cells/WallCell.java	/^	public void effect(CellPart p){$/;"	m	class:WallCell
-effect	src/cells/WallCellFast.java	/^	public void effect(CellPart p){$/;"	m	class:WallCellFast
-effect	src/cells/enemyCells/MasterCell.java	/^	public void effect(CellPart p){$/;"	m	class:MasterCell
-effect	src/cells/enemyCells/PatrolCell.java	/^	public void effect(CellPart p){$/;"	m	class:PatrolCell
-effect	src/cells/enemyCells/WhiteBloodCell.java	/^	public void effect(CellPart p){$/;"	m	class:WhiteBloodCell
-effect	src/cells/generators/Veins.java	/^	public void effect(CellPart p){$/;"	m	class:VeinMaker
-effect	src/cells/generators/VeinsFast.java	/^	public void effect(CellPart p){$/;"	m	class:VeinMakerFast
-effect	src/physics/ESPhysicsObj.java	/^	public void effect(PhysicsObj p){$/;"	m	class:ESPhysicsObj
-effect	src/physics/PhysicsObj.java	/^	public void effect(PhysicsObj p){$/;"	m	class:PhysicsObj
-effect	src/physics/physicsObjects/Ball.java	/^	public void effect(PhysicsObj p){$/;"	m	class:Ball
-effect	src/physics/physicsObjects/ESPhysicsObj.java	/^	public void effect(PhysicsObj p){$/;"	m	class:ESPhysicsObj
-effect	src/physics/physicsObjects/Guy.java	/^	public void effect(PhysicsObj p){$/;"	m	class:BodyPart
-effect	src/physics/physicsObjects/NodePhysObj.java	/^	public void effect(PhysicsObj p){$/;"	m	class:NodePhysObj
-effect	src/physics/physicsObjects/PhysicsObj.java	/^	public void effect(PhysicsObj p){$/;"	m	class:PhysicsObj
-electricConst	src/physics/ESPhysicsObj.java	/^	protected static final double electricConst = 8.854;$/;"	f	class:ESPhysicsObj
-electricConst	src/physics/physicsObjects/ESPhysicsObj.java	/^	protected static final double electricConst = 8.854;$/;"	f	class:ESPhysicsObj
-electroStatic	src/physics/ESPhysicsObj.java	/^	public void electroStatic(PhysicsObj p){$/;"	m	class:ESPhysicsObj
-electroStatic	src/physics/physicsObjects/ESPhysicsObj.java	/^	public void electroStatic(PhysicsObj p){$/;"	m	class:ESPhysicsObj
-electronMass	src/physics/Electron.java	/^	public static double electronMass = .01;$/;"	f	class:Electron
-electronMass	src/physics/physicsObjects/Electron.java	/^	public static double electronMass = .01;$/;"	f	class:Electron
-ensureDist	src/physics/physicsObjects/Guy.java	/^	public void ensureDist(PhysicsObj p, double distance){$/;"	m	class:BodyPart
-ensureDist	src/physics/physicsObjects/NodePhysObj.java	/^	public void ensureDist(PhysicsObj p, double distance){$/;"	m	class:NodePhysObj
-fileLoc	src/nodes/ImageNode.java	/^	String fileLoc;$/;"	f	class:ImageNode
-fillPolygon	src/render3D/support/Polygon3D.java	/^	public void fillPolygon(Graphics2D g2, int[] x, int[] y){$/;"	m	class:Polygon3D
-findIntersect	src/render3D/support/Plane.java	/^	public double[] findIntersect(Line l){$/;"	m	class:Plane
-findPartners	src/cells/CellRegion.java	/^	public void findPartners(CellRegion[][] c){$/;"	m	class:CellRegion
-font	src/cells/generators/Tutorial.java	/^	Font font;$/;"	f	class:TextCell
-font	src/cells/gui/CircleButton.java	/^	Font font;$/;"	f	class:CircleButton
-font	src/cells/gui/ControlPanel.java	/^	Font font = new Font("Impact", Font.BOLD, 30);$/;"	f	class:ControlPanel
-font	src/nodes/AnimatedText.java	/^	Font font;$/;"	f	class:AnimatedText
-found	src/cells/enemyCells/PatrolCell.java	/^	boolean found = false;$/;"	f	class:PatrolCell
+e	src/main/Session.vim	/^nnoremap <buffer> <silent> e :call nerdtree#ui_glue#invokeKeyMap("e")$/;"	m
+f	src/main/Session.vim	/^nnoremap <buffer> <silent> f :call nerdtree#ui_glue#invokeKeyMap("f")$/;"	m
 frame	src/input/Mouse.java	/^	public static JFrame frame;$/;"	f	class:Mouse
 frame	src/states/Game.java	/^	private JFrame frame;$/;"	f	class:Game	file:
-g	src/cells/CellState.java	/^	Generator g;$/;"	f	class:CellState
-g	src/physics/PhysicsObj.java	/^	static double g = .0001;$/;"	f	class:PhysicsObj
-g	src/physics/physicsObjects/PhysicsObj.java	/^	static double g = .0001;$/;"	f	class:PhysicsObj
 game	src/airplanes/AirplaneState.java	/^	Game game;$/;"	f	class:AirplaneState
-game	src/cells/CellState.java	/^	Game game;$/;"	f	class:CellState
-game	src/cells/gui/StartMenu.java	/^	Game game;$/;"	f	class:StartMenu
-genBranch	src/cells/generators/Veins.java	/^	private void genBranch(int i){$/;"	m	class:VeinMaker	file:
-genBranch	src/cells/generators/VeinsFast.java	/^	private void genBranch(int i){$/;"	m	class:VeinMakerFast	file:
-generate	src/cells/Generator.java	/^	public Point generate(CellRegion[][] cellParts);$/;"	m	interface:Generator
-generate	src/cells/generators/Block.java	/^	public Point generate(CellRegion[][] cellParts) {$/;"	m	class:Block
-generate	src/cells/generators/Empty.java	/^	public Point generate(CellRegion[][] cells) {$/;"	m	class:Empty
-generate	src/cells/generators/Tutorial.java	/^	public Point generate(CellRegion[][] cellParts) {$/;"	m	class:Tutorial
-generate	src/cells/generators/Veins.java	/^	public Point generate(CellRegion[][] cellParts){$/;"	m	class:Veins
-generate	src/cells/generators/VeinsFast.java	/^	public Point generate(CellRegion[][] cellParts){$/;"	m	class:VeinsFast
-getAveragePoint	src/render3D/support/Polygon3D.java	/^	public double[] getAveragePoint(){$/;"	m	class:Polygon3D
-getAveragePoint	src/render3D/support/PolygonEditor.java	/^	public double[] getAveragePoint() {$/;"	m	class:PolygonEditor
-getAveragePoint	src/render3D/support/PolygonList.java	/^	public double[] getAveragePoint() {$/;"	m	class:PolygonList
-getAveragePoint	src/render3D/support/PolygonTest.java	/^		public double[] getAveragePoint() {$/;"	m	class:PolygonTest
-getAveragePos	src/cells/MembranePart.java	/^	protected Point getAveragePos(){$/;"	m	class:MembranePart
-getBranch	src/cells/VeinMarker.java	/^	public VeinMarker getBranch(int index){$/;"	m	class:VeinMarker
-getChunk	src/render3D/Viewer.java	/^	public int[] getChunk(){$/;"	m	class:Viewer
-getClickLoc	src/cells/CellRunner.java	/^	public Point getClickLoc(Point p){$/;"	m	class:CellRunner
-getClickLocCellsPoint	src/cells/CellRunner.java	/^	public cells.Point getClickLocCellsPoint(Point p){$/;"	m	class:CellRunner
-getDepth	src/cells/VeinMarker.java	/^	public int getDepth(){$/;"	m	class:VeinMarker
-getDifference	src/cells/Point.java	/^	public static Vector getDifference(Point a, Point b){$/;"	m	class:Point
-getDistance	src/render3D/support/Polygon3D.java	/^	public double getDistance() {return distance;}$/;"	m	class:Polygon3D
-getDistance	src/render3D/support/PolygonList.java	/^	public double getDistance() {$/;"	m	class:PolygonList
 getFrame	src/input/Mouse.java	/^	public static JFrame getFrame(){$/;"	m	class:Mouse
-getFurthest	src/cells/generators/VeinsFast.java	/^	public VeinMakerFast getFurthest(){$/;"	m	class:VeinMakerFast
 getHitbox	src/nodes/Node.java	/^	public Rectangle getHitbox(){$/;"	m	class:Node
 getImage	src/input/FileRead.java	/^	public static BufferedImage getImage(String fileLoc){$/;"	m	class:FileRead
 getImage	src/nodes/Node.java	/^	protected BufferedImage getImage(String img){$/;"	m	class:Node
-getLeftChainLength	src/cells/MembranePart.java	/^	public int getLeftChainLength(){$/;"	m	class:MembranePart
-getLength	src/cells/Vector.java	/^	public double getLength(){$/;"	m	class:Vector
-getLength	src/nodes/NumBox.java	/^	public int getLength(){$/;"	m	class:NumBox
-getLength	src/nodes/TextBox.java	/^	public int getLength(){$/;"	m	class:TextBox
-getLocation	src/cells/CellRunner.java	/^	public Point getLocation(){$/;"	m	class:CellRunner
-getLocation	src/render3D/Viewer.java	/^	public double[] getLocation(){$/;"	m	class:Viewer
-getNearest	src/cells/CellRegion.java	/^	public VirusCluster getNearest(Point p){$/;"	m	class:CellRegion
-getNumber	src/nodes/NumBox.java	/^	public int getNumber(){$/;"	m	class:NumBox
-getParent	src/cells/VeinMarker.java	/^	public VeinMarker getParent(){$/;"	m	class:VeinMarker
-getPath	src/cells/enemyCells/PatrolCell.java	/^	public ArrayList<Integer> getPath(){$/;"	m	class:PatrolCell
-getPoint	src/cells/CellPart.java	/^	public Point getPoint(){$/;"	m	class:CellPart
-getPolygons	src/render3D/support/PolygonChunk.java	/^	public ArrayList<Polygon3D> getPolygons(){$/;"	m	class:PolygonChunk
-getRadius	src/cells/GoldCell.java	/^	public double getRadius(){$/;"	m	class:GoldCell
-getRadius	src/cells/HasRadius.java	/^	public double getRadius();$/;"	m	interface:HasRadius
-getRadius	src/cells/Nucleus.java	/^	public double getRadius(){return radius;}$/;"	m	class:Nucleus
-getRadius	src/cells/VirusCluster.java	/^	public double getRadius() {$/;"	m	class:VirusCluster
-getRadius	src/cells/WallCellFast.java	/^	public double getRadius(){$/;"	m	class:WallCellFast
-getRadius	src/cells/enemyCells/MasterCell.java	/^	public double getRadius() {$/;"	m	class:MasterCell
-getRadius	src/cells/enemyCells/PatrolCell.java	/^	public double getRadius() {$/;"	m	class:PatrolCell
-getRadius	src/cells/enemyCells/RedBloodCell.java	/^	public double getRadius() {$/;"	m	class:RedBloodCell
 getReader	src/input/FileRead.java	/^	public static BufferedReader getReader(String fileLoc){$/;"	m	class:FileRead
-getReader	src/physics/Start.java	/^	public static BufferedReader getReader(String fileLoc){$/;"	m	class:Start
-getRightChainLength	src/cells/MembranePart.java	/^	public int getRightChainLength(){$/;"	m	class:MembranePart
-getRunner	src/cells/CellState.java	/^	public CellRunner getRunner(){$/;"	m	class:CellState
-getSize	src/cells/VirusCluster.java	/^	public int getSize(){$/;"	m	class:VirusCluster
-getSubRadius	src/cells/Nucleus.java	/^	public double getSubRadius(){return subRadius;}$/;"	m	class:Nucleus
-getTarget	src/physics/physicsObjects/NodePhysObj.java	/^	public PhysicsObj getTarget(){$/;"	m	class:NodePhysObj
-getText	src/nodes/TextBox.java	/^	public String getText(){$/;"	m	class:TextBox
+getReader	src/main/Start.java	/^	public static BufferedReader getReader(String fileLoc){$/;"	m	class:Start
 getWriter	src/input/FileRead.java	/^	public static BufferedWriter getWriter(String fileLoc){$/;"	m	class:FileRead
-getWriter	src/physics/Start.java	/^	public static BufferedWriter getWriter(String fileLoc){$/;"	m	class:Start
-goingBack	src/cells/enemyCells/PatrolCell.java	/^	boolean goingBack = false;$/;"	f	class:PatrolCell
-gravity	src/physics/PhysicsObj.java	/^	public void gravity(PhysicsObj p){$/;"	m	class:PhysicsObj
-gravity	src/physics/physicsObjects/ESPhysicsObj.java	/^	public void gravity(PhysicsObj p){}$/;"	m	class:ESPhysicsObj
-gravity	src/physics/physicsObjects/PhysicsObj.java	/^	public void gravity(PhysicsObj p){$/;"	m	class:PhysicsObj
-head	src/physics/physicsObjects/Guy.java	/^	Head head;$/;"	f	class:Guy
-height	src/render3D/Viewer.java	/^	double height = c;$/;"	f	class:Viewer
-highlight	src/cells/VirusCluster.java	/^	public static boolean highlight = false;$/;"	f	class:VirusCluster
+getWriter	src/main/Start.java	/^	public static BufferedWriter getWriter(String fileLoc){$/;"	m	class:Start
+gi	src/main/Session.vim	/^nnoremap <buffer> <silent> gi :call nerdtree#ui_glue#invokeKeyMap("gi")$/;"	m
+go	src/main/Session.vim	/^nnoremap <buffer> <silent> go :call nerdtree#ui_glue#invokeKeyMap("go")$/;"	m
+gs	src/main/Session.vim	/^nnoremap <buffer> <silent> gs :call nerdtree#ui_glue#invokeKeyMap("gs")$/;"	m
+gx	src/main/Session.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
+gx	src/main/Session.vim	/^vmap gx <Plug>NetrwBrowseXVis$/;"	m
 hitbox	src/nodes/Node.java	/^	protected Rectangle hitbox;$/;"	f	class:Node
-ignoreReselect	src/cells/gui/ControlPanel.java	/^	boolean ignoreReselect = false;$/;"	f	class:ControlPanel
-ignoreReselect	src/cells/gui/ControlPanel.java	/^	public boolean ignoreReselect(){$/;"	m	class:ControlPanel
+i	src/main/Session.vim	/^nnoremap <buffer> <silent> i :call nerdtree#ui_glue#invokeKeyMap("i")$/;"	m
 imageLoc	src/nodes/Button.java	/^	protected String imageLoc;$/;"	f	class:Button
-increment	src/cells/VirusCluster.java	/^	public static boolean increment = false;$/;"	f	class:VirusCluster
-infect	src/cells/GoldCell.java	/^	public void infect(VirusCluster v){$/;"	m	class:GoldCell
-infect	src/cells/Infectable.java	/^	public void infect(VirusCluster v);$/;"	m	interface:Infectable
-infect	src/cells/enemyCells/RedBloodCell.java	/^	public void infect(VirusCluster v) {$/;"	m	class:RedBloodCell
-infected	src/cells/GoldCell.java	/^	boolean infected;$/;"	f	class:GoldCell
-infected	src/cells/enemyCells/RedBloodCell.java	/^	boolean infected = false;$/;"	f	class:RedBloodCell
-initial	src/cells/enemyCells/PatrolCell.java	/^	boolean initial = false;$/;"	f	class:PatrolCell
 input	src/input/FileRead.java	/^package input;$/;"	p
 input	src/input/Keyboard.java	/^package input;$/;"	p
 input	src/input/Mouse.java	/^package input;$/;"	p
 input	src/input/MouseWheel.java	/^package input;$/;"	p
-intersect	src/cells/Point.java	/^	public Point intersect(Point a, Point b, Point c, Point d){$/;"	m	class:Point
-isClicked	src/cells/gui/CircleButton.java	/^	public boolean isClicked(){$/;"	m	class:CircleButton
-isContained	src/cells/CellPart.java	/^	public boolean isContained(Rectangle area){$/;"	m	class:CellPart
-isDead	src/cells/CellPart.java	/^	public boolean isDead(){$/;"	m	class:CellPart
-isDead	src/cells/generators/Veins.java	/^	boolean isDead = false;$/;"	f	class:VeinMaker
-isDead	src/cells/generators/VeinsFast.java	/^	boolean isDead = false;$/;"	f	class:VeinMakerFast
-isEmpty	src/render3D/support/PolygonChunk.java	/^	public boolean isEmpty(){$/;"	m	class:PolygonChunk
-isInFront	src/render3D/Viewer.java	/^	public boolean isInFront(double[] point){$/;"	m	class:Viewer
-isInfected	src/cells/GoldCell.java	/^	public boolean isInfected(){$/;"	m	class:GoldCell
-isInfected	src/cells/Infectable.java	/^	public boolean isInfected();$/;"	m	interface:Infectable
-isInfected	src/cells/enemyCells/RedBloodCell.java	/^	public boolean isInfected() {$/;"	m	class:RedBloodCell
-isOptimized	src/cells/CellPart.java	/^	boolean isOptimized;$/;"	f	class:CellPart
-isSelected	src/cells/CellPart.java	/^	protected boolean isSelected = false;$/;"	f	class:CellPart
-isSelected	src/cells/CellPart.java	/^	public boolean isSelected(){return isSelected;}$/;"	m	class:CellPart
-isSelected	src/render3D/support/Polygon3D.java	/^	boolean isSelected = false;$/;"	f	class:Polygon3D
-isVirusSelected	src/cells/VirusCluster.java	/^	public static boolean isVirusSelected = false;$/;"	f	class:VirusCluster
-isVirusSelected	src/cells/gui/ControlPanel.java	/^	boolean isVirusSelected = false;$/;"	f	class:ControlPanel
-iterations	src/cells/generators/Veins.java	/^	int iterations;$/;"	f	class:VeinMaker
-iterations	src/cells/generators/VeinsFast.java	/^	int iterations;$/;"	f	class:VeinMakerFast
-k	src/render3D/support/Plane.java	/^	public double k, mx, my, mz;$/;"	f	class:Plane
+j	src/main/Session.vim	/^nnoremap j gj$/;"	m
+jk	src/main/Session.vim	/^inoremap jk $/;"	m
+k	src/main/Session.vim	/^nnoremap k gk$/;"	m
 keyPressed	src/input/Keyboard.java	/^	public void keyPressed(KeyEvent e) {$/;"	m	class:Keyboard
 keyReleased	src/input/Keyboard.java	/^	public void keyReleased(KeyEvent e) {$/;"	m	class:Keyboard
 keyTyped	src/input/Keyboard.java	/^	public void keyTyped(KeyEvent e) {$/;"	m	class:Keyboard
 keyboard	src/states/Game.java	/^	private Keyboard keyboard;$/;"	f	class:Game	file:
 keys	src/input/Keyboard.java	/^	public static boolean[] keys = new boolean[1000];$/;"	f	class:Keyboard
-killList	src/cells/generators/Veins.java	/^	ArrayList<WallCell> killList = new ArrayList<WallCell>();$/;"	f	class:VeinMaker
-killList	src/cells/generators/VeinsFast.java	/^	ArrayList<WallCellFast> killList = new ArrayList<WallCellFast>();$/;"	f	class:VeinMakerFast
-lArm	src/physics/physicsObjects/Guy.java	/^	BodyPart lArm;$/;"	f	class:Guy
-lLeg	src/physics/physicsObjects/Guy.java	/^	BodyPart lLeg;$/;"	f	class:Guy
-last	src/cells/CellRunner.java	/^	Point last = Mouse.button1At;$/;"	f	class:CellRunner
-last	src/render3D/support/PolygonEditor.java	/^	boolean last = false;$/;"	f	class:PolygonEditor
-lastClicked	src/nodes/NumBox.java	/^	private boolean lastClicked = false;$/;"	f	class:NumBox	file:
-lastClicked	src/nodes/TextBox.java	/^	private boolean lastClicked = false;$/;"	f	class:TextBox	file:
-lastTarget	src/cells/enemyCells/WhiteBloodCell.java	/^	int lastTarget = 0;$/;"	f	class:WhiteBloodCell
-lastVirus	src/cells/enemyCells/WhiteBloodCell.java	/^	int lastVirus = absorbRate;$/;"	f	class:WhiteBloodCell
-left	src/cells/MembranePart.java	/^	MembranePart left, right;$/;"	f	class:MembranePart
-length	src/nodes/NumBox.java	/^	private int length = 17;$/;"	f	class:NumBox	file:
-length	src/nodes/TextBox.java	/^	private int length = 17;$/;"	f	class:TextBox	file:
-limitDist	src/cells/CellPart.java	/^	public void limitDist(Point p, double distance){$/;"	m	class:CellPart
-limitSpeed	src/cells/CellPart.java	/^	public void limitSpeed(double speedLimit){$/;"	m	class:CellPart
-loc	src/cells/gui/CircleButton.java	/^	Point loc;$/;"	f	class:CircleButton
-location	src/render3D/Viewer.java	/^	double[] location = {0,0,0,1};$/;"	f	class:Viewer
-locations	src/render3D/support/Polygon3D.java	/^	private double[][] locations;$/;"	f	class:Polygon3D	file:
-lookRight	src/render3D/ControllableViewer.java	/^	public void lookRight(double rad){$/;"	m	class:ControllableViewer
-lookUp	src/render3D/ControllableViewer.java	/^	public void lookUp(double rad){$/;"	m	class:ControllableViewer
-lose	src/cells/CellRunner.java	/^	public static boolean lose = false;$/;"	f	class:CellRunner
-main	src/physics/Start.java	/^	public static void main(String[] args) throws IOException{$/;"	m	class:Start
-main	src/render3D/_RenderTest.java	/^	public static void main(String[] args){$/;"	m	class:_RenderTest
-marked	src/cells/MembranePart.java	/^	private boolean marked = false;$/;"	f	class:MembranePart	file:
-mass	src/physics/PhysicsObj.java	/^	double mass;$/;"	f	class:PhysicsObj
-mass	src/physics/physicsObjects/PhysicsObj.java	/^	double mass;$/;"	f	class:PhysicsObj
-matrixMult	src/render3D/support/Opp.java	/^	public static double[][] matrixMult(double[][] a, double[][] b){$/;"	m	class:Opp
-membrane	src/cells/Nucleus.java	/^	protected ArrayList<MembranePart> membrane;$/;"	f	class:Nucleus
-membraneSize	src/cells/Nucleus.java	/^	public int membraneSize(){return membrane.size();}$/;"	m	class:Nucleus
+kj	src/main/Session.vim	/^inoremap kj $/;"	m
+m	src/main/Session.vim	/^nnoremap <buffer> <silent> m :call nerdtree#ui_glue#invokeKeyMap("m")$/;"	m
+main	src/main/Start.java	/^	public static void main(String[] args) throws IOException{$/;"	m	class:Start
+main	src/main/Start.java	/^package main;$/;"	p
 mouse	src/states/Game.java	/^	private Mouse mouse;$/;"	f	class:Game	file:
 mouseClicked	src/input/Mouse.java	/^	public void mouseClicked(MouseEvent e) {$/;"	m	class:Mouse
-mouseControl	src/render3D/ControllableViewer.java	/^	Robot mouseControl;$/;"	f	class:ControllableViewer
 mouseDragged	src/input/Mouse.java	/^	public void mouseDragged(MouseEvent e) {$/;"	m	class:Mouse
 mouseEntered	src/input/Mouse.java	/^	public void mouseEntered(MouseEvent e) {$/;"	m	class:Mouse
 mouseExited	src/input/Mouse.java	/^	public void mouseExited(MouseEvent e) {$/;"	m	class:Mouse
 mouseMoved	src/input/Mouse.java	/^	public void mouseMoved(MouseEvent e){$/;"	m	class:Mouse
-mousePosInWorld	src/cells/CellRunner.java	/^	public static cells.Point mousePosInWorld = new cells.Point();$/;"	f	class:CellRunner
 mousePressed	src/input/Mouse.java	/^	public void mousePressed(MouseEvent e) {$/;"	m	class:Mouse
 mouseReleased	src/input/Mouse.java	/^	public void mouseReleased(MouseEvent e) {$/;"	m	class:Mouse
 mouseWheelMoved	src/input/MouseWheel.java	/^	public void mouseWheelMoved(MouseWheelEvent e) {$/;"	m	class:MouseWheel
-move	src/cells/MembranePart.java	/^	private void move(){$/;"	m	class:MembranePart	file:
-move	src/cells/VirusCluster.java	/^	public static boolean move = false;$/;"	f	class:VirusCluster
-move	src/render3D/ControllableViewer.java	/^	private void move(double[] dir){$/;"	m	class:ControllableViewer	file:
-move	src/render3D/support/Polygon3D.java	/^	public void move(double x, double y, double z){$/;"	m	class:Polygon3D
-moveToward	src/cells/CellPart.java	/^	public void moveToward(Point p, double speed, double dist){$/;"	m	class:CellPart
-moveToward	src/cells/VirusCluster.java	/^	Point moveToward = null;$/;"	f	class:VirusCluster
-multiply	src/cells/Vector.java	/^	public void multiply(double s){$/;"	m	class:Vector
-multiply	src/render3D/support/Opp.java	/^	public static double[] multiply(double[] a, double scalar){$/;"	m	class:Opp
-multiply	src/render3D/support/Opp.java	/^	public static int[] multiply(int[] a, int scalar){$/;"	m	class:Opp
-mx	src/render3D/support/Plane.java	/^	public double k, mx, my, mz;$/;"	f	class:Plane
-my	src/render3D/support/Plane.java	/^	public double k, mx, my, mz;$/;"	f	class:Plane
-mz	src/render3D/support/Plane.java	/^	public double k, mx, my, mz;$/;"	f	class:Plane
-n	src/render3D/support/PolygonEditor.java	/^	boolean n = false;$/;"	f	class:PolygonEditor
-newArr	src/render3D/support/Opp.java	/^	public static double[] newArr(double ... a){$/;"	m	class:Opp
-newIntArr	src/render3D/support/Opp.java	/^	public static int[] newIntArr(int ... a){$/;"	m	class:Opp
-newPolygon	src/render3D/support/Opp.java	/^	public static double[][] newPolygon(double a1, double b1, double c1, double a2, double b2, double c2,double a3, double b3, double c3){$/;"	m	class:Opp
-newRotationMatrix	src/render3D/support/Opp.java	/^	public static double[][] newRotationMatrix(double[] axis, double[] point, double rad){$/;"	m	class:Opp
-next	src/cells/enemyCells/PatrolCell.java	/^	VeinMarker next;$/;"	f	class:PatrolCell
-next	src/cells/enemyCells/RedBloodCell.java	/^	VeinMarker next;$/;"	f	class:RedBloodCell
-next	src/cells/enemyCells/WhiteBloodCell.java	/^	VeinMarker next;$/;"	f	class:WhiteBloodCell
 nodeImages	src/nodes/Node.java	/^	private static HashMap<String,BufferedImage> nodeImages = new HashMap<String,BufferedImage>();$/;"	f	class:Node	file:
-nodes	src/nodes/AnimatedText.java	/^package nodes;$/;"	p
 nodes	src/nodes/Button.java	/^package nodes;$/;"	p
-nodes	src/nodes/ImageNode.java	/^package nodes;$/;"	p
 nodes	src/nodes/Node.java	/^package nodes;$/;"	p
-nodes	src/nodes/NumBox.java	/^package nodes;$/;"	p
-nodes	src/nodes/TestButton.java	/^package nodes;$/;"	p
-nodes	src/nodes/TextBox.java	/^package nodes;$/;"	p
 nodes	src/states/NodeState.java	/^	private ArrayList<Node> nodes;$/;"	f	class:NodeState	file:
-normalize	src/cells/Vector.java	/^	public void normalize(){$/;"	m	class:Vector
-nucleus	src/cells/MembranePart.java	/^	Nucleus nucleus;$/;"	f	class:MembranePart
-numBranches	src/cells/VeinMarker.java	/^	public int numBranches(){$/;"	m	class:VeinMarker
-onClick	src/physics/physicsObjects/Guy.java	/^	public void onClick(Boolean onClick){$/;"	m	class:Head
-onClick	src/physics/physicsObjects/PhysicsObj.java	/^	public void onClick(Boolean b){};$/;"	m	class:PhysicsObj
-origin	src/cells/CellRunner.java	/^	Point origin = new Point(0,0);$/;"	f	class:CellRunner
-origin	src/cells/enemyCells/MasterCell.java	/^	VeinMarker origin;$/;"	f	class:MasterCell
-origin	src/physics/PhysicsNode.java	/^	Point origin = new Point(0,0);$/;"	f	class:PhysicsNode
-others	src/cells/MembranePart.java	/^	ArrayList<MembranePart> others;$/;"	f	class:MembranePart
-parent	src/cells/VeinMarker.java	/^	VeinMarker parent;$/;"	f	class:VeinMarker
-parent	src/cells/Virus.java	/^	VirusCluster parent = null;$/;"	f	class:Virus
-parent	src/cells/generators/Veins.java	/^	VeinMaker parent;$/;"	f	class:VeinMaker
-parent	src/cells/generators/VeinsFast.java	/^	VeinMakerFast parent;$/;"	f	class:VeinMakerFast
-partText	src/nodes/AnimatedText.java	/^	String partText = "";$/;"	f	class:AnimatedText
-path	src/cells/enemyCells/PatrolCell.java	/^	ArrayList<Integer> path;$/;"	f	class:PatrolCell
-path	src/cells/enemyCells/WhiteBloodCell.java	/^	ArrayList<Integer> path;$/;"	f	class:WhiteBloodCell
-pathIteration	src/cells/enemyCells/WhiteBloodCell.java	/^	int pathIteration = 0;$/;"	f	class:WhiteBloodCell
-perspective	src/render3D/Viewer.java	/^	double perspective = 6.5;$/;"	f	class:Viewer
-phys	src/physics/PhysicsState.java	/^	private PhysicsNode phys;$/;"	f	class:PhysicsState	file:
-physObjs	src/physics/PhysicsNode.java	/^	ArrayList<PhysicsObj> physObjs;$/;"	f	class:PhysicsNode
-physics	src/physics/ESPhysicsObj.java	/^package physics;$/;"	p
-physics	src/physics/Electron.java	/^package physics;$/;"	p
-physics	src/physics/PhysicsNode.java	/^package physics;$/;"	p
-physics	src/physics/PhysicsObj.java	/^package physics;$/;"	p
-physics	src/physics/PhysicsState.java	/^package physics;$/;"	p
-physics	src/physics/Start.java	/^package physics;$/;"	p
-physics	src/physics/StaticESPhysObj.java	/^package physics;$/;"	p
-physics	src/physics/StaticPhysObj.java	/^package physics;$/;"	p
-physics.physicsObjects	src/physics/physicsObjects/Ball.java	/^package physics.physicsObjects;$/;"	p
-physics.physicsObjects	src/physics/physicsObjects/ControlableNodePhysObj.java	/^package physics.physicsObjects;$/;"	p
-physics.physicsObjects	src/physics/physicsObjects/ESPhysicsObj.java	/^package physics.physicsObjects;$/;"	p
-physics.physicsObjects	src/physics/physicsObjects/Electron.java	/^package physics.physicsObjects;$/;"	p
-physics.physicsObjects	src/physics/physicsObjects/Guy.java	/^package physics.physicsObjects;$/;"	p
-physics.physicsObjects	src/physics/physicsObjects/NodePhysObj.java	/^package physics.physicsObjects;$/;"	p
-physics.physicsObjects	src/physics/physicsObjects/PhysicsObj.java	/^package physics.physicsObjects;$/;"	p
-physics.physicsObjects	src/physics/physicsObjects/StaticESPhysObj.java	/^package physics.physicsObjects;$/;"	p
-physics.physicsObjects	src/physics/physicsObjects/StaticPhysObj.java	/^package physics.physicsObjects;$/;"	p
+o	src/main/Session.vim	/^nnoremap <buffer> <silent> o :call nerdtree#ui_glue#invokeKeyMap("o")$/;"	m
+o	src/main/Session.vim	/^nnoremap o ox<BS>$/;"	m
+p	src/main/Session.vim	/^nnoremap <buffer> <silent> p :call nerdtree#ui_glue#invokeKeyMap("p")$/;"	m
 pixelsHeight	src/states/Game.java	/^	private int pixelsHeight = pixelsWidth\/16*11;$/;"	f	class:Game	file:
 pixelsWidth	src/states/Game.java	/^	private int pixelsWidth = 600;$/;"	f	class:Game	file:
-polygons	src/render3D/RenderNode.java	/^	PolygonChunk[][] polygons;$/;"	f	class:RenderNode
-polygons	src/render3D/Viewer.java	/^	PolygonChunk[][] polygons;$/;"	f	class:Viewer
-polygons	src/render3D/support/PolygonChunk.java	/^	private ArrayList<Polygon3D> polygons;$/;"	f	class:PolygonChunk	file:
-polys	src/render3D/support/PolygonEditor.java	/^	ArrayList<Polygon3D> polys = new ArrayList<Polygon3D>();$/;"	f	class:PolygonEditor
-polys	src/render3D/support/PolygonList.java	/^	ArrayList<Polygon3D> polys = new ArrayList<Polygon3D>();$/;"	f	class:PolygonList
-polys	src/render3D/support/PolygonTest.java	/^		ArrayList<Polygon3D> polys = new ArrayList<Polygon3D>();$/;"	f	class:PolygonTest
-prefLoc	src/cells/MembranePart.java	/^	Point prefLoc;$/;"	f	class:MembranePart
-prefLoc	src/cells/Virus.java	/^	Point prefLoc;$/;"	f	class:Virus
-prefLoc	src/cells/WallCell.java	/^	private Point prefLoc;$/;"	f	class:WallCell	file:
-prefLoc	src/cells/WallCellFast.java	/^	private Point prefLoc;$/;"	f	class:WallCellFast	file:
-preferedDist	src/cells/MembranePart.java	/^	private double preferedDist = 10;$/;"	f	class:MembranePart	file:
 prevClick	src/states/NodeState.java	/^	private boolean prevClick = false;$/;"	f	class:NodeState	file:
-prevKey	src/cells/gui/ControlPanel.java	/^	boolean prevKey = false;$/;"	f	class:ControlPanel
-prevKey2	src/cells/gui/ControlPanel.java	/^	boolean prevKey2 = false;$/;"	f	class:ControlPanel
-project	src/render3D/Viewer.java	/^	public double[] project(double[] point){$/;"	m	class:Viewer
-push	src/physics/physicsObjects/Ball.java	/^	public void push(PhysicsObj p, double distance){$/;"	m	class:Ball
-putInGrid	src/cells/CellPart.java	/^	public static void putInGrid(CellPart p, CellRegion[][] grid){$/;"	m	class:CellPart
-putSelfInArrayList	src/physics/physicsObjects/Guy.java	/^	public void putSelfInArrayList(ArrayList<PhysicsObj> array){$/;"	m	class:Guy
-putSelfInGrid	src/render3D/support/Polygon3D.java	/^	public void putSelfInGrid(PolygonChunk[][] container){$/;"	m	class:Polygon3D
-putSelfInGrid	src/render3D/support/PolygonList.java	/^	public void putSelfInGrid(PolygonChunk[][] container){$/;"	m	class:PolygonList
-r	src/cells/gui/SettingsMenu.java	/^	BufferedReader r;$/;"	f	class:SettingsMenu
-rArm	src/physics/physicsObjects/Guy.java	/^	BodyPart rArm;$/;"	f	class:Guy
-rLeg	src/physics/physicsObjects/Guy.java	/^	BodyPart rLeg;$/;"	f	class:Guy
-radius	src/cells/GoldCell.java	/^	double radius;$/;"	f	class:GoldCell
-radius	src/cells/Nucleus.java	/^	protected double radius;$/;"	f	class:Nucleus
-radius	src/cells/VirusCluster.java	/^	double radius;$/;"	f	class:VirusCluster
-radius	src/cells/WallCellFast.java	/^	double radius;$/;"	f	class:WallCellFast
-radius	src/cells/enemyCells/MasterCell.java	/^	double radius = 250;$/;"	f	class:MasterCell
-radius	src/cells/enemyCells/PatrolCell.java	/^	double radius = 15;$/;"	f	class:PatrolCell
-radius	src/cells/enemyCells/RedBloodCell.java	/^	double radius = 50;$/;"	f	class:RedBloodCell
-radius	src/cells/generators/Veins.java	/^	double radius;$/;"	f	class:VeinMaker
-radius	src/cells/generators/VeinsFast.java	/^	double radius;$/;"	f	class:VeinMakerFast
-radius	src/cells/gui/CircleButton.java	/^	int radius;$/;"	f	class:CircleButton
-radius	src/physics/physicsObjects/Ball.java	/^	int radius = 80;$/;"	f	class:Ball
-rand	src/cells/CellRegion.java	/^	Color rand = new Color((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));$/;"	f	class:CellRegion
-regions	src/cells/CellRegion.java	/^	private CellRegion[] regions = new CellRegion[8];$/;"	f	class:CellRegion	file:
-remove	src/cells/VirusCluster.java	/^	public void remove(){$/;"	m	class:VirusCluster
-remove	src/render3D/support/PolygonChunk.java	/^	public void remove(Polygon3D p){$/;"	m	class:PolygonChunk
-render	src/cells/gui/StartMenu.java	/^	public void render(Graphics2D g2){$/;"	m	class:StartMenu
+q	src/main/Session.vim	/^nnoremap <buffer> <silent> q :call nerdtree#ui_glue#invokeKeyMap("q")$/;"	m
+r	src/main/Session.vim	/^nnoremap <buffer> <silent> r :call nerdtree#ui_glue#invokeKeyMap("r")$/;"	m
 render	src/states/Game.java	/^	private void render(){$/;"	m	class:Game	file:
 render	src/states/NodeState.java	/^	public void render(Graphics2D g2){$/;"	m	class:NodeState
 render	src/states/State.java	/^	public abstract void render(Graphics2D g2);$/;"	m	class:State
-render3D	src/render3D/ControllableViewer.java	/^package render3D;$/;"	p
-render3D	src/render3D/RenderNode.java	/^package render3D;$/;"	p
-render3D	src/render3D/Viewer.java	/^package render3D;$/;"	p
-render3D	src/render3D/_RenderTest.java	/^package render3D;$/;"	p
-render3D.support	src/render3D/support/Line.java	/^package render3D.support;$/;"	p
-render3D.support	src/render3D/support/Opp.java	/^package render3D.support;$/;"	p
-render3D.support	src/render3D/support/Plane.java	/^package render3D.support;$/;"	p
-render3D.support	src/render3D/support/Polygon3D.java	/^package render3D.support;$/;"	p
-render3D.support	src/render3D/support/PolygonChunk.java	/^package render3D.support;$/;"	p
-render3D.support	src/render3D/support/PolygonControler.java	/^package render3D.support;$/;"	p
-render3D.support	src/render3D/support/PolygonEditor.java	/^package render3D.support;$/;"	p
-render3D.support	src/render3D/support/PolygonList.java	/^package render3D.support;$/;"	p
-render3D.support	src/render3D/support/PolygonTest.java	/^package render3D.support;$/;"	p
-renderChunk	src/render3D/RenderNode.java	/^	public void renderChunk(int[] chunkLoc, Graphics2D g2){$/;"	m	class:RenderNode
-renderMode	src/cells/CellRunner.java	/^	int renderMode = 0;$/;"	f	class:CellRunner
-repel	src/cells/CellPart.java	/^	public void repel(Point p, double speed, double dist){$/;"	m	class:CellPart
-reset	src/cells/MembranePart.java	/^	public void reset(){$/;"	m	class:MembranePart
-reset	src/render3D/support/Plane.java	/^	public void reset(double[] normal, double[] point){$/;"	m	class:Plane
-right	src/cells/MembranePart.java	/^	MembranePart left, right;$/;"	f	class:MembranePart
-rightVector	src/render3D/ControllableViewer.java	/^	double[] rightVector = {0,-1,0,0};$/;"	f	class:ControllableViewer
-rotate	src/render3D/support/Opp.java	/^	public static double[] rotate(double[] a, double[] b, double angle){$/;"	m	class:Opp
-rotateRelative	src/render3D/support/Polygon3D.java	/^	public void rotateRelative(double[] p, double x, double y, double z){$/;"	m	class:Polygon3D
-roughness	src/cells/MembranePart.java	/^	private double roughness = 5;$/;"	f	class:MembranePart	file:
 run	src/states/Game.java	/^	public void run() {$/;"	m	class:Game
-runner	src/cells/gui/StartMenu.java	/^	CellRunner runner;$/;"	f	class:StartMenu
-running	src/nodes/AnimatedText.java	/^	boolean running = false;$/;"	f	class:AnimatedText
-running	src/render3D/ControllableViewer.java	/^	boolean running = false;$/;"	f	class:ControllableViewer
-scale	src/cells/CellRunner.java	/^	double scale = zoomInSuperScale;$/;"	f	class:CellRunner
+s	src/main/Session.vim	/^nnoremap <buffer> <silent> s :call nerdtree#ui_glue#invokeKeyMap("s")$/;"	m
+s:cpo_save	src/main/Session.vim	/^let s:cpo_save=&cpo$/;"	v
+s:l	src/main/Session.vim	/^let s:l = 16 - ((15 * winheight(0) + 19) \/ 38)$/;"	v
+s:l	src/main/Session.vim	/^let s:l = 21 - ((16 * winheight(0) + 19) \/ 38)$/;"	v
+s:so_save	src/main/Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:sx	src/main/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	src/main/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
 scale	src/input/Mouse.java	/^	public static int scale = 1;$/;"	f	class:Mouse
-scale	src/render3D/Viewer.java	/^	double scale = 123;$/;"	f	class:Viewer
 scale	src/states/Game.java	/^	private int scale = 1;$/;"	f	class:Game	file:
-screen	src/cells/CellRunner.java	/^	private Rectangle screen;$/;"	f	class:CellRunner	file:
-searching	src/cells/VirusCluster.java	/^	boolean searching = false;$/;"	f	class:VirusCluster
-select	src/cells/CellPart.java	/^	public void select(Rectangle area){$/;"	m	class:CellPart
-select	src/cells/CellRegion.java	/^	public void select(Rectangle area){$/;"	m	class:CellRegion
-select	src/cells/VirusCluster.java	/^	public boolean select(Point p){$/;"	m	class:VirusCluster
-selectVirus	src/cells/CellRegion.java	/^	public boolean selectVirus(Point p){$/;"	m	class:CellRegion
-selected	src/cells/gui/CircleButton.java	/^	boolean selected = false;$/;"	f	class:CircleButton
 selected	src/nodes/Button.java	/^	protected boolean selected = false;$/;"	f	class:Button
-selected	src/render3D/support/PolygonEditor.java	/^	int selected = 0;$/;"	f	class:PolygonEditor
-selectedA	src/cells/gui/SettingsMenu.java	/^	boolean selectedA;$/;"	f	class:SettingsMenu
 selectedImageLoc	src/nodes/Button.java	/^	protected String selectedImageLoc;$/;"	f	class:Button
-setCluster	src/cells/Virus.java	/^	public void setCluster(VirusCluster v){$/;"	m	class:Virus
-setDebug	src/cells/CellRunner.java	/^	public void setDebug(boolean b){$/;"	m	class:CellRunner
-setDefault	src/nodes/NumBox.java	/^	public void setDefault(int d){$/;"	m	class:NumBox
-setDirection	src/cells/CellPart.java	/^	public void setDirection(int dx, int dy){this.dx = dx; this.dy = dy;}$/;"	m	class:CellPart
-setDirection	src/physics/PhysicsObj.java	/^	public void setDirection(int dx, int dy){this.dx = dx; this.dy = dy;}$/;"	m	class:PhysicsObj
-setDirection	src/physics/physicsObjects/PhysicsObj.java	/^	public void setDirection(int dx, int dy){this.dx = dx; this.dy = dy;}$/;"	m	class:PhysicsObj
-setDistance	src/render3D/support/Polygon3D.java	/^	public void setDistance(double dist) {distance = dist;}$/;"	m	class:Polygon3D
-setDistance	src/render3D/support/PolygonList.java	/^	public void setDistance(double dist) {$/;"	m	class:PolygonList
-setLength	src/nodes/NumBox.java	/^	public void setLength(int l){$/;"	m	class:NumBox
-setLength	src/nodes/TextBox.java	/^	public void setLength(int l){$/;"	m	class:TextBox
-setLocation	src/cells/CellPart.java	/^	public void setLocation(int x, int y){this.x = x; this.y = y;};$/;"	m	class:CellPart
-setLocation	src/cells/CellRunner.java	/^	public void setLocation(int x, int y){$/;"	m	class:CellRunner
-setLocation	src/physics/PhysicsObj.java	/^	public void setLocation(int x, int y){this.x = x; this.y = y;};$/;"	m	class:PhysicsObj
-setLocation	src/physics/physicsObjects/PhysicsObj.java	/^	public void setLocation(int x, int y){this.x = x; this.y = y;};$/;"	m	class:PhysicsObj
-setOptimized	src/cells/CellPart.java	/^	public void setOptimized(boolean b){$/;"	m	class:CellPart
-setOptimized	src/cells/Nucleus.java	/^	public void setOptimized(boolean b){$/;"	m	class:Nucleus
-setOptimized	src/cells/WallCell.java	/^	public void setOptimized(boolean b){$/;"	m	class:WallCell
-setOptimized	src/cells/WallCellFast.java	/^	public void setOptimized(boolean b){$/;"	m	class:WallCellFast
-setParent	src/cells/VeinMarker.java	/^	public void setParent(VeinMarker v){$/;"	m	class:VeinMarker
-setPrefLoc	src/cells/MembranePart.java	/^	public void setPrefLoc(Point p){$/;"	m	class:MembranePart
-setPrefLoc	src/cells/Virus.java	/^	public void setPrefLoc(Point p){$/;"	m	class:Virus
 setScale	src/input/Mouse.java	/^	public void setScale(int s){$/;"	m	class:Mouse
-setSelected	src/render3D/support/Polygon3D.java	/^	public void setSelected(boolean s){$/;"	m	class:Polygon3D
 setStateIndex	src/states/Game.java	/^	public void setStateIndex(int i){$/;"	m	class:Game
-setTarget	src/physics/physicsObjects/NodePhysObj.java	/^	public void setTarget(PhysicsObj p){$/;"	m	class:NodePhysObj
-setVirusSelected	src/cells/gui/ControlPanel.java	/^	public void setVirusSelected(boolean b){$/;"	m	class:ControlPanel
-shift	src/cells/generators/VeinsFast.java	/^	public static int shift = 5000;$/;"	f	class:VeinsFast
-size	src/cells/CellRegion.java	/^	public int size(){$/;"	m	class:CellRegion
-size	src/render3D/support/PolygonChunk.java	/^	public int size(){$/;"	m	class:PolygonChunk
-solidify	src/cells/MembranePart.java	/^	public void solidify(){$/;"	m	class:MembranePart
-sort	src/render3D/Viewer.java	/^	public void sort(PolygonChunk[][] list){$/;"	m	class:Viewer
-speed	src/cells/ControlableMembrane.java	/^	double speed = 2;$/;"	f	class:ControlableMembrane
-speed	src/cells/Nucleus.java	/^	double speed = 2;$/;"	f	class:Nucleus
-speed	src/nodes/AnimatedText.java	/^	int speed = 1;$/;"	f	class:AnimatedText
-speed	src/physics/physicsObjects/ControlableNodePhysObj.java	/^	int speed = 2;$/;"	f	class:ControlableNodePhysObj
-speed	src/render3D/ControllableViewer.java	/^	double speed = 5;$/;"	f	class:ControllableViewer
-speedLimit	src/cells/MembranePart.java	/^	double speedLimit = 10;$/;"	f	class:MembranePart
-speedLimit	src/cells/Nucleus.java	/^	protected double speedLimit = 3;$/;"	f	class:Nucleus
-split	src/cells/VirusCluster.java	/^	public static boolean split = false;$/;"	f	class:VirusCluster
-start	src/nodes/AnimatedText.java	/^	public void start(){$/;"	m	class:AnimatedText
-start	src/render3D/ControllableViewer.java	/^	public void start(){$/;"	m	class:ControllableViewer
 start	src/states/Game.java	/^	public void start(){$/;"	m	class:Game
 states	src/states/Game.java	/^	private ArrayList<State> states = new ArrayList<State>();$/;"	f	class:Game	file:
 states	src/states/Game.java	/^package states;$/;"	p
 states	src/states/NodeState.java	/^package states;$/;"	p
 states	src/states/State.java	/^package states;$/;"	p
-states	src/states/TestState.java	/^package states;$/;"	p
-stiffness	src/cells/MembranePart.java	/^	private double stiffness = 40;$/;"	f	class:MembranePart	file:
-stop	src/render3D/ControllableViewer.java	/^	public void stop(){$/;"	m	class:ControllableViewer
-stopUpdate	src/cells/WallCell.java	/^	int stopUpdate = 22;$/;"	f	class:WallCell
-strA	src/cells/gui/SettingsMenu.java	/^	String strA;$/;"	f	class:SettingsMenu
-subRadius	src/cells/Nucleus.java	/^	protected double subRadius = 13;$/;"	f	class:Nucleus
-subRadius	src/cells/WallCellFast.java	/^	double subRadius = 10;$/;"	f	class:WallCellFast
-subtract	src/cells/Point.java	/^	public void subtract(Vector v){$/;"	m	class:Point
-subtract	src/cells/Point.java	/^	public void subtract(double a, double b){$/;"	m	class:Point
-subtract	src/cells/Vector.java	/^	public void subtract(Vector v){$/;"	m	class:Vector
-subtract	src/render3D/support/Opp.java	/^	public static double[] subtract(double[] a, double[] b){$/;"	m	class:Opp
-subtract	src/render3D/support/Opp.java	/^	public static int[] subtract(int[] a, int[] b){$/;"	m	class:Opp
-t	src/render3D/support/PolygonEditor.java	/^	boolean t = false;$/;"	f	class:PolygonEditor
-target	src/physics/physicsObjects/NodePhysObj.java	/^	PhysicsObj target;$/;"	f	class:NodePhysObj
-targets	src/physics/physicsObjects/Guy.java	/^	ArrayList<PhysicsObj> targets;$/;"	f	class:BodyPart
-temporaryCells	src/cells/CellRegion.java	/^	private LinkedList<CellPart> temporaryCells;$/;"	f	class:CellRegion	file:
-text	src/cells/generators/Tutorial.java	/^	String text;$/;"	f	class:TextCell
-text	src/cells/gui/CircleButton.java	/^	String text;$/;"	f	class:CircleButton
-text	src/nodes/AnimatedText.java	/^	String text;$/;"	f	class:AnimatedText
+t	src/main/Session.vim	/^nnoremap <buffer> <silent> t :call nerdtree#ui_glue#invokeKeyMap("t")$/;"	m
 text	src/nodes/Node.java	/^	private static BufferedImage[][] text = new BufferedImage[16][6];$/;"	f	class:Node	file:
-text	src/nodes/NumBox.java	/^	private String text;$/;"	f	class:NumBox	file:
-text	src/nodes/TextBox.java	/^	private String text;$/;"	f	class:TextBox	file:
-textColor	src/cells/gui/CircleButton.java	/^	Color textColor;$/;"	f	class:CircleButton
-textLoc	src/cells/gui/CircleButton.java	/^	Point textLoc;$/;"	f	class:CircleButton
 textString	src/nodes/Button.java	/^	public String textString = "";$/;"	f	class:Button
-timer	src/cells/WallCell.java	/^	int timer = 0;$/;"	f	class:WallCell
 toBufferedImage	src/input/FileRead.java	/^	public static BufferedImage toBufferedImage(Image img)$/;"	m	class:FileRead
-toString	src/cells/CellPart.java	/^	public String toString(){$/;"	m	class:CellPart
-toString	src/cells/Point.java	/^	public String toString(){$/;"	m	class:Point
-toString	src/cells/Vector.java	/^	public String toString(){$/;"	m	class:Vector
-toString	src/physics/PhysicsObj.java	/^	public String toString(){$/;"	m	class:PhysicsObj
-toString	src/physics/physicsObjects/PhysicsObj.java	/^	public String toString(){$/;"	m	class:PhysicsObj
-toString	src/render3D/support/Line.java	/^	public String toString(){$/;"	m	class:Line
-toString	src/render3D/support/Plane.java	/^	public String toString(){$/;"	m	class:Plane
-torso	src/physics/physicsObjects/Guy.java	/^	BodyPart torso;$/;"	f	class:Guy
-tracking	src/render3D/ControllableViewer.java	/^	double tracking = .005;$/;"	f	class:ControllableViewer
-upVector	src/render3D/ControllableViewer.java	/^	double[] upVector = {0,0,1,0};$/;"	f	class:ControllableViewer
+u	src/main/Session.vim	/^nnoremap <buffer> <silent> u :call nerdtree#ui_glue#invokeKeyMap("u")$/;"	m
 update	src/airplanes/AirplaneState.java	/^	public void update(){$/;"	m	class:AirplaneState
-update	src/cells/CellPart.java	/^	public void update(){$/;"	m	class:CellPart
-update	src/cells/CellRegion.java	/^	public void update(Rectangle hitbox){$/;"	m	class:CellRegion
-update	src/cells/CellRunner.java	/^	public void update(Boolean onClick){$/;"	m	class:CellRunner
-update	src/cells/CellState.java	/^	public void update(){$/;"	m	class:CellState
-update	src/cells/ControlableMembrane.java	/^	public void update(){$/;"	m	class:ControlableMembrane
-update	src/cells/GoldCell.java	/^	public void update(){$/;"	m	class:GoldCell
-update	src/cells/MembranePart.java	/^	public void update(){$/;"	m	class:MembranePart
-update	src/cells/Nucleus.java	/^	public void update(){$/;"	m	class:Nucleus
-update	src/cells/VeinMarker.java	/^	public void update(){$/;"	m	class:VeinMarker
-update	src/cells/Virus.java	/^	public void update(){$/;"	m	class:Virus
-update	src/cells/VirusCluster.java	/^	public void update(){$/;"	m	class:VirusCluster
-update	src/cells/WallCell.java	/^	public void update(){$/;"	m	class:WallCell
-update	src/cells/WallCellFast.java	/^	public void update(){$/;"	m	class:WallCellFast
-update	src/cells/enemyCells/MasterCell.java	/^	public void update(){$/;"	m	class:MasterCell
-update	src/cells/enemyCells/PatrolCell.java	/^	public void update(){$/;"	m	class:PatrolCell
-update	src/cells/enemyCells/RedBloodCell.java	/^	public void update(){$/;"	m	class:RedBloodCell
-update	src/cells/enemyCells/WhiteBloodCell.java	/^	public void update(){$/;"	m	class:WhiteBloodCell
-update	src/cells/generators/Veins.java	/^	public void update(){$/;"	m	class:VeinMaker
-update	src/cells/generators/VeinsFast.java	/^	public void update(){$/;"	m	class:VeinMakerFast
-update	src/cells/gui/CircleButton.java	/^	public void update(Boolean onClick) {$/;"	m	class:CircleButton
-update	src/cells/gui/ControlPanel.java	/^	public void update(Boolean onClick) {$/;"	m	class:ControlPanel
-update	src/cells/gui/SettingsMenu.java	/^	public void update(Boolean onClick){$/;"	m	class:SettingsMenu
-update	src/cells/gui/StartMenu.java	/^	public void update(){$/;"	m	class:StartMenu
-update	src/nodes/AnimatedText.java	/^	public void update(Boolean onClick) {$/;"	m	class:AnimatedText
 update	src/nodes/Button.java	/^	public void update(Boolean onClick){$/;"	m	class:Button
-update	src/nodes/ImageNode.java	/^	public void update(Boolean onClick) {$/;"	m	class:ImageNode
 update	src/nodes/Node.java	/^	public abstract void update(Boolean onClick);$/;"	m	class:Node
-update	src/nodes/NumBox.java	/^	public void update(Boolean onClick){$/;"	m	class:NumBox
-update	src/nodes/TestButton.java	/^	public void update(Boolean onClick){$/;"	m	class:TestButton
-update	src/nodes/TextBox.java	/^	public void update(Boolean onClick){$/;"	m	class:TextBox
-update	src/physics/PhysicsNode.java	/^	public void update(Boolean onClick) {$/;"	m	class:PhysicsNode
-update	src/physics/PhysicsObj.java	/^	public void update(){$/;"	m	class:PhysicsObj
-update	src/physics/PhysicsState.java	/^	public void update(){$/;"	m	class:PhysicsState
-update	src/physics/StaticESPhysObj.java	/^	public void update(){$/;"	m	class:StaticESPhysObj
-update	src/physics/StaticPhysObj.java	/^	public void update(){$/;"	m	class:StaticPhysObj
-update	src/physics/physicsObjects/ControlableNodePhysObj.java	/^	public void update(){$/;"	m	class:ControlableNodePhysObj
-update	src/physics/physicsObjects/Guy.java	/^	public void update(){$/;"	m	class:BodyPart
-update	src/physics/physicsObjects/Guy.java	/^	public void update(){$/;"	m	class:Head
-update	src/physics/physicsObjects/NodePhysObj.java	/^	public void update(){$/;"	m	class:NodePhysObj
-update	src/physics/physicsObjects/PhysicsObj.java	/^	public void update(){$/;"	m	class:PhysicsObj
-update	src/physics/physicsObjects/StaticESPhysObj.java	/^	public void update(){$/;"	m	class:StaticESPhysObj
-update	src/physics/physicsObjects/StaticPhysObj.java	/^	public void update(){$/;"	m	class:StaticPhysObj
-update	src/render3D/ControllableViewer.java	/^	public void update(){$/;"	m	class:ControllableViewer
-update	src/render3D/RenderNode.java	/^	public void update(Boolean onClick) {$/;"	m	class:RenderNode
-update	src/render3D/Viewer.java	/^	public void update(){$/;"	m	class:Viewer
-update	src/render3D/support/Polygon3D.java	/^	public void update(){$/;"	m	class:Polygon3D
-update	src/render3D/support/PolygonEditor.java	/^	public void update(){$/;"	m	class:PolygonEditor
-update	src/render3D/support/PolygonList.java	/^	public void update(){$/;"	m	class:PolygonList
-update	src/render3D/support/PolygonTest.java	/^		public void update(){$/;"	m	class:PolygonTest
 update	src/states/Game.java	/^	private void update(){$/;"	m	class:Game	file:
 update	src/states/NodeState.java	/^	public void update(){$/;"	m	class:NodeState
 update	src/states/State.java	/^	public abstract void update();$/;"	m	class:State
-updateChunk	src/render3D/support/Polygon3D.java	/^	public void updateChunk(){$/;"	m	class:Polygon3D
-updateChunk	src/render3D/support/PolygonEditor.java	/^	public void updateChunk(){$/;"	m	class:PolygonEditor
-updateChunk	src/render3D/support/PolygonList.java	/^	public void updateChunk(){$/;"	m	class:PolygonList
-updateChunk	src/render3D/support/PolygonTest.java	/^		public void updateChunk(){$/;"	m	class:PolygonTest
-updatePartners	src/cells/MembranePart.java	/^	public void updatePartners(){$/;"	m	class:MembranePart
 updated	src/airplanes/AirplaneState.java	/^	boolean updated = false;$/;"	f	class:AirplaneState
-updated	src/cells/CellState.java	/^	boolean updated = false;$/;"	f	class:CellState
-vecMatrixMult	src/render3D/support/Opp.java	/^	public static double[] vecMatrixMult(double[] vec, double[][] mat){$/;"	m	class:Opp
-view	src/render3D/RenderNode.java	/^	Viewer view;$/;"	f	class:RenderNode
-view	src/render3D/support/PolygonEditor.java	/^	Viewer view;$/;"	f	class:PolygonEditor
-virusSpace	src/cells/VirusCluster.java	/^	double virusSpace = 50;$/;"	f	class:VirusCluster
-viruses	src/cells/VirusCluster.java	/^	LinkedList<Virus> viruses;$/;"	f	class:VirusCluster
-w	src/cells/gui/SettingsMenu.java	/^	BufferedWriter w;$/;"	f	class:SettingsMenu
+w!!	src/main/Session.vim	/^cmap w!! w !sudo tee > \/dev\/null %$/;"	m
 wheelMove	src/input/MouseWheel.java	/^	public static int wheelMove = 0;$/;"	f	class:MouseWheel
-width	src/render3D/Viewer.java	/^	double width = c;$/;"	f	class:Viewer
-win	src/cells/CellRunner.java	/^	public static boolean win = false;$/;"	f	class:CellRunner
-x	src/cells/CellPart.java	/^	public double x, y;$/;"	f	class:CellPart
-x	src/cells/Point.java	/^	public double x, y;$/;"	f	class:Point
-x	src/physics/PhysicsObj.java	/^	double x, y;$/;"	f	class:PhysicsObj
-x	src/physics/physicsObjects/PhysicsObj.java	/^	double x, y;$/;"	f	class:PhysicsObj
-x	src/render3D/support/Opp.java	/^	public static double[] x = {1,0,0};$/;"	f	class:Opp
-xBound	src/cells/generators/VeinsFast.java	/^	public static int xBound = 10000+shift;$/;"	f	class:VeinsFast
-xMin	src/cells/generators/VeinsFast.java	/^	public static int xMin = 100+shift;$/;"	f	class:VeinsFast
-xk	src/render3D/support/Line.java	/^	public double xk,xt, yk,yt, zk,zt;$/;"	f	class:Line
-xt	src/render3D/support/Line.java	/^	public double xk,xt, yk,yt, zk,zt;$/;"	f	class:Line
-y	src/cells/CellPart.java	/^	public double x, y;$/;"	f	class:CellPart
-y	src/cells/Point.java	/^	public double x, y;$/;"	f	class:Point
-y	src/physics/PhysicsObj.java	/^	double x, y;$/;"	f	class:PhysicsObj
-y	src/physics/physicsObjects/PhysicsObj.java	/^	double x, y;$/;"	f	class:PhysicsObj
-y	src/render3D/support/Opp.java	/^	public static double[] y = {0,1,0};$/;"	f	class:Opp
-yBound	src/cells/generators/VeinsFast.java	/^	public static int yBound = 8500+shift;$/;"	f	class:VeinsFast
-yMin	src/cells/generators/VeinsFast.java	/^	public static int yMin = 100+shift;$/;"	f	class:VeinsFast
-yk	src/render3D/support/Line.java	/^	public double xk,xt, yk,yt, zk,zt;$/;"	f	class:Line
-yt	src/render3D/support/Line.java	/^	public double xk,xt, yk,yt, zk,zt;$/;"	f	class:Line
-z	src/render3D/support/Opp.java	/^	public static double[] z = {0,0,1};$/;"	f	class:Opp
-zk	src/render3D/support/Line.java	/^	public double xk,xt, yk,yt, zk,zt;$/;"	f	class:Line
-zoomInScale	src/cells/CellRunner.java	/^	double zoomInScale = 2;$/;"	f	class:CellRunner
-zoomInSuperScale	src/cells/CellRunner.java	/^	double zoomInSuperScale = 1;$/;"	f	class:CellRunner
-zoomOutScale	src/cells/CellRunner.java	/^	double zoomOutScale = 5;$/;"	f	class:CellRunner
-zt	src/render3D/support/Line.java	/^	public double xk,xt, yk,yt, zk,zt;$/;"	f	class:Line
+x	src/main/Session.vim	/^nnoremap <buffer> <silent> x :call nerdtree#ui_glue#invokeKeyMap("x")$/;"	m
+zo	src/main/Session.vim	/^normal! zo$/;"	m
+zt	src/main/Session.vim	/^normal! zt$/;"	m
+{	src/main/Session.vim	/^inoremap {$/;"	m

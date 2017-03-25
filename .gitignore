@@ -1,0 +1,7 @@
+*.swp
+*.DS_Store
+*.class
+tags
+Session.vim
+.vimrc
+.project
