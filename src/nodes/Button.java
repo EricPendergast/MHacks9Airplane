@@ -6,7 +6,7 @@ import input.Mouse;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Graphics2D;
-import dataStructures.HashMap;
+import java.util.HashMap;
 import java.awt.image.BufferedImage;
 
 public class Button extends Node{

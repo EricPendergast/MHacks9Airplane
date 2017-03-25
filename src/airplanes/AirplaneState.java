@@ -5,9 +5,6 @@ import input.Keyboard;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 
-import cells.generators.Tutorial;
-import cells.generators.VeinsFast;
-import cells.gui.ControlPanel;
 import states.Game;
 import states.NodeState;
 import java.util.*;

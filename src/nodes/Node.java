@@ -7,7 +7,7 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 
-import dataStructures.HashMap;
+import java.util.HashMap;
 
 public abstract class Node {
 	private static HashMap<String,BufferedImage> nodeImages = new HashMap<String,BufferedImage>();

@@ -1,4 +1,5 @@
-package physics;
+package main;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -12,8 +13,6 @@ import java.util.Scanner;
 
 import input.FileRead;
 import airplanes.AirplaneState;
-import cells.generators.Tutorial;
-import cells.gui.StartMenu;
 import states.*;
 import java.util.*;
 public class Start {
