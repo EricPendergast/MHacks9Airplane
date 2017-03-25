@@ -1,0 +1,148 @@
+	Session.vim	/^nnoremap  :sh$/;"	m
+	Session.vim	/^noremap  h$/;"	m
+		Session.vim	/^imap 	 <Plug>SuperTabForward$/;"	m
+		Session.vim	/^nnoremap 	 gt$/;"	m
+	Session.vim	/^nmap  P "+P$/;"	m
+	Session.vim	/^nmap  c  <Plug>NERDCommenterToggle$/;"	m
+	Session.vim	/^nmap  c$ <Plug>NERDCommenterToEOL$/;"	m
+	Session.vim	/^nmap  cA <Plug>NERDCommenterAppend$/;"	m
+	Session.vim	/^nmap  ca <Plug>NERDCommenterAltDelims$/;"	m
+	Session.vim	/^nmap  cb <Plug>NERDCommenterAlignBoth$/;"	m
+	Session.vim	/^nmap  cc <Plug>NERDCommenterComment$/;"	m
+	Session.vim	/^nmap  ci <Plug>NERDCommenterInvert$/;"	m
+	Session.vim	/^nmap  cl <Plug>NERDCommenterAlignLeft$/;"	m
+	Session.vim	/^nmap  cm <Plug>NERDCommenterMinimal$/;"	m
+	Session.vim	/^nmap  cn <Plug>NERDCommenterNested$/;"	m
+	Session.vim	/^nmap  cs <Plug>NERDCommenterSexy$/;"	m
+	Session.vim	/^nmap  cu <Plug>NERDCommenterUncomment$/;"	m
+	Session.vim	/^nmap  cy <Plug>NERDCommenterYank$/;"	m
+	Session.vim	/^nmap  p "+p$/;"	m
+	Session.vim	/^nnoremap    za$/;"	m
+	Session.vim	/^nnoremap  $/;"	m
+	Session.vim	/^nnoremap  a A$/;"	m
+	Session.vim	/^nnoremap  h :update$/;"	m
+	Session.vim	/^nnoremap  i i r$/;"	m
+	Session.vim	/^nnoremap  o :CtrlP$/;"	m
+	Session.vim	/^nnoremap  r :SyntasticReset$/;"	m
+	Session.vim	/^nnoremap  t :NERDTreeTabsToggle$/;"	m
+	Session.vim	/^noremap  s :wa$/;"	m
+	Session.vim	/^vmap  P "+P$/;"	m
+	Session.vim	/^vmap  d "+d$/;"	m
+	Session.vim	/^vmap  p "+p$/;"	m
+	Session.vim	/^vmap  y "+y$/;"	m
+	Session.vim	/^vnoremap  $/;"	m
+	Session.vim	/^nnoremap <buffer> <silent>  :call nerdtree#ui_glue#invokeKeyMap("<C-k>")$/;"	m
+	Session.vim	/^noremap  k$/;"	m
+	Session.vim	/^noremap  l$/;"	m
+	Session.vim	/^inoremap $/;"	m
+	Session.vim	/^nnoremap <buffer> <silent> $/;"	m
+	Session.vim	/^map  <Plug>(ctrlp)$/;"	m
+	Session.vim	/^inoremap  :update$/;"	m
+	Session.vim	/^nnoremap  :update$/;"	m
+	Session.vim	/^onoremap  :update$/;"	m
+	Session.vim	/^vnoremap  :update$/;"	m
+	Session.vim	/^inoremap  :call NERDComment(0,"toggle")$/;"	m
+	Session.vim	/^nnoremap  :call NERDComment(0,"toggle")$/;"	m
+	Session.vim	/^vnoremap  :call NERDComment(0,"toggle")$/;"	m
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+,	Session.vim	/^nnoremap , za$/;"	m
+0	Session.vim	/^normal! 0$/;"	m
+011|	Session.vim	/^normal! 011|$/;"	m
+<2-LeftMouse>	Session.vim	/^nnoremap <buffer> <silent> <2-LeftMouse> :call nerdtree#ui_glue#invokeKeyMap("<2-LeftMouse>")$/;"	m
+<C-Tab>	Session.vim	/^inoremap <C-Tab> 	$/;"	m
+<F11>	Session.vim	/^nnoremap <silent> <F11> :call conque_term#exec_file()$/;"	m
+<F4>	Session.vim	/^map <F4> :wa$/;"	m
+<F5>	Session.vim	/^map <F5> :wa$/;"	m
+<LeftRelease>	Session.vim	/^nnoremap <buffer> <silent> <LeftRelease> <LeftRelease>:call nerdtree#ui_glue#invokeKeyMap("<LeftRelease>")$/;"	m
+<MiddleRelease>	Session.vim	/^nnoremap <buffer> <silent> <MiddleRelease> :call nerdtree#ui_glue#invokeKeyMap("<MiddleRelease>")$/;"	m
+<NL>	Session.vim	/^nnoremap <buffer> <silent> <NL> :call nerdtree#ui_glue#invokeKeyMap("<C-j>")$/;"	m
+<NL>	Session.vim	/^noremap <NL> j$/;"	m
+<Plug>(ctrlp)	Session.vim	/^nnoremap <silent> <Plug>(ctrlp) :CtrlP$/;"	m
+<Plug>NERDCommenterAlignBoth	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterAlignBoth :call NERDComment("n", "AlignBoth")$/;"	m
+<Plug>NERDCommenterAlignLeft	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterAlignLeft :call NERDComment("n", "AlignLeft")$/;"	m
+<Plug>NERDCommenterAppend	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterAppend :call NERDComment("n", "Append")$/;"	m
+<Plug>NERDCommenterComment	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterComment :call NERDComment("n", "Comment")$/;"	m
+<Plug>NERDCommenterInsert	Session.vim	/^inoremap <silent> <Plug>NERDCommenterInsert  <BS>:call NERDComment('i', "insert")$/;"	m
+<Plug>NERDCommenterInvert	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterInvert :call NERDComment("n", "Invert")$/;"	m
+<Plug>NERDCommenterMinimal	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterMinimal :call NERDComment("n", "Minimal")$/;"	m
+<Plug>NERDCommenterNested	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterNested :call NERDComment("n", "Nested")$/;"	m
+<Plug>NERDCommenterSexy	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterSexy :call NERDComment("n", "Sexy")$/;"	m
+<Plug>NERDCommenterToEOL	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterToEOL :call NERDComment("n", "ToEOL")$/;"	m
+<Plug>NERDCommenterToggle	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterToggle :call NERDComment("n", "Toggle")$/;"	m
+<Plug>NERDCommenterUncomment	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterUncomment :call NERDComment("n", "Uncomment")$/;"	m
+<Plug>NERDCommenterYank	Session.vim	/^nnoremap <silent> <Plug>NERDCommenterYank :call NERDComment("n", "Yank")$/;"	m
+<Plug>NetrwBrowseX	Session.vim	/^nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(expand((exists("g:netrw_gx")? g:netrw_gx : '<cfile>')),netrw#CheckIfRemote())$/;"	m
+<Plug>NetrwBrowseXVis	Session.vim	/^vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()$/;"	m
+<S-Tab>	Session.vim	/^imap <S-Tab> <Plug>SuperTabBackward$/;"	m
+<S-Tab>	Session.vim	/^nnoremap <S-Tab> gT$/;"	m
+?	Session.vim	/^nnoremap <buffer> <silent> ? :call nerdtree#ui_glue#invokeKeyMap("?")$/;"	m
+A	Session.vim	/^nnoremap <buffer> <silent> A :call nerdtree#ui_glue#invokeKeyMap("A")$/;"	m
+B	Session.vim	/^nnoremap <buffer> <silent> B :call nerdtree#ui_glue#invokeKeyMap("B")$/;"	m
+C	Session.vim	/^nnoremap <buffer> <silent> C :call nerdtree#ui_glue#invokeKeyMap("C")$/;"	m
+CD	Session.vim	/^nnoremap <buffer> <silent> CD :call nerdtree#ui_glue#invokeKeyMap("CD")$/;"	m
+D	Session.vim	/^nnoremap <buffer> <silent> D :call nerdtree#ui_glue#invokeKeyMap("D")$/;"	m
+F	Session.vim	/^nnoremap <buffer> <silent> F :call nerdtree#ui_glue#invokeKeyMap("F")$/;"	m
+I	Session.vim	/^nnoremap <buffer> <silent> I :call nerdtree#ui_glue#invokeKeyMap("I")$/;"	m
+J	Session.vim	/^nnoremap <buffer> <silent> J :call nerdtree#ui_glue#invokeKeyMap("J")$/;"	m
+J	Session.vim	/^nnoremap J 5$/;"	m
+K	Session.vim	/^nnoremap <buffer> <silent> K :call nerdtree#ui_glue#invokeKeyMap("K")$/;"	m
+K	Session.vim	/^nnoremap K 5$/;"	m
+O	Session.vim	/^nnoremap <buffer> <silent> O :call nerdtree#ui_glue#invokeKeyMap("O")$/;"	m
+O	Session.vim	/^nnoremap O Ox<BS>$/;"	m
+P	Session.vim	/^nnoremap <buffer> <silent> P :call nerdtree#ui_glue#invokeKeyMap("P")$/;"	m
+R	Session.vim	/^nnoremap <buffer> <silent> R :call nerdtree#ui_glue#invokeKeyMap("R")$/;"	m
+SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
+Start	Start.java	/^public class Start {$/;"	c
+T	Session.vim	/^nnoremap <buffer> <silent> T :call nerdtree#ui_glue#invokeKeyMap("T")$/;"	m
+U	Session.vim	/^nnoremap <buffer> <silent> U :call nerdtree#ui_glue#invokeKeyMap("U")$/;"	m
+X	Session.vim	/^nnoremap <buffer> <silent> X :call nerdtree#ui_glue#invokeKeyMap("X")$/;"	m
+\b	Session.vim	/^nnoremap <silent> \\b :call conque_gdb#toggle_breakpoint(expand("%:p"), line("."))$/;"	m
+\c	Session.vim	/^nnoremap <silent> \\c :call conque_gdb#command("continue")$/;"	m
+\f	Session.vim	/^nnoremap <silent> \\f :call conque_gdb#command("finish")$/;"	m
+\n	Session.vim	/^nnoremap <silent> \\n :call conque_gdb#command("next")$/;"	m
+\p	Session.vim	/^nnoremap <silent> \\p :call conque_gdb#print_word(expand("<cword>"))$/;"	m
+\r	Session.vim	/^nnoremap <silent> \\r :call conque_gdb#command("run")$/;"	m
+\s	Session.vim	/^nnoremap <silent> \\s :call conque_gdb#command("step")$/;"	m
+\t	Session.vim	/^nnoremap <silent> \\t :call conque_gdb#command("backtrace")$/;"	m
+cd	Session.vim	/^nnoremap <buffer> <silent> cd :call nerdtree#ui_glue#invokeKeyMap("cd")$/;"	m
+e	Session.vim	/^nnoremap <buffer> <silent> e :call nerdtree#ui_glue#invokeKeyMap("e")$/;"	m
+f	Session.vim	/^nnoremap <buffer> <silent> f :call nerdtree#ui_glue#invokeKeyMap("f")$/;"	m
+getReader	Start.java	/^	public static BufferedReader getReader(String fileLoc){$/;"	m	class:Start
+getWriter	Start.java	/^	public static BufferedWriter getWriter(String fileLoc){$/;"	m	class:Start
+gi	Session.vim	/^nnoremap <buffer> <silent> gi :call nerdtree#ui_glue#invokeKeyMap("gi")$/;"	m
+go	Session.vim	/^nnoremap <buffer> <silent> go :call nerdtree#ui_glue#invokeKeyMap("go")$/;"	m
+gs	Session.vim	/^nnoremap <buffer> <silent> gs :call nerdtree#ui_glue#invokeKeyMap("gs")$/;"	m
+gx	Session.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
+gx	Session.vim	/^vmap gx <Plug>NetrwBrowseXVis$/;"	m
+i	Session.vim	/^nnoremap <buffer> <silent> i :call nerdtree#ui_glue#invokeKeyMap("i")$/;"	m
+j	Session.vim	/^nnoremap j gj$/;"	m
+jk	Session.vim	/^inoremap jk $/;"	m
+k	Session.vim	/^nnoremap k gk$/;"	m
+kj	Session.vim	/^inoremap kj $/;"	m
+m	Session.vim	/^nnoremap <buffer> <silent> m :call nerdtree#ui_glue#invokeKeyMap("m")$/;"	m
+main	Start.java	/^	public static void main(String[] args) throws IOException{$/;"	m	class:Start
+main	Start.java	/^package main;$/;"	p
+o	Session.vim	/^nnoremap <buffer> <silent> o :call nerdtree#ui_glue#invokeKeyMap("o")$/;"	m
+o	Session.vim	/^nnoremap o ox<BS>$/;"	m
+p	Session.vim	/^nnoremap <buffer> <silent> p :call nerdtree#ui_glue#invokeKeyMap("p")$/;"	m
+q	Session.vim	/^nnoremap <buffer> <silent> q :call nerdtree#ui_glue#invokeKeyMap("q")$/;"	m
+r	Session.vim	/^nnoremap <buffer> <silent> r :call nerdtree#ui_glue#invokeKeyMap("r")$/;"	m
+s	Session.vim	/^nnoremap <buffer> <silent> s :call nerdtree#ui_glue#invokeKeyMap("s")$/;"	m
+s:cpo_save	Session.vim	/^let s:cpo_save=&cpo$/;"	v
+s:l	Session.vim	/^let s:l = 16 - ((15 * winheight(0) + 19) \/ 38)$/;"	v
+s:l	Session.vim	/^let s:l = 21 - ((16 * winheight(0) + 19) \/ 38)$/;"	v
+s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+t	Session.vim	/^nnoremap <buffer> <silent> t :call nerdtree#ui_glue#invokeKeyMap("t")$/;"	m
+u	Session.vim	/^nnoremap <buffer> <silent> u :call nerdtree#ui_glue#invokeKeyMap("u")$/;"	m
+w!!	Session.vim	/^cmap w!! w !sudo tee > \/dev\/null %$/;"	m
+x	Session.vim	/^nnoremap <buffer> <silent> x :call nerdtree#ui_glue#invokeKeyMap("x")$/;"	m
+zo	Session.vim	/^normal! zo$/;"	m
+zt	Session.vim	/^normal! zt$/;"	m
+{	Session.vim	/^inoremap {$/;"	m

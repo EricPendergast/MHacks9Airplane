@@ -14,6 +14,9 @@ import javax.swing.JFrame;
 
 import nodes.Node;
 
+// Handles all the rendering, updating, keyboard and mouse stuff. It contains a list of states,
+// and knows which state is the current one. It updates and renders the current
+// state at regular intervals.
 public class Game extends Canvas implements Runnable{
 	private int pixelsWidth = 600;
 	private int pixelsHeight = pixelsWidth/16*11;

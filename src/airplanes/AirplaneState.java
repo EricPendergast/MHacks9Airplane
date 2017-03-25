@@ -8,12 +8,14 @@ import java.awt.event.KeyEvent;
 import states.Game;
 import states.NodeState;
 import java.util.*;
+import java.awt.*;
 
 public class AirplaneState extends NodeState{
 	Game game;
     ArrayList<Airplane> airplanes = new ArrayList<Airplane>();
 	public AirplaneState(Game game){
 		this.game = game;
+        airplanes.add(new Airplane());
 	}
    
 	boolean updated = false;
@@ -23,5 +25,9 @@ public class AirplaneState extends NodeState{
 			updated = true;
 		}
 	}
+    
+    public void render(Graphics2D g2) {
+        for (Airplane a : airplanes)
+            a.render(g2);
+    }
 }
-
