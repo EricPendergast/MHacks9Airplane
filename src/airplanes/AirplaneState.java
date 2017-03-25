@@ -32,6 +32,11 @@ public class AirplaneState extends NodeState {
 		if(!updated){
 			updated = true;
 		}
+
+		for (Airplane airplane :
+				airplanes) {
+			airplane.update(1.0/60);
+		}
 	}
     
     // REQUIRES: 'plane' is valid
