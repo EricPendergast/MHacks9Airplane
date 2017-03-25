@@ -10,20 +10,24 @@ import java.awt.geom.GeneralPath;
 
 public class Airplane {
     //x pos and y pos
-    double x = 0;
-    double y = 0;
+    double x = 500;
+    double y = 500;
     double speed = 0;
     // Theta is zero 
     double theta = 0;
     // The radius of the plane
     double girth = 0;
+
+    public Airplane() {
+        speed = 40;
+        theta = 7;
+    }
     
-    
-    Airplane(double x, double y) {
+    public Airplane(double x, double y) {
         this.x = x;
         this.y = y;
     }
-    Airplane(double x, double y, double theta) {
+    public Airplane(double x, double y, double theta) {
         
     }
     // Queue of positions. This is reset whenever the player draws a new path
@@ -46,7 +50,15 @@ public class Airplane {
     double getSpeed() {
         return speed;
     }
-    
+
+    private double rotateX(double x, double y, double theta) {
+        return Math.cos(theta) * x - Math.sin(theta) * y;
+    }
+
+    private double rotateY(double x, double y, double theta) {
+        return Math.sin(theta) * x + Math.cos(theta) * y;
+    }
+
     //MODIFIES: g2
     //EFFECTS: renders the airplane to g2
     void render(Graphics2D g) {
@@ -55,6 +67,15 @@ public class Airplane {
         Graphics2D g2 = (Graphics2D)g;
         int x1Points[] = {0, 10, 0, -10, 0};
         int y1Points[] = {0,20,15,20, 0};
+
+        for (int i = 0; i < x1Points.length; i++) {
+            double newX = rotateX(x1Points[i], y1Points[i], theta + Math.PI / 2);
+            double newY = rotateY(x1Points[i], y1Points[i], theta + Math.PI / 2);
+            x1Points[i] = (int) newX;
+            y1Points[i] = (int) newY;
+        }
+
+
         GeneralPath polygon =
                 new GeneralPath(GeneralPath.WIND_EVEN_ODD,
                         x1Points.length);
@@ -70,6 +91,8 @@ public class Airplane {
         g2.setBackground(Color.darkGray);
         g2.draw(polygon);
         g2.fill(polygon);
+
+        g.rotate(-theta);
     }
     
     public void update(double dt) {
