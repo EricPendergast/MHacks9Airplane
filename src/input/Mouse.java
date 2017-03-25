@@ -16,7 +16,7 @@ public class Mouse implements MouseListener, MouseMotionListener{
 	public static int scale = 1;
 	public static JFrame frame;
     
-    private ArrayList<MouseListener> listeners = new ArrayList<MouseListener>();
+    private static ArrayList<MouseListener> listeners = new ArrayList<MouseListener>();
     public void addMouseListener(MouseListener l) {
         listeners.add(l);
     }
