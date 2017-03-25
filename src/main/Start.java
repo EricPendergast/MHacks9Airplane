@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 import input.FileRead;
-import airplanes.AirplaneState;
+import airplanes.*;
 import states.*;
 import java.util.*;
 
@@ -20,6 +20,7 @@ public class Start {
     public static void main(String[] args) throws IOException{
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
         AirplaneState airplaneState = new AirplaneState(game);
+        airplaneState.addAirplane(new Airplane());
         game.addState(airplaneState);
         game.start();
         //game.addState(cells);
@@ -28,15 +29,6 @@ public class Start {
         //game.setStateIndex(1);
         //game.start();
     }
-    //public static void main(String[] args) throws IOException{
-    //    Game game = new Game(1200, 750, Integer.parseInt(args[0]));
-    //    CellState cells = new CellState(game);
-    //    game.addState(cells);
-    //    game.addState(new StartMenu(cells.getRunner(),game));
-    //    game.addState(new CellState(game, new Tutorial()));
-    //    game.setStateIndex(1);
-    //    game.start();
-    //}
 
     public static BufferedReader getReader(String fileLoc){
         BufferedReader br = null;
@@ -58,4 +50,3 @@ public class Start {
         return bw;
     }
 }
-
