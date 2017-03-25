@@ -11,7 +11,11 @@ import states.NodeState;
 import java.util.*;
 import java.awt.*;
 
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
 public class AirplaneState extends NodeState {
+    
 	Game game;
     ArrayList<Airplane> airplanes = new ArrayList<Airplane>();
     //REQUIRES: game is valid
@@ -36,7 +40,7 @@ public class AirplaneState extends NodeState {
     // MODIFIES: this
     // EFFECTS: adds 'plane' to the list of 
     public void addAirplane(Airplane plane) {
-        airplanes.add(new Airplane());
+        airplanes.add(plane);
     }
     
     // EFFECTS: none
@@ -51,4 +55,23 @@ public class AirplaneState extends NodeState {
         if (Mouse.button1Pressed)
             System.out.println("Mouse 1");
     }
+}
+
+
+class ASListener implements MouseListener {
+	public void mouseMoved(MouseEvent e){
+	}
+	public void mouseClicked(MouseEvent e) {
+	}
+	public void mouseEntered(MouseEvent e) {
+	}
+	public void mouseExited(MouseEvent e) {
+	}
+	public void mousePressed(MouseEvent e) {
+	}
+	public void mouseReleased(MouseEvent e) {
+	}
+	public void mouseDragged(MouseEvent e) {
+	}
+    
 }
