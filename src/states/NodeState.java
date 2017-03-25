@@ -9,6 +9,8 @@ import nodes.*;
 
 import java.util.ArrayList;
 
+// NodeState is a state that contains a list of nodes, where each node is some
+// object that has a position on the screen, can be updated
 public class NodeState extends State{
     private boolean prevClick = false;
 
