@@ -1,8 +1,12 @@
 package airplanes;
 
 import java.util.*;
+import java.awt.*;
 import java.awt.geom.Point2D;
 import java.awt.Graphics2D;
+import java.awt.geom.*;
+import java.awt.geom.GeneralPath;
+
 
 public class Airplane {
     //x pos and y pos
@@ -24,15 +28,33 @@ public class Airplane {
     //REQUIRES: 'a' is valid
     //EFFECTS: returns whether or not 'this' and 'a' are colliding
     boolean collide(Airplane a){
-        double dist = getDistance(a);
+        double dist = getDistance(a.x, a.y);
         return dist-girth-a.girth < 0;
     }
     
     //MODIFIES: g2
     //EFFECTS: renders the airplane to g2
-    void render(Graphics2D g2) {
-        g2.translate(x,y);
-        g2.drawOval(0,0,50,50);
-        g2.translate(-x,-y);
+    void render(Graphics2D g) {
+        int inx = (int)x;
+        int iny = (int)y;
+        Graphics2D g2 = (Graphics2D)g;
+        int x1Points[] = {0, 10, 0, -10, 0};
+        int y1Points[] = {0,20,15,20, 0};
+        GeneralPath polygon =
+                new GeneralPath(GeneralPath.WIND_EVEN_ODD,
+                        x1Points.length);
+        polygon.moveTo(x1Points[0], y1Points[0]);
+
+        for (int index = 1; index < x1Points.length; index++) {
+            polygon.lineTo(x1Points[index], y1Points[index]);
+        };
+
+        polygon.closePath();
+        g2.translate(inx, iny);
+        g2.setColor(Color.BLUE);
+        g2.setBackground(Color.darkGray);
+        g2.draw(polygon);
+        g2.fill(polygon);
+
     }
 }
