@@ -19,7 +19,7 @@ import java.util.*;
 public class Start {
     public static void main(String[] args) throws IOException{
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
-        AirplaneState airplaneState = new AirplaneState(game);
+        AirplaneState airplaneState = new AirplaneState();
         airplaneState.addAirplane(new Airplane());
         game.addState(airplaneState);
         game.start();

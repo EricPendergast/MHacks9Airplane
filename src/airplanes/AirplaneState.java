@@ -16,13 +16,11 @@ import java.awt.event.MouseListener;
 
 public class AirplaneState extends NodeState {
     
-	Game game;
     ArrayList<Airplane> airplanes = new ArrayList<Airplane>();
     //REQUIRES: game is valid
     //MODIFIES: this
     //EFFECTS: initializes 'this' with a game object
-	public AirplaneState(Game game){
-		this.game = game;
+	public AirplaneState(){
 	}
    
     //MODIFIES: this
