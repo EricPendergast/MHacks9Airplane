@@ -62,9 +62,9 @@ public class AirplaneState extends NodeState {
 
 		// Update all airplanes
         for (Airplane airplane : airplanes) {
-		    if(airplane.getC()){
-                airplane.crashseq();
-            }else{airplane.update(1.0/60);}
+		    if(!airplane.getC()){
+		        airplane.update(1.0/60);
+            }
 
 		}
 
@@ -204,6 +204,10 @@ public class AirplaneState extends NodeState {
         for (Airplane a : airplanes) {
 			a.render(g2);
 		}
+		for (Airplane a : airplanes) {
+            if (a.getC())
+                a.crashseq(g2);
+        }
     }
     
     // MODIFIES: this

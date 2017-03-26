@@ -211,7 +211,7 @@ public class Airplane {
 
         // Reduce fuel
 
-        fuel -= 1;
+        fuel -= 10;
         if (fuel <= 0) {
             System.out.println("PLANE CRASHED");
             crashing = true;
@@ -262,14 +262,31 @@ public class Airplane {
     //    return new Point2D.Double(proposed.x, proposed.y);
     //}
     
-    public void crashseq(){
+    public void crashseq(Graphics2D g2){
         speed = this.speed * 0.9;
         if(Math.floor(speed) < 10){
-            this.explodeseq();
+            this.explodeseq(g2);
         }
     }
-    private void explodeseq(){
+    private void explodeseq(Graphics2D g2){
+        int[]FireArrayX = {0, 3, 5, 6, 7, 6, 5, 4, 4, 5,
+                4, 3, 2, 1, 0, 1, 0, -1, -2, -3, -4, -4, -2, -3, -3, -5, -6, -5, -6, -5, -3, -2};
+        int[]FireArrayY = {-3 ,-2, -1, 1, 4, 8, 10, 9, 8, 6,
+                5, 6, 8, 9, 8, 5, 3, 5, 7, 8, 7, 5, 4, 1, 2, 6, 3, 1, -1, -2, -1, -1};
+        int[]InFireX = {-5, -4, -5, -5, -4, -3, -2, -2, 0, 1, 2, 3, 5, 6, 4, 1};
+        int[]InFireY = {-1, 1, 2, 3, 2, 0, 1, 3, 2, 3, 6, 4, 5, 3, 0, -1};
+        GeneralPath polygon =
+                new GeneralPath(GeneralPath.WIND_EVEN_ODD,
+                        FireArrayX.length);
+        polygon.moveTo(FireArrayX[0], FireArrayY[0]);
 
+        for (int index = 1; index < FireArrayY.length; index++) {
+            polygon.lineTo(FireArrayX[index], FireArrayY[index]);
+        }
+        polygon.closePath();
+        g2.setColor(Color.red);
+        g2.draw(polygon);
+        g2.fill(polygon);
     }
     
     public void pushToPath(Point2D.Double point) {
