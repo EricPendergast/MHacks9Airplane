@@ -18,12 +18,11 @@ public class Airplane {
     // The radius of the plane
     double girth = 0;
     
-    ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
-
     // Queue of positions. This is reset whenever the player draws a new path
     // for the plane.
     ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
 
+    
     public Airplane() {
         speed = 100;
         theta = 7;
@@ -71,6 +70,7 @@ public class Airplane {
     //EFFECTS: renders the airplane to g2
     void render(Graphics2D g) {
         drawPlane(g);
+        drawPath(g);
     }
     
     private void drawPlane(Graphics2D g2) {
@@ -99,16 +99,19 @@ public class Airplane {
         polygon.closePath();
         g2.translate(inx, iny);
         g2.setColor(Color.BLUE);
-        g2.setBackground(Color.darkGray);
         g2.draw(polygon);
         g2.fill(polygon);
+        g2.translate(-inx, -iny);
 
-        g2.rotate(-theta);
     }
     
-    private void drawPath() {
+    private void drawPath(Graphics2D g2) {
+        g2.setStroke(new BasicStroke(10, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        if(path.size() > 0)
+            g2.drawLine((int)path.get(0).x, (int)path.get(0).y, (int)x, (int)y);
+        
         for(int i = 0; i+1 < path.size(); i++) {
-            
+            g2.drawLine((int)path.get(i).x, (int)path.get(i).y, (int)path.get(i+1).x, (int)path.get(i+1).y);
         }
     }
     
@@ -137,3 +140,5 @@ public class Airplane {
     }
     
 }
+
+
