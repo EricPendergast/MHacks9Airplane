@@ -12,7 +12,7 @@ public class Airplane {
     //x pos and y pos
     double x = 500;
     double y = 300;
-    double speed = 0;
+    double speed = 100;
     // Theta is zero 
     double theta = 0;
     // The radius of the plane
@@ -24,9 +24,6 @@ public class Airplane {
 
     
     public Airplane() {
-        speed = 100;
-        theta = 7;
-
         path.add(new Point2D.Double(100, 300));
         path.add(new Point2D.Double(100, 100));
     }
@@ -34,6 +31,9 @@ public class Airplane {
     public Airplane(double x, double y) {
         this.x = x;
         this.y = y;
+
+        path.add(new Point2D.Double(100, 300));
+        path.add(new Point2D.Double(100, 100));
     }
     public Airplane(double x, double y, double theta) {
         this.x = x;
@@ -102,7 +102,6 @@ public class Airplane {
         g2.draw(polygon);
         g2.fill(polygon);
         g2.translate(-inx, -iny);
-
     }
     
     private void drawPath(Graphics2D g2) {
@@ -130,8 +129,6 @@ public class Airplane {
             }
         }
     }
-    
-    //public void setPath<F4
     
     private void rotateTowards(double x, double y) {
         double dx = x - this.x;

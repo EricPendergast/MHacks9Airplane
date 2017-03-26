@@ -21,6 +21,7 @@ public class Start {
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
         AirplaneState airplaneState = new AirplaneState();
         airplaneState.addAirplane(new Airplane());
+        airplaneState.addAirplane(new Airplane(500, 500));
         game.addState(airplaneState);
         game.start();
         //game.addState(cells);

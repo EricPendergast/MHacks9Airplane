@@ -48,8 +48,9 @@ public class AirplaneState extends NodeState {
     
     // EFFECTS: none
     public void render(Graphics2D g2) {
-        for (Airplane a : airplanes)
-            a.render(g2);
+        for (Airplane a : airplanes) {
+			a.render(g2);
+		}
     }
     
     // MODIFIES: this
