@@ -61,14 +61,15 @@ public class AirplaneState extends NodeState {
                     closestPlaneIndex = i;
                 }
             }
-            // If the closest plane is closer than  its girth, the user has
+            
+            // If the closest plane is closer than its select distance, the user has
             // selected the plane.
-            if (closestPlaneValue <= airplanes.get(closestPlaneIndex).getGirth()){
+            if (closestPlaneValue <= airplanes.get(closestPlaneIndex).getSelectDistance()){
                 planeSelected = true;
                 selectedPlaneIndex = closestPlaneIndex;
+                airplanes.get(selectedPlaneIndex).resetPath();
             }
         } else if (listener.mouseHeld() && planeSelected) {
-            System.out.println("adding to path");
             airplanes.get(selectedPlaneIndex).pushToPath(new Point2D.Double(Mouse.button1At.x, Mouse.button1At.y));
         } else if (listener.releaseInit()) {
             planeSelected = false;
@@ -90,11 +91,6 @@ public class AirplaneState extends NodeState {
         for (Airplane a : airplanes) {
 			a.render(g2);
 		}
-        
-        if (planeSelected) {
-            g2.drawLine((int)airplanes.get(selectedPlaneIndex).getX(), (int)airplanes.get(selectedPlaneIndex).getY(), 
-                    Mouse.button1At.x, Mouse.button1At.y);
-        }
     }
     
     // MODIFIES: this

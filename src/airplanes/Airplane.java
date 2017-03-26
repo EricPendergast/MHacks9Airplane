@@ -10,11 +10,18 @@ import java.awt.geom.GeneralPath;
 
 public class Airplane {
     //x pos and y pos
-    double x = 500;
-    double y = 300;
+    private double x = 500;
+    private double y = 300;
     private double speed = 100;
-    double theta = 0;   // Theta is zero when plane is pointing right
-    private double girth = 10;   // Radius of the plane
+    // The angle of the plane. Theta is zero when plane is pointing right
+    private double theta = 0;   
+    
+    // The maximum distance the user has to click from the center of the
+    // airplane in order to select it.
+    private double selectDistance = 100;
+    // Radius of the plane. This is used for detecting collisions.
+    private double girth = 10;
+    // The rate of change of theta
     private double dTheta = .01;
     private final double defFuel = 3000;
     private double fuel = defFuel;
@@ -23,7 +30,7 @@ public class Airplane {
     // Queue of positions. This is reset whenever the player draws a new path
     // for the plane. The first item in 'path' is the first point that the
     // plane targets
-    ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
+    private ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
 
     
     public Airplane() {
@@ -70,11 +77,11 @@ public class Airplane {
     //EFFECTS: renders the airplane to g2
     void render(Graphics2D g) {
         //AffineTransform oldXForm = g.getTransform();
-        drawPlane(g);
         //g.setTransform(oldXForm);
         drawGBar(g);
         drawRBar(g);
         drawPath(g);
+        drawPlane(g);
     }
     
     private void drawPlane(Graphics2D g2) {
@@ -175,7 +182,7 @@ public class Airplane {
     }
 
     private void drawPath(Graphics2D g2) {
-        g2.setStroke(new BasicStroke(10, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        g2.setStroke(new BasicStroke(7, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
         if(path.size() > 0)
             g2.drawLine((int)path.get(0).x, (int)path.get(0).y, (int)x, (int)y);
         
@@ -221,7 +228,12 @@ public class Airplane {
         path.add(point);
     }
     
+    public void resetPath() {
+        path.clear();
+    }
+    
     public double getGirth() { return girth; }
+    public double getSelectDistance() { return selectDistance; }
     public double getX() {return x;}
     public double getY() {return y;}
 }
