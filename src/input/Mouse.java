@@ -17,13 +17,12 @@ public class Mouse implements MouseListener, MouseMotionListener{
 	public static int scale = 1;
 	public static JFrame frame;
 
-	private interface MasterMouse extends MouseMotionListener, MouseListener{}
     
     private static ArrayList<MasterMouse> listeners = new ArrayList<MasterMouse>();
-    public void addMouseListener(MasterMouse l) {
+    public static void addMouseListener(MasterMouse l) {
         listeners.add(l);
     }
-    public void removeMouseListener(MasterMouse l) {
+    public static void removeMouseListener(MasterMouse l) {
         listeners.remove(l);
     }
 	public Mouse(){

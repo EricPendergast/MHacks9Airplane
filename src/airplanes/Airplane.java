@@ -16,10 +16,11 @@ public class Airplane {
     // Theta is zero 
     double theta = 0;
     // The radius of the plane
-    double girth = 0;
+    double girth = 100;
     
     // Queue of positions. This is reset whenever the player draws a new path
-    // for the plane.
+    // for the plane. The first item in 'path' is the first point that the
+    // plane targets
     ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
 
     
@@ -136,6 +137,13 @@ public class Airplane {
         theta = Math.atan2(dy, dx);
     }
     
+    public void pushToPath(Point2D.Double point) {
+        path.add(point);
+    }
+    
+    public double getGirth() { return girth; }
+    public double getX() {return x;}
+    public double getY() {return y;}
 }
 
 
