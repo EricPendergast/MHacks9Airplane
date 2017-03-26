@@ -17,10 +17,12 @@ public class Airplane {
     double theta = 0;
     // The radius of the plane
     double girth = 0;
+    
+    ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
 
     public Airplane() {
-        speed = 40;
-        theta = 7;
+        speed = 0;
+        theta = 0;
     }
     
     public Airplane(double x, double y) {
@@ -28,11 +30,10 @@ public class Airplane {
         this.y = y;
     }
     public Airplane(double x, double y, double theta) {
-        
+        this.x = x;
+        this.y = y;
+        this.theta = theta;
     }
-    // Queue of positions. This is reset whenever the player draws a new path
-    // for the plane.
-    ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
     
     //EFFECTS: returns the distance from 'this' to 'airplane'
     double getDistance(double x, double y) {
@@ -62,9 +63,12 @@ public class Airplane {
     //MODIFIES: g2
     //EFFECTS: renders the airplane to g2
     void render(Graphics2D g) {
+        drawPlane(g);
+    }
+    
+    private void drawPlane(Graphics2D g2) {
         int inx = (int)x;
         int iny = (int)y;
-        Graphics2D g2 = (Graphics2D)g;
         int x1Points[] = {0, 10, 0, -10, 0};
         int y1Points[] = {0,20,15,20, 0};
 
@@ -92,7 +96,13 @@ public class Airplane {
         g2.draw(polygon);
         g2.fill(polygon);
 
-        g.rotate(-theta);
+        g2.rotate(-theta);
+    }
+    
+    private void drawPath() {
+        for(int i = 0; i+1 < path.size(); i++) {
+            
+        }
     }
     
     public void update(double dt) {
