@@ -24,6 +24,7 @@ public class AirplaneState extends NodeState {
     double meanVel = 100;
     double stdVel = 20;
     int numPlanes = 30;
+    ArrayList<Color> planeTypes = new ArrayList<>();
 
     ArrayList<enviro> enviros = new ArrayList<>();
 
@@ -43,6 +44,10 @@ public class AirplaneState extends NodeState {
         this.meanVel = meanV;
         this.stdVel = stdVel;
         this.numPlanes = numPlanes;
+        this.planeTypes = planeTypes;
+
+        planeTypes.add(Color.blue);
+        planeTypes.add(Color.red);
 	}
    
     //MODIFIES: this
@@ -57,9 +62,9 @@ public class AirplaneState extends NodeState {
 
 		// Update all airplanes
         for (Airplane airplane : airplanes) {
-		    if(airplane.getC()){
-                airplane.crashseq();
-            }else{airplane.update(1.0/60);}
+		    if(!airplane.getC()){
+		        airplane.update(1.0/60);
+            }
 
 		}
 
@@ -67,7 +72,7 @@ public class AirplaneState extends NodeState {
 		rndFuncs();
 
 		// COMMENT OUT UNTIL CHECK SELECTION METHOD FIXED
-		//landedPlanes();
+		landedPlanes();
 
         if (collisionDetection()) {
             System.out.println("You lose!");
@@ -92,7 +97,8 @@ public class AirplaneState extends NodeState {
 	    double destX = 600 + rnd.nextGaussian() * 150;
         double destY = 325 + rnd.nextGaussian() * 100;
         double vel = rnd.nextGaussian() * stdVel + meanVel;
-        Color color = Color.blue;
+
+        Color color = planeTypes.get(rnd.nextInt(planeTypes.size()));
 
 	    if (rand == 0) {
             addAirplane(new Airplane(-100, rnd.nextInt(550) + 100, destX, destY, vel, color));
@@ -198,6 +204,10 @@ public class AirplaneState extends NodeState {
         for (Airplane a : airplanes) {
 			a.render(g2);
 		}
+		for (Airplane a : airplanes) {
+            if (a.getC())
+                a.crashseq(g2);
+        }
     }
     
     // MODIFIES: this

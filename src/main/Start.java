@@ -28,8 +28,9 @@ public class Start {
         game.addState(title);
         
         AirplaneState airplaneState = new AirplaneState(.01, 100, 20, 30);
-        airplaneState.addRunway(new Runway(500, 500, 300, 50, niceColors[1]));
-        airplaneState.addEnviros(new enviro(2000, 0, true, 1, niceColors[0]));
+        airplaneState.addRunway(new Runway(500, 500, 300, 50, Color.blue));
+        airplaneState.addRunway(new Runway(800, 300, 300, 50, Color.red));
+        airplaneState.addEnviros(new enviro(2000, 0, true, 1, new Color(12, 173, 12)));
         airplaneState.addEnviros(new enviro(40, 40, true, 1 , Color.orange));
         airplaneState.addEnviros(new enviro(40, 40, true, 1, Color.DARK_GRAY ));
         airplaneState.addEnviros(new enviro(40, 600, true, 1, Color.DARK_GRAY ));
