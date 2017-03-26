@@ -10,19 +10,27 @@ import java.awt.geom.GeneralPath;
 
 public class Airplane {
     //x pos and y pos
-    double x = 500;
-    double y = 300;
+    public double x = 500;
+    public double y = 300;
     private double speed = 100;
-    double theta = 0;   // Theta is zero when plane is pointing right
-    private double girth = 10;   // Radius of the plane
+    // The angle of the plane. Theta is zero when plane is pointing right
+    public double theta = 0;
+    
+    // The maximum distance the user has to click from the center of the
+    // airplane in order to select it.
+    private double selectDistance = 100;
+    // Radius of the plane. This is used for detecting collisions.
+    private double girth = 10;
+    // The rate of change of theta
     private double dTheta = .01;
     private final double defFuel = 3000;
     private double fuel = defFuel;
     private Color color;
     
     // Queue of positions. This is reset whenever the player draws a new path
-    // for the plane.
-    ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
+    // for the plane. The first item in 'path' is the first point that the
+    // plane targets
+    private ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
 
     
     public Airplane() {
@@ -72,6 +80,7 @@ public class Airplane {
         drawGBar(g);
         drawRBar(g);
         drawPath(g);
+        drawPlane(g);
     }
     
     private void drawPlane(Graphics2D g2) {
@@ -172,13 +181,14 @@ public class Airplane {
     }
 
     private void drawPath(Graphics2D g2) {
-        g2.setStroke(new BasicStroke(10, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        g2.setStroke(new BasicStroke(7, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
         if(path.size() > 0)
             g2.drawLine((int)path.get(0).x, (int)path.get(0).y, (int)x, (int)y);
         
         for(int i = 0; i+1 < path.size(); i++) {
             g2.drawLine((int)path.get(i).x, (int)path.get(i).y, (int)path.get(i+1).x, (int)path.get(i+1).y);
         }
+        g2.setStroke(new BasicStroke(1));
     }
     
     public void update(double dt) {
@@ -213,6 +223,18 @@ public class Airplane {
         theta = Math.atan2(dy, dx);
     }
     
+    public void pushToPath(Point2D.Double point) {
+        path.add(point);
+    }
+    
+    public void resetPath() {
+        path.clear();
+    }
+    
+    public double getGirth() { return girth; }
+    public double getSelectDistance() { return selectDistance; }
+    public double getX() {return x;}
+    public double getY() {return y;}
 }
 
 

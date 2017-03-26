@@ -1,7 +1,6 @@
 package airplanes;
 
-import input.Keyboard;
-import input.Mouse;
+import input.*;
 
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
@@ -13,15 +12,23 @@ import java.awt.*;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.geom.Point2D;
 
 public class AirplaneState extends NodeState {
     ArrayList<Airplane> airplanes = new ArrayList<Airplane>();
     ArrayList<Runway> runways = new ArrayList<>();
 
+    ASListener listener;
+    
+    boolean planeSelected = false;
+    int selectedPlaneIndex = -1;
+    
     //REQUIRES: game is valid
     //MODIFIES: this
     //EFFECTS: initializes 'this' with a game object
 	public AirplaneState(){
+        listener = new ASListener();
+        Mouse.addMouseListener(listener);
 	}
    
     //MODIFIES: this
@@ -38,7 +45,40 @@ public class AirplaneState extends NodeState {
 				airplanes) {
 			airplane.update(1.0/60);
 		}
+        
+        checkSelection();
 	}
+    
+    // If the user clicks, the closest plane is selected, and as the user drags, a path is drawn.
+    public void checkSelection() {
+        if (listener.pressInit()) {
+            int closestPlaneIndex = 0;
+            double closestPlaneValue = airplanes.get(0).getDistance(Mouse.button1At.x, Mouse.button1At.y);
+            // Searching for the closest plane
+            for (int i = 1; i < airplanes.size(); i++) {
+                double dist = airplanes.get(i).getDistance(Mouse.button1At.x, Mouse.button1At.y);
+                if (dist < closestPlaneValue) {
+                    closestPlaneValue = dist;
+                    closestPlaneIndex = i;
+                }
+            }
+            
+            // If the closest plane is closer than its select distance, the user has
+            // selected the plane.
+            if (closestPlaneValue <= airplanes.get(closestPlaneIndex).getSelectDistance()){
+                planeSelected = true;
+                selectedPlaneIndex = closestPlaneIndex;
+                airplanes.get(selectedPlaneIndex).resetPath();
+            }
+        } else if (listener.mouseHeld() && planeSelected) {
+            airplanes.get(selectedPlaneIndex).pushToPath(new Point2D.Double(Mouse.button1At.x, Mouse.button1At.y));
+        } else if (listener.releaseInit()) {
+            planeSelected = false;
+            selectedPlaneIndex = -1;
+        }
+        
+        
+    }
     
     // REQUIRES: 'plane' is valid
     // MODIFIES: this
@@ -63,14 +103,44 @@ public class AirplaneState extends NodeState {
     // MODIFIES: this
     // EFFECTS: changes the state of 'this' depending on user input
     private void evalUserInput() {
-        if (Mouse.button1Pressed)
-            System.out.println("Mouse 1");
+        //if (Mouse.button1Pressed)
+            //System.out.println("Mouse 1");
     }
 }
 
 
-class ASListener implements MouseListener {
+class ASListener implements MasterMouse {
+    boolean pressInit = false;
+    boolean releaseInit = false;
+    
+    boolean mouseHold = false;
+    
+    // MODIFIES: 'pressInit'
+    // EFFECTS: returns whether the mouse was initially pressed. In other
+    // words, whether the mouse went from being not pressed to pressed since
+    // the last time this method was called. This method will only be true the
+    // first time it is called.
+    public boolean pressInit() {
+        if (pressInit){
+            pressInit = false;
+            return true;
+        }
+        return false;
+    }
+    public boolean releaseInit() {
+        if (releaseInit){
+            releaseInit = false;
+            return true;
+        }
+        return false;
+    }
+    
+    public boolean mouseHeld() {
+        return mouseHold;
+    }
+    
 	public void mouseMoved(MouseEvent e){
+        //System.out.println("MOUSE MOVED");
 	}
 	public void mouseClicked(MouseEvent e) {
 	}
@@ -79,10 +149,15 @@ class ASListener implements MouseListener {
 	public void mouseExited(MouseEvent e) {
 	}
 	public void mousePressed(MouseEvent e) {
+        pressInit = true;
+        mouseHold = true;
 	}
 	public void mouseReleased(MouseEvent e) {
+        releaseInit = true;
+        mouseHold = false;
 	}
 	public void mouseDragged(MouseEvent e) {
+        //System.out.println("MOUSE DRAGGED");
 	}
     
 }
