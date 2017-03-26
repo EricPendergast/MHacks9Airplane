@@ -11,16 +11,23 @@ import java.awt.geom.GeneralPath;
 public class Airplane {
     //x pos and y pos
     double x = 500;
-    double y = 500;
+    double y = 300;
     double speed = 0;
     // Theta is zero 
     double theta = 0;
     // The radius of the plane
     double girth = 0;
 
+    // Queue of positions. This is reset whenever the player draws a new path
+    // for the plane.
+    ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
+
     public Airplane() {
-        speed = 40;
+        speed = 100;
         theta = 7;
+
+        path.add(new Point2D.Double(100, 300));
+        path.add(new Point2D.Double(100, 100));
     }
     
     public Airplane(double x, double y) {
@@ -30,13 +37,10 @@ public class Airplane {
     public Airplane(double x, double y, double theta) {
         
     }
-    // Queue of positions. This is reset whenever the player draws a new path
-    // for the plane.
-    ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
-    
+
     //EFFECTS: returns the distance from 'this' to 'airplane'
     double getDistance(double x, double y) {
-        return Math.sqrt(Math.pow(this.x+x,2) + Math.pow(this.y+y,2));
+        return Math.sqrt(Math.pow(this.x-x,2) + Math.pow(this.y-y,2));
     }
     
     //returns true if distance is in critial threshold and false otherwise
@@ -66,7 +70,7 @@ public class Airplane {
         int iny = (int)y;
         Graphics2D g2 = (Graphics2D)g;
         int x1Points[] = {0, 10, 0, -10, 0};
-        int y1Points[] = {0,20,15,20, 0};
+        int y1Points[] = {-10,10,5,10, -10};
 
         for (int i = 0; i < x1Points.length; i++) {
             double newX = rotateX(x1Points[i], y1Points[i], theta + Math.PI / 2);
@@ -103,17 +107,18 @@ public class Airplane {
         y += dy;
         
         if (path.size() > 0) {
-            if (getDistance(path.get(0).x, path.get(0).y) < 42)
-                path.remove(0);
-            
             rotateTowards(path.get(0).x, path.get(0).y);
+
+            if (getDistance(path.get(0).x, path.get(0).y) < 42) {
+                path.remove(0);
+            }
         }
     }
     
     private void rotateTowards(double x, double y) {
         double dx = x - this.x;
         double dy = y - this.y;
-        theta = Math.atan(dy/dx);
+        theta = Math.atan2(dy, dx);
     }
     
 }
