@@ -67,7 +67,7 @@ public class AirplaneState extends NodeState {
                 planeSelected = true;
                 selectedPlaneIndex = closestPlaneIndex;
             }
-        } else if (listener.mouseHeld()) {
+        } else if (listener.mouseHeld() && planeSelected) {
             System.out.println("adding to path");
             airplanes.get(selectedPlaneIndex).pushToPath(new Point2D.Double(Mouse.button1At.x, Mouse.button1At.y));
         } else if (listener.releaseInit()) {
