@@ -17,7 +17,7 @@ import java.awt.geom.Point2D;
 public class AirplaneState extends NodeState {
     ArrayList<Airplane> airplanes = new ArrayList<Airplane>();
     ArrayList<Runway> runways = new ArrayList<>();
-
+    ArrayList<enviro> enviros = new ArrayList<>();
     ASListener listener;
     
     boolean planeSelected = false;
@@ -43,7 +43,10 @@ public class AirplaneState extends NodeState {
 
 		for (Airplane airplane :
 				airplanes) {
-			airplane.update(1.0/60);
+		    if(airplane.getC()){
+                airplane.crashseq();
+            }else{airplane.update(1.0/60);}
+
 		}
         
         checkSelection();
@@ -88,6 +91,8 @@ public class AirplaneState extends NodeState {
     }
 
     public void addRunway(Runway runway) { runways.add(runway);}
+
+    public void addEnviros(enviro environment){enviros.add(environment);}
     
     // EFFECTS: none
     public void render(Graphics2D g2) {
@@ -98,6 +103,9 @@ public class AirplaneState extends NodeState {
 		for (Runway r : runways) {
 			r.render(g2);
 		}
+		for (enviro e: enviros){
+            e.render(g2);
+        }
     }
     
     // MODIFIES: this

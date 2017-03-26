@@ -15,7 +15,7 @@ public class Airplane {
     private double speed = 100;
     // The angle of the plane. Theta is zero when plane is pointing right
     public double theta = 0;
-    
+    private boolean crashing = false;
     // The maximum distance the user has to click from the center of the
     // airplane in order to select it.
     private double selectDistance = 100;
@@ -203,6 +203,7 @@ public class Airplane {
         fuel -= 1;
         if (fuel <= 0) {
             System.out.println("PLANE CRASHED");
+            crashing = true;
         }
 
         // Either go to destination, or move in a circle
@@ -222,7 +223,15 @@ public class Airplane {
         double dy = y - this.y;
         theta = Math.atan2(dy, dx);
     }
-    
+    public void crashseq(){
+        speed = this.speed * 0.9;
+        if(Math.floor(speed) < 10){
+            this.explodeseq();
+        }
+    }
+    private void explodeseq(){
+
+    }
     public void pushToPath(Point2D.Double point) {
         path.add(point);
     }
@@ -235,6 +244,7 @@ public class Airplane {
     public double getSelectDistance() { return selectDistance; }
     public double getX() {return x;}
     public double getY() {return y;}
+    public boolean getC(){return crashing;}
 }
 
 
