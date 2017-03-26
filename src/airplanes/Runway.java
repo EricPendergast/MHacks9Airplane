@@ -22,12 +22,11 @@ public class Runway {
     }
 
     public boolean detectLand(Airplane airplane) {
-        if (airplane.x < x + width / 2 && airplane.x > x - width / 2 &&
-                airplane.y > y - length / 2 && airplane.y < y - length / 2 + 100
-                && Math.abs(airplane.theta - Math.PI / 2) < Math.PI / 7) {
-            return true;
-        }
-        return false;
+        return (airplane.getX() < x + width / 2 &&
+                airplane.getX() > x - width / 2 &&
+                airplane.getY() > y - length / 2 &&
+                airplane.getY() < y - length / 2 + 100 &&
+                Math.abs(airplane.getTheta() - Math.PI / 2) < Math.PI / 7);
     }
 
     //MODIFIES: g2
