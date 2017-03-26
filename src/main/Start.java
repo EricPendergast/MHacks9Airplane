@@ -24,7 +24,8 @@ public class Start {
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
 
         AirplaneState airplaneState = new AirplaneState(.01, 100, 20, 30);
-        airplaneState.addRunway(new Runway(500, 500, 300, 50, Color.gray));
+        airplaneState.addRunway(new Runway(500, 500, 300, 50, Color.blue));
+        airplaneState.addRunway(new Runway(800, 300, 300, 50, Color.red));
         airplaneState.addEnviros(new enviro(2000, 0, true, 1, new Color(12, 173, 12)));
         airplaneState.addEnviros(new enviro(40, 40, true, 1 , Color.orange));
         airplaneState.addEnviros(new enviro(40, 40, true, 1, Color.DARK_GRAY ));

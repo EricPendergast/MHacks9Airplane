@@ -26,7 +26,8 @@ public class Runway {
                 airplane.getX() > x - width / 2 &&
                 airplane.getY() > y - length / 2 &&
                 airplane.getY() < y - length / 2 + 100 &&
-                Math.abs(airplane.getTheta() - Math.PI / 2) < Math.PI / 7);
+                Math.abs(airplane.getTheta() - Math.PI / 2) < Math.PI / 7 &&
+                airplane.getColor().equals(this.color));
     }
 
     //MODIFIES: g2
@@ -54,16 +55,16 @@ public class Runway {
 
         polygon.closePath();
         g2.translate(x, y);
-        g2.setColor(this.color);
+        g2.setColor(Color.gray);
         g2.draw(polygon);
         g2.fill(polygon);
         g2.translate(-x, -y);
     }
 
     private void drawRunwayStripe(Graphics2D g2) {
-        int xCorner = (int) (width / 16);
+        int xCorner = (int) (width / 20);
         int yCorner = (int) (length / 2);
-        int x1Points[] = {xCorner, xCorner, (int)(xCorner - width / 8), (int)(xCorner - width / 8)};
+        int x1Points[] = {xCorner, xCorner, (int)(xCorner - width / 10), (int)(xCorner - width / 10)};
         int y1Points[] = {yCorner, (int)(yCorner - length), (int)(yCorner - length), yCorner};
 
         // Drawing Runway
@@ -78,7 +79,7 @@ public class Runway {
 
         polygon.closePath();
         g2.translate(x, y);
-        g2.setColor(Color.white);
+        g2.setColor(this.color);
         g2.draw(polygon);
         g2.fill(polygon);
         g2.translate(-x, -y);

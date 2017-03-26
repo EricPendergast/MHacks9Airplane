@@ -187,17 +187,19 @@ public class Airplane {
     }
 
     private void drawPath(Graphics2D g2) {
-        g2.setStroke(new BasicStroke(3, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
-        g2.setColor(color);
-        if(path.size() > 0)
-            g2.drawLine((int)path.get(0).x, (int)path.get(0).y, (int)x, (int)y);
-        
-        for(int i = 0; i+1 < path.size(); i++) {
-            g2.drawLine((int)path.get(i).x, (int)path.get(i).y,
-                        (int)path.get(i+1).x, (int)path.get(i+1).y);
+        if (path.size() > 1) {
+            g2.setStroke(new BasicStroke(3, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+            g2.setColor(color);
+            if (path.size() > 0)
+                g2.drawLine((int) path.get(0).x, (int) path.get(0).y, (int) x, (int) y);
+
+            for (int i = 0; i + 1 < path.size(); i++) {
+                g2.drawLine((int) path.get(i).x, (int) path.get(i).y,
+                        (int) path.get(i + 1).x, (int) path.get(i + 1).y);
+            }
+
+            g2.setStroke(new BasicStroke(1));
         }
-        
-        g2.setStroke(new BasicStroke(1));
     }
     
     public void update(double dt) {
@@ -287,7 +289,8 @@ public class Airplane {
     public double getDX() {return speed * Math.cos(theta);}
     public double getDY() {return speed * Math.sin(theta);}
     public double getTheta() {return theta;}
-    public boolean getC(){return crashing;}
+    public boolean getC() {return crashing;}
+    public Color getColor() {return this.color;}
 }
 
 
