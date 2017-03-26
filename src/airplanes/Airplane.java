@@ -27,7 +27,7 @@ public class Airplane {
     private final double defFuel = 3000;
     private double fuel = defFuel;
     private Color color;
-    
+
     // The minimum angle per time the plane can turn at.
     private double thetaThresh = 100;
     
@@ -36,7 +36,7 @@ public class Airplane {
     // plane targets
     private ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
 
-    
+    public int[]FireArrayX = {}
     public Airplane() {
         path.add(new Point2D.Double(100, 300));
         path.add(new Point2D.Double(100, 100));
