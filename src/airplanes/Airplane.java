@@ -68,11 +68,11 @@ public class Airplane {
     //MODIFIES: g2
     //EFFECTS: renders the airplane to g2
     void render(Graphics2D g) {
-        AffineTransform oldXForm = g.getTransform();
+        //AffineTransform oldXForm = g.getTransform();
         drawPlane(g);
-        g.setTransform(oldXForm);
+        //g.setTransform(oldXForm);
         drawGBar(g);
-        //drawRBar(g);
+        drawRBar(g);
         drawPath(g);
     }
     
@@ -103,7 +103,6 @@ public class Airplane {
         polygon.closePath();
         g2.translate(inx, iny);
         g2.setColor(color);
-        g2.setBackground(Color.darkGray);
         g2.draw(polygon);
         g2.fill(polygon);
         g2.translate(-inx, -iny);
@@ -139,8 +138,8 @@ public class Airplane {
         g2.setColor(Color.green);
         g2.draw(polygon);
         g2.fill(polygon);
-
-        // Drawing Red
+        g2.setColor(Color.black);
+        g2.translate(-x, -y);
     }
 
     private void drawRBar(Graphics2D g2) {
@@ -171,6 +170,7 @@ public class Airplane {
         g2.setColor(Color.red);
         g2.draw(polygon);
         g2.fill(polygon);
+        g2.translate(-x, -y);
     }
 
     private void drawPath(Graphics2D g2) {

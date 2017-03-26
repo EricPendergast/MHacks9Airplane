@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a982279-90c2-4a2e-b6c9-f65cc74e971a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/.Start.java.swo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/states/.NodeState.java.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/airplanes/Airplane.class" afterPath="$PROJECT_DIR$/src/airplanes/Airplane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/airplanes/AirplaneState.class" afterPath="$PROJECT_DIR$/src/airplanes/AirplaneState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Start.class" afterPath="$PROJECT_DIR$/src/main/Start.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/airplanes/Airplane.java" afterPath="$PROJECT_DIR$/src/airplanes/Airplane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Start.java" afterPath="$PROJECT_DIR$/src/main/Start.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +22,8 @@
       <file leaf-file-name="Airplane.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/airplanes/Airplane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="165">
+              <caret line="74" column="7" lean-forward="false" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#710#726#0" expanded="true" />
@@ -67,8 +63,8 @@
       <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="24" column="83" lean-forward="false" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
+            <state relative-caret-position="150">
+              <caret line="25" column="80" lean-forward="false" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -556,14 +552,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/airplanes/AirplaneState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/airplanes/Airplane.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -572,10 +560,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/airplanes/AirplaneState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="24" column="83" lean-forward="false" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
+        <state relative-caret-position="150">
+          <caret line="25" column="80" lean-forward="false" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -600,8 +596,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/airplanes/Airplane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="165">
+          <caret line="74" column="7" lean-forward="false" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#710#726#0" expanded="true" />
