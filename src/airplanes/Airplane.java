@@ -15,6 +15,7 @@ public class Airplane {
     double speed = 100;
     double theta = 0;   // Theta is zero when plane is pointing right
     double girth = 10;   // Radius of the plane
+    double dTheta = .01;
     Color color;
     
     // Queue of positions. This is reset whenever the player draws a new path
@@ -119,6 +120,8 @@ public class Airplane {
             if (getDistance(path.get(0).x, path.get(0).y) < 42) {
                 path.remove(0);
             }
+        } else {
+            theta += dTheta;
         }
     }
     
