@@ -10,12 +10,13 @@ import java.awt.geom.GeneralPath;
 
 public class Airplane {
     //x pos and y pos
-    public double x = 500;
-    public double y = 300;
+    private double x = 500;
+    private double y = 300;
     private double speed = 100;
     // The angle of the plane. Theta is zero when plane is pointing right
-    public double theta = 0;
-    
+    private double theta = 0;
+    private boolean crashing = false;
+
     // The maximum distance the user has to click from the center of the
     // airplane in order to select it.
     private double selectDistance = 100;
@@ -190,8 +191,10 @@ public class Airplane {
             g2.drawLine((int)path.get(0).x, (int)path.get(0).y, (int)x, (int)y);
         
         for(int i = 0; i+1 < path.size(); i++) {
-            g2.drawLine((int)path.get(i).x, (int)path.get(i).y, (int)path.get(i+1).x, (int)path.get(i+1).y);
+            g2.drawLine((int)path.get(i).x, (int)path.get(i).y,
+                        (int)path.get(i+1).x, (int)path.get(i+1).y);
         }
+        
         g2.setStroke(new BasicStroke(1));
     }
     
@@ -207,6 +210,7 @@ public class Airplane {
         fuel -= 1;
         if (fuel <= 0) {
             System.out.println("PLANE CRASHED");
+            crashing = true;
         }
 
         // Either go to destination, or move in a circle
@@ -254,6 +258,16 @@ public class Airplane {
     //    return new Point2D.Double(proposed.x, proposed.y);
     //}
     
+    public void crashseq(){
+        speed = this.speed * 0.9;
+        if(Math.floor(speed) < 10){
+            this.explodeseq();
+        }
+    }
+    private void explodeseq(){
+
+    }
+    
     public void pushToPath(Point2D.Double point) {
         //Point2D.Double vel = new Point2D.Double(speed*Math.cos(theta), speed*Math.sin(theta));
         //path.add(applyThreshold(vel, point));
@@ -270,6 +284,8 @@ public class Airplane {
     public double getY() {return y;}
     public double getDX() {return speed * Math.cos(theta);}
     public double getDY() {return speed * Math.sin(theta);}
+    public double getTheta() {return theta;}
+    public boolean getC(){return crashing;}
 }
 
 

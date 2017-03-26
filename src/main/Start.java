@@ -18,13 +18,16 @@ import states.*;
 import java.util.*;
 
 public class Start {
+    AirplaneState[] levels = new AirplaneState[10];
+
     public static void main(String[] args) throws IOException{
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
-        AirplaneState airplaneState = new AirplaneState();
-        airplaneState.addAirplane(new Airplane());
-        airplaneState.addAirplane(new Airplane(500, 500, 700, 300, 100, Color.orange));
-        airplaneState.addAirplane(new Airplane(500, 500, 100, 300, 50, Color.cyan));
+        AirplaneState airplaneState = new AirplaneState(.01, 100, 20, 30);
+//        airplaneState.addAirplane(new Airplane());
+//        airplaneState.addAirplane(new Airplane(500, 500, 700, 300, 100, Color.orange));
+//        airplaneState.addAirplane(new Airplane(500, 500, 100, 300, 50, Color.cyan));
         airplaneState.addRunway(new Runway(500, 500, 300, 50, Color.gray));
+        airplaneState.addEnviros(new enviro(40, 40, true, 1 ));
         game.addState(airplaneState);
         game.start();
         //game.addState(cells);

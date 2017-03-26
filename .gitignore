@@ -5,4 +5,5 @@ tags
 Session.vim
 .vimrc
 .project
-.idea/
+.idea/**
+*.iml
