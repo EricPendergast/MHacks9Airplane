@@ -49,7 +49,8 @@ public class AirplaneState extends NodeState {
         checkSelection();
 	}
     
-    // If the user clicks, the closest plane is selected, and as the user drags, a path is drawn.
+    // If the user clicks, the closest plane is selected, and as the user
+    // drags, a path is drawn.
     public void checkSelection() {
         if (listener.pressInit()) {
             int closestPlaneIndex = 0;
@@ -63,22 +64,24 @@ public class AirplaneState extends NodeState {
                 }
             }
             
-            // If the closest plane is closer than its select distance, the user has
-            // selected the plane.
+            // If the closest plane is closer than its select distance, the
+            // user has selected the plane.
             if (closestPlaneValue <= airplanes.get(closestPlaneIndex).getSelectDistance()){
                 planeSelected = true;
                 selectedPlaneIndex = closestPlaneIndex;
                 airplanes.get(selectedPlaneIndex).resetPath();
             }
         } else if (listener.mouseHeld() && planeSelected) {
+            //Airplane plane = airplanes.get(selectedPlaneIndex);
+            //plane.pushToPath(plane.applyThreshold(new Point2D.Double(plane.getDX(), plane.getDY()), new Point2D.Double(Mouse.button1At.x, Mouse.button1At.y)));
             airplanes.get(selectedPlaneIndex).pushToPath(new Point2D.Double(Mouse.button1At.x, Mouse.button1At.y));
         } else if (listener.releaseInit()) {
             planeSelected = false;
             selectedPlaneIndex = -1;
         }
         
-        
     }
+    
     
     // REQUIRES: 'plane' is valid
     // MODIFIES: this
@@ -157,7 +160,6 @@ class ASListener implements MasterMouse {
         mouseHold = false;
 	}
 	public void mouseDragged(MouseEvent e) {
-        //System.out.println("MOUSE DRAGGED");
+        
 	}
-    
 }

@@ -21,11 +21,14 @@ public class Airplane {
     private double selectDistance = 100;
     // Radius of the plane. This is used for detecting collisions.
     private double girth = 10;
-    // The rate of change of theta
+    // The rate of change of theta with respect to time when circling
     private double dTheta = .01;
     private final double defFuel = 3000;
     private double fuel = defFuel;
     private Color color;
+    
+    // The minimum angle per time the plane can turn at.
+    private double thetaThresh = 100;
     
     // Queue of positions. This is reset whenever the player draws a new path
     // for the plane. The first item in 'path' is the first point that the
@@ -181,7 +184,8 @@ public class Airplane {
     }
 
     private void drawPath(Graphics2D g2) {
-        g2.setStroke(new BasicStroke(7, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        g2.setStroke(new BasicStroke(3, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        g2.setColor(color);
         if(path.size() > 0)
             g2.drawLine((int)path.get(0).x, (int)path.get(0).y, (int)x, (int)y);
         
@@ -209,7 +213,9 @@ public class Airplane {
         if (path.size() > 0) {
             rotateTowards(path.get(0).x, path.get(0).y);
 
-            if (getDistance(path.get(0).x, path.get(0).y) < 42) {
+            while ( path.size() > 0 && 
+                    getDistance(path.get(0).x, path.get(0).y) < 42) {
+                rotateTowards(path.get(0).x, path.get(0).y);
                 path.remove(0);
             }
         } else {
@@ -223,7 +229,34 @@ public class Airplane {
         theta = Math.atan2(dy, dx);
     }
     
+    
+    //public Point2D.Double applyThreshold(Point2D.Double velocity, Point2D.Double proposed) {
+    //    double magV = Math.sqrt(velocity.x*velocity.x + velocity.y*velocity.y);
+    //    double magP = Math.sqrt(proposed.x*proposed.x + proposed.y*proposed.y);
+    //    double angleBetween =
+    //            Math.acos((velocity.x*proposed.x + velocity.y*proposed.y) /
+    //            (magV * magP));
+    //
+    //    double magicNumber = thetaThresh / (magV+magP);
+    //    System.out.println(angleBetween);
+    //
+    //    if (angleBetween < magicNumber) {
+    //        // rotate 'proposed' until its angle with 'velocity' is the
+    //        // threshold
+    //        double angleToRotate = magicNumber - angleBetween;
+    //        double cos = Math.cos(angleToRotate);
+    //        double sin = Math.sin(angleToRotate);
+    //        return new Point2D.Double(  proposed.x*cos - proposed.y*sin,
+    //                                    proposed.x*sin + proposed.y*cos);
+    //
+    //    }
+    //
+    //    return new Point2D.Double(proposed.x, proposed.y);
+    //}
+    
     public void pushToPath(Point2D.Double point) {
+        //Point2D.Double vel = new Point2D.Double(speed*Math.cos(theta), speed*Math.sin(theta));
+        //path.add(applyThreshold(vel, point));
         path.add(point);
     }
     
@@ -235,6 +268,8 @@ public class Airplane {
     public double getSelectDistance() { return selectDistance; }
     public double getX() {return x;}
     public double getY() {return y;}
+    public double getDX() {return speed * Math.cos(theta);}
+    public double getDY() {return speed * Math.sin(theta);}
 }
 
 
