@@ -24,8 +24,8 @@ public class Start {
     public static void main(String[] args) throws IOException{
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
 
-        //TitleState title = new TitleState();
-        //game.addState(title);
+        TitleState title = new TitleState(game);
+        game.addState(title);
         
         AirplaneState airplaneState = new AirplaneState(.01, 100, 20, 30);
         airplaneState.addRunway(new Runway(500, 500, 300, 50, niceColors[1]));
