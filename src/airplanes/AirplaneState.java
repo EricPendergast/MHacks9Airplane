@@ -186,6 +186,10 @@ public class AirplaneState extends NodeState {
     
     // EFFECTS: none
     public void render(Graphics2D g2) {
+        for (enviro e: enviros){
+            e.render(g2);
+        }
+
         for (Runway r : runways) {
             r.render(g2);
         }
@@ -193,10 +197,6 @@ public class AirplaneState extends NodeState {
         for (Airplane a : airplanes) {
 			a.render(g2);
 		}
-
-		for (enviro e: enviros){
-            e.render(g2);
-        }
     }
     
     // MODIFIES: this
