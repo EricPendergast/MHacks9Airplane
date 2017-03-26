@@ -18,11 +18,15 @@ import states.*;
 import java.util.*;
 
 public class Start {
+    public static Color[] niceColors = {new Color(0x89C73E), new Color(0xBAC5CC)};
     AirplaneState[] levels = new AirplaneState[10];
 
     public static void main(String[] args) throws IOException{
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
 
+        //TitleState title = new TitleState();
+        //game.addState(title);
+        
         AirplaneState airplaneState = new AirplaneState(.01, 100, 20, 30);
         airplaneState.addRunway(new Runway(500, 500, 300, 50, Color.blue));
         airplaneState.addRunway(new Runway(800, 300, 300, 50, Color.red));
@@ -33,6 +37,7 @@ public class Start {
         airplaneState.addEnviros(new enviro(40, 90, true, 1, Color.DARK_GRAY ));
 
         game.addState(airplaneState);
+        
         game.start();
         //game.addState(cells);
         //game.addState(new StartMenu(cells.getRunner(),game));

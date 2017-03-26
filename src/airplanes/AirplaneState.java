@@ -31,7 +31,7 @@ public class AirplaneState extends NodeState {
     ASListener listener;
     
     boolean planeSelected = false;
-    int selectedPlaneIndex = -1;
+    Airplane selectedPlane = null;
     
     //REQUIRES: game is valid
     //MODIFIES: this
@@ -72,7 +72,7 @@ public class AirplaneState extends NodeState {
 		rndFuncs();
 
 		// COMMENT OUT UNTIL CHECK SELECTION METHOD FIXED
-		//landedPlanes();
+		landedPlanes();
 
         if (collisionDetection()) {
             System.out.println("You lose!");
@@ -146,9 +146,10 @@ public class AirplaneState extends NodeState {
         return false;
     }
 
-    // If the user clicks, the closest plane is selected, and as the user drags, a path is drawn.
+    // If the user clicks, the closest plane is selected, and as the user
+    // drags, a path is drawn.
     public void checkSelection() {
-        if (listener.pressInit()) {
+        if (listener.pressInit() && airplanes.size() > 0) {
             int closestPlaneIndex = 0;
             double closestPlaneValue = airplanes.get(0).getDistance(Mouse.button1At.x, Mouse.button1At.y);
             // Searching for the closest plane
@@ -164,16 +165,16 @@ public class AirplaneState extends NodeState {
             // user has selected the plane.
             if (closestPlaneValue <= airplanes.get(closestPlaneIndex).getSelectDistance()){
                 planeSelected = true;
-                selectedPlaneIndex = closestPlaneIndex;
-                airplanes.get(selectedPlaneIndex).resetPath();
+                selectedPlane = airplanes.get(closestPlaneIndex);
+                selectedPlane.resetPath();
             }
         } else if (listener.mouseHeld() && planeSelected) {
             //Airplane plane = airplanes.get(selectedPlaneIndex);
             //plane.pushToPath(plane.applyThreshold(new Point2D.Double(plane.getDX(), plane.getDY()), new Point2D.Double(Mouse.button1At.x, Mouse.button1At.y)));
-            airplanes.get(selectedPlaneIndex).pushToPath(new Point2D.Double(Mouse.button1At.x, Mouse.button1At.y));
+            selectedPlane.pushToPath(new Point2D.Double(Mouse.button1At.x, Mouse.button1At.y));
         } else if (listener.releaseInit()) {
             planeSelected = false;
-            selectedPlaneIndex = -1;
+            selectedPlane = null;
         }
         
     }
