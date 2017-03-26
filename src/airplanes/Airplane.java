@@ -27,7 +27,7 @@ public class Airplane {
     private final double defFuel = 3000;
     private double fuel = defFuel;
     private Color color;
-    
+
     // The minimum angle per time the plane can turn at.
     private double thetaThresh = 100;
     
@@ -36,7 +36,7 @@ public class Airplane {
     // plane targets
     private ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
 
-    
+    public int[]FireArrayX = {}
     public Airplane() {
         path.add(new Point2D.Double(100, 300));
         path.add(new Point2D.Double(100, 100));
@@ -90,15 +90,17 @@ public class Airplane {
     private void drawPlane(Graphics2D g2) {
         int inx = (int)x;
         int iny = (int)y;
-        int x1Points[] = {0, 10, 0, -10, 0};
-        int y1Points[] = {-10,10,5,10, -10};
+        int x1Points[] = {0, 1, 1, 7, 7, 1, 1, 3, 1, 0, -1, -3, -1, -1, -6, -6, -1, -1};
+        int y1Points[] = {-10,-8,-5,0, 1,-1, 5, 7, 7, 9, 7, 7, 5, -1, 1, 0, -5, -8};
 
         // Rotate shape
         for (int i = 0; i < x1Points.length; i++) {
             double newX = rotateX(x1Points[i], y1Points[i], theta + Math.PI / 2);
             double newY = rotateY(x1Points[i], y1Points[i], theta + Math.PI / 2);
-            x1Points[i] = (int) newX;
-            y1Points[i] = (int) newY;
+            x1Points[i] = (int)  Math.floor(newX);
+            y1Points[i] = (int)  Math.floor(newY);
+            x1Points[i] = x1Points[i] * 3;
+            y1Points[i] = y1Points[i] * 3;
         }
 
         // Drawing Airplane
