@@ -16,7 +16,7 @@ public class enviro {
     public Color color;
     int x_level1_tower1[] = {0, 40, 40, 0};
     int y_level1_tower1[] = {0, 0, 40, 40};
-    public enviro(int size, int center, boolean hitbox, int level){
+    public enviro(int size, int center, boolean hitbox, int level, Color incolor){
         x_level1_tower1[0] = center;
         x_level1_tower1[1] = center + size;
         x_level1_tower1[2] = center + size;
@@ -25,6 +25,7 @@ public class enviro {
         y_level1_tower1[1] = center;
         y_level1_tower1[2] = center + size;
         y_level1_tower1[3] = center + size;
+        color = incolor;
     }
 
     void render(Graphics2D g) {

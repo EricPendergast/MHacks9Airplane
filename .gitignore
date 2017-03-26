@@ -5,4 +5,7 @@ tags
 Session.vim
 .vimrc
 .project
+.idea/workspace.xml
+.idea/tasks.xml
+**/.idea/
 .idea/
