@@ -27,6 +27,7 @@ public class Start {
 //        airplaneState.addAirplane(new Airplane(500, 500, 700, 300, 100, Color.orange));
 //        airplaneState.addAirplane(new Airplane(500, 500, 100, 300, 50, Color.cyan));
         airplaneState.addRunway(new Runway(500, 500, 300, 50, Color.gray));
+        airplaneState.addEnviros(new enviro(40, 40, true, 1 ));
         game.addState(airplaneState);
         game.start();
         //game.addState(cells);

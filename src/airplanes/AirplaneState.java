@@ -25,6 +25,8 @@ public class AirplaneState extends NodeState {
     double stdVel = 20;
     int numPlanes = 30;
 
+    ArrayList<enviro> enviros = new ArrayList<>();
+
     ASListener listener;
     
     boolean planeSelected = false;
@@ -56,7 +58,10 @@ public class AirplaneState extends NodeState {
 		// Update all airplanes
 		for (Airplane airplane :
 				airplanes) {
-			airplane.update(1.0/60);
+		    if(airplane.getC()){
+                airplane.crashseq();
+            }else{airplane.update(1.0/60);}
+
 		}
 
 		// Generates random places
@@ -175,6 +180,8 @@ public class AirplaneState extends NodeState {
     }
 
     public void addRunway(Runway runway) { runways.add(runway);}
+
+    public void addEnviros(enviro environment){enviros.add(environment);}
     
     // EFFECTS: none
     public void render(Graphics2D g2) {
@@ -185,6 +192,16 @@ public class AirplaneState extends NodeState {
         for (Airplane a : airplanes) {
 			a.render(g2);
 		}
+<<<<<<< HEAD
+=======
+
+		for (Runway r : runways) {
+			r.render(g2);
+		}
+		for (enviro e: enviros){
+            e.render(g2);
+        }
+>>>>>>> bebf14be35583edb8f5e82bb1be7feac50ce4227
     }
     
     // MODIFIES: this
