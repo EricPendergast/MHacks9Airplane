@@ -10,12 +10,13 @@ import java.awt.geom.GeneralPath;
 
 public class Airplane {
     //x pos and y pos
-    public double x = 500;
-    public double y = 300;
+    private double x = 500;
+    private double y = 300;
     private double speed = 100;
     // The angle of the plane. Theta is zero when plane is pointing right
-    public double theta = 0;
+    private double theta = 0;
     private boolean crashing = false;
+
     // The maximum distance the user has to click from the center of the
     // airplane in order to select it.
     private double selectDistance = 100;
@@ -181,14 +182,16 @@ public class Airplane {
     }
 
     private void drawPath(Graphics2D g2) {
-        g2.setStroke(new BasicStroke(7, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
-        if(path.size() > 0)
-            g2.drawLine((int)path.get(0).x, (int)path.get(0).y, (int)x, (int)y);
-        
-        for(int i = 0; i+1 < path.size(); i++) {
-            g2.drawLine((int)path.get(i).x, (int)path.get(i).y, (int)path.get(i+1).x, (int)path.get(i+1).y);
+        if (path.size() > 1) {
+            g2.setStroke(new BasicStroke(7, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+            if (path.size() > 0)
+                g2.drawLine((int) path.get(0).x, (int) path.get(0).y, (int) x, (int) y);
+
+            for (int i = 0; i + 1 < path.size(); i++) {
+                g2.drawLine((int) path.get(i).x, (int) path.get(i).y, (int) path.get(i + 1).x, (int) path.get(i + 1).y);
+            }
+            g2.setStroke(new BasicStroke(1));
         }
-        g2.setStroke(new BasicStroke(1));
     }
     
     public void update(double dt) {
@@ -244,6 +247,7 @@ public class Airplane {
     public double getSelectDistance() { return selectDistance; }
     public double getX() {return x;}
     public double getY() {return y;}
+    public double getTheta() {return theta;}
     public boolean getC(){return crashing;}
 }
 

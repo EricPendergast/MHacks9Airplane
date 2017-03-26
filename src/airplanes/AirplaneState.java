@@ -17,7 +17,16 @@ import java.awt.geom.Point2D;
 public class AirplaneState extends NodeState {
     ArrayList<Airplane> airplanes = new ArrayList<Airplane>();
     ArrayList<Runway> runways = new ArrayList<>();
+
+    // Rnd level stuff
+    Random rnd = new Random();
+    double planeFreq = .05;
+    double meanVel = 100;
+    double stdVel = 20;
+    int numPlanes = 30;
+
     ArrayList<enviro> enviros = new ArrayList<>();
+
     ASListener listener;
     
     boolean planeSelected = false;
@@ -26,9 +35,14 @@ public class AirplaneState extends NodeState {
     //REQUIRES: game is valid
     //MODIFIES: this
     //EFFECTS: initializes 'this' with a game object
-	public AirplaneState(){
+	public AirplaneState(double pf, double meanV, double stdVel, int numPlanes){
         listener = new ASListener();
         Mouse.addMouseListener(listener);
+
+        this.planeFreq = pf;
+        this.meanVel = meanV;
+        this.stdVel = stdVel;
+        this.numPlanes = numPlanes;
 	}
    
     //MODIFIES: this
@@ -41,6 +55,7 @@ public class AirplaneState extends NodeState {
 			updated = true;
 		}
 
+		// Update all airplanes
 		for (Airplane airplane :
 				airplanes) {
 		    if(airplane.getC()){
@@ -48,10 +63,84 @@ public class AirplaneState extends NodeState {
             }else{airplane.update(1.0/60);}
 
 		}
-        
+
+		// Generates random places
+		rndFuncs();
+
+		// COMMENT OUT UNTIL CHECK SELECTION METHOD FIXED
+		//landedPlanes();
+
+        if (collisionDetection()) {
+            System.out.println("You lose!");
+        }
+
+        if (winLevel()) {
+            System.out.println("You win!!!");
+        }
+
         checkSelection();
 	}
-    
+
+	private void rndFuncs() {
+	    if (numPlanes > 0 && rnd.nextDouble() < planeFreq) {
+	        makeNewPlane();
+	        numPlanes--;
+        }
+    }
+
+    private void makeNewPlane() {
+	    int rand = rnd.nextInt(4);
+	    double destX = 600 + rnd.nextGaussian() * 150;
+        double destY = 325 + rnd.nextGaussian() * 100;
+        double vel = rnd.nextGaussian() * stdVel + meanVel;
+        Color color = Color.blue;
+
+	    if (rand == 0) {
+            addAirplane(new Airplane(-100, rnd.nextInt(550) + 100, destX, destY, vel, color));
+        } else if (rand == 1) {
+            addAirplane(new Airplane(1300, rnd.nextInt(550) + 100, destX, destY, vel, color));
+        } else if (rand == 2) {
+            addAirplane(new Airplane(rnd.nextInt(900) + 100, -100, destX, destY, vel, color));
+        } else if (rand == 4) {
+            addAirplane(new Airplane(rnd.nextInt(900) + 100, 850, destX, destY, vel, color));
+        }
+    }
+
+	private void landedPlanes() {
+        // Delete the airplanes that land
+        ArrayList<Airplane> toDelete = new ArrayList<>();
+
+        for (Airplane a : airplanes) {
+            for (Runway r : runways) {
+                if (r.detectLand(a)) {
+                    toDelete.add(a);
+                }
+            }
+        }
+
+        for (Airplane a : toDelete) {
+            airplanes.remove(a);
+        }
+    }
+
+    private boolean collisionDetection() {
+        for (Airplane a1 : airplanes) {
+            for (Airplane a2 : airplanes) {
+                if (!a1.equals(a2) && a1.collide(a2)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private boolean winLevel() {
+	    if (numPlanes == 0 && airplanes.size() == 0) {
+	        return true;
+        }
+        return false;
+    }
+
     // If the user clicks, the closest plane is selected, and as the user drags, a path is drawn.
     public void checkSelection() {
         if (listener.pressInit()) {
@@ -99,14 +188,13 @@ public class AirplaneState extends NodeState {
         for (enviro e: enviros){
             e.render(g2);
         }
+        for (Runway r : runways) {
+            r.render(g2);
+        }
+
         for (Airplane a : airplanes) {
 			a.render(g2);
 		}
-
-		for (Runway r : runways) {
-			r.render(g2);
-		}
-
     }
     
     // MODIFIES: this
@@ -116,7 +204,6 @@ public class AirplaneState extends NodeState {
             //System.out.println("Mouse 1");
     }
 }
-
 
 class ASListener implements MasterMouse {
     boolean pressInit = false;

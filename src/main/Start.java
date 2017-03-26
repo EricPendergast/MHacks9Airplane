@@ -18,9 +18,11 @@ import states.*;
 import java.util.*;
 
 public class Start {
+    AirplaneState[] levels = new AirplaneState[10];
+
     public static void main(String[] args) throws IOException{
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
-        AirplaneState airplaneState = new AirplaneState();
+        AirplaneState airplaneState = new AirplaneState(.01, 100, 20, 30);
         airplaneState.addEnviros(new enviro(2000, 0, true, 1, Color.GREEN ));
         airplaneState.addAirplane(new Airplane());
         airplaneState.addAirplane(new Airplane(500, 500, 700, 300, 100, Color.orange));

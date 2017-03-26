@@ -9,3 +9,6 @@ Session.vim
 .idea/tasks.xml
 **/.idea/
 .idea/
+.idea/**
+*.iml
+
