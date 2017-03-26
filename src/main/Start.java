@@ -24,6 +24,9 @@ public class Start {
     public static void main(String[] args) throws IOException{
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
 
+        //TitleState title = new TitleState();
+        //game.addState(title);
+        
         AirplaneState airplaneState = new AirplaneState(.01, 100, 20, 30);
         airplaneState.addRunway(new Runway(500, 500, 300, 50, niceColors[1]));
         airplaneState.addEnviros(new enviro(2000, 0, true, 1, niceColors[0]));
@@ -34,9 +37,6 @@ public class Start {
 
         game.addState(airplaneState);
         
-        TitleState title = new TitleState();
-        
-        game.addState(title);
         game.start();
         //game.addState(cells);
         //game.addState(new StartMenu(cells.getRunner(),game));

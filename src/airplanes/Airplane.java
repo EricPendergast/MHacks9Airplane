@@ -36,7 +36,7 @@ public class Airplane {
     // plane targets
     private ArrayList<Point2D.Double> path = new ArrayList<Point2D.Double>();
 
-    public int[]FireArrayX = {}
+    public int[]FireArrayX = {};
     public Airplane() {
         path.add(new Point2D.Double(100, 300));
         path.add(new Point2D.Double(100, 100));
@@ -281,24 +281,6 @@ public class Airplane {
     }
     
     public static Color[] planeColors = {new Color(0x95BBED), new Color(0xED95E7)};
-    public static Airplane randAirplaneFactory() {
-        Random rnd = new Random();
-	    int rand = rnd.nextInt(4);
-	    double destX = 600 + rnd.nextGaussian() * 150;
-        double destY = 325 + rnd.nextGaussian() * 100;
-        double vel = rnd.nextGaussian() * stdVel + meanVel;
-        Color color = Color.BLUE ;
-        
-	    if (rand == 0) {
-            return new Airplane(-100, rnd.nextInt(550) + 100, destX, destY, vel, color);
-        } else if (rand == 1) {
-            return new Airplane(1300, rnd.nextInt(550) + 100, destX, destY, vel, color);
-        } else if (rand == 2) {
-            return new Airplane(rnd.nextInt(900) + 100, -100, destX, destY, vel, color);
-        } else {
-            return new Airplane(rnd.nextInt(900) + 100, 850, destX, destY, vel, color);
-        }
-    }
     
     public double getGirth() { return girth; }
     public double getSelectDistance() { return selectDistance; }
