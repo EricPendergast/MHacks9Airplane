@@ -1,5 +1,9 @@
 package airplanes;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -85,6 +89,17 @@ public class Airplane {
         drawRBar(g);
         drawPath(g);
         drawPlane(g);
+
+        if (crashing == true) {
+            BufferedImage img = null;
+            try {
+                img = ImageIO.read(new File("gameover.jpg"));
+            } catch (IOException e) {
+                System.out.println("Can't find file");
+            }
+
+            g.drawImage(img, 0, 0, null);
+        }
     }
     
     private void drawPlane(Graphics2D g2) {
@@ -187,7 +202,7 @@ public class Airplane {
     }
 
     private void drawPath(Graphics2D g2) {
-        if (path.size() > 1) {
+        if (path.size() > 1 && fuel > 0) {
             g2.setStroke(new BasicStroke(3, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
             g2.setColor(color);
             if (path.size() > 0)
@@ -211,8 +226,9 @@ public class Airplane {
 
         // Reduce fuel
 
-        fuel -= 10;
+        fuel -= 5;
         if (fuel <= 0) {
+            fuel = 0;
             System.out.println("PLANE CRASHED");
             crashing = true;
         }
@@ -263,18 +279,25 @@ public class Airplane {
     //}
     
     public void crashseq(Graphics2D g2){
-        speed = this.speed * 0.9;
+        speed = this.speed * 0.95;
+        dTheta = dTheta * 0.95;
         if(Math.floor(speed) < 10){
             this.explodeseq(g2);
         }
     }
+
     private void explodeseq(Graphics2D g2){
-        int[]FireArrayX = {0, 3, 5, 6, 7, 6, 5, 4, 4, 5,
+        int[] FireArrayX = {0, 3, 5, 6, 7, 6, 5, 4, 4, 5,
                 4, 3, 2, 1, 0, 1, 0, -1, -2, -3, -4, -4, -2, -3, -3, -5, -6, -5, -6, -5, -3, -2};
-        int[]FireArrayY = {-3 ,-2, -1, 1, 4, 8, 10, 9, 8, 6,
+        int[] FireArrayY = {-3 ,-2, -1, 1, 4, 8, 10, 9, 8, 6,
                 5, 6, 8, 9, 8, 5, 3, 5, 7, 8, 7, 5, 4, 1, 2, 6, 3, 1, -1, -2, -1, -1};
-        int[]InFireX = {-5, -4, -5, -5, -4, -3, -2, -2, 0, 1, 2, 3, 5, 6, 4, 1};
-        int[]InFireY = {-1, 1, 2, 3, 2, 0, 1, 3, 2, 3, 6, 4, 5, 3, 0, -1};
+
+        for (int i = 0; i < FireArrayX.length; i++) {
+            FireArrayX[i] *= 2;
+            FireArrayY[i] *= 2;
+        }
+        //int[]InFireX = {-5, -4, -5, -5, -4, -3, -2, -2, 0, 1, 2, 3, 5, 6, 4, 1};
+        //int[]InFireY = {-1, 1, 2, 3, 2, 0, 1, 3, 2, 3, 6, 4, 5, 3, 0, -1};
         GeneralPath polygon =
                 new GeneralPath(GeneralPath.WIND_EVEN_ODD,
                         FireArrayX.length);
@@ -284,9 +307,11 @@ public class Airplane {
             polygon.lineTo(FireArrayX[index], FireArrayY[index]);
         }
         polygon.closePath();
+        g2.translate(x, y);
         g2.setColor(Color.red);
         g2.draw(polygon);
         g2.fill(polygon);
+        g2.translate(-x, -y);
     }
     
     public void pushToPath(Point2D.Double point) {

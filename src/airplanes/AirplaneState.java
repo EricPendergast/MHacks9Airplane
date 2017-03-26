@@ -7,6 +7,11 @@ import java.awt.event.KeyEvent;
 
 import states.Game;
 import states.NodeState;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.awt.*;
 
@@ -27,6 +32,8 @@ public class AirplaneState extends NodeState {
     ArrayList<Color> planeTypes = new ArrayList<>();
 
     ArrayList<enviro> enviros = new ArrayList<>();
+
+    ArrayList<Hud> huds = new ArrayList<>();
 
     ASListener listener;
     
@@ -62,9 +69,9 @@ public class AirplaneState extends NodeState {
 
 		// Update all airplanes
         for (Airplane airplane : airplanes) {
-		    if(!airplane.getC()){
+		    //if(!airplane.getC()){
 		        airplane.update(1.0/60);
-            }
+            //}
 
 		}
 
@@ -76,6 +83,11 @@ public class AirplaneState extends NodeState {
 
         if (collisionDetection()) {
             System.out.println("You lose!");
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
         if (winLevel()) {
@@ -190,7 +202,9 @@ public class AirplaneState extends NodeState {
     public void addRunway(Runway runway) { runways.add(runway);}
 
     public void addEnviros(enviro environment){enviros.add(environment);}
-    
+
+    public void addHud(Hud hud){huds.add(hud);}
+
     // EFFECTS: none
     public void render(Graphics2D g2) {
         for (enviro e: enviros){
@@ -204,6 +218,7 @@ public class AirplaneState extends NodeState {
         for (Airplane a : airplanes) {
 			a.render(g2);
 		}
+
 		for (Airplane a : airplanes) {
             if (a.getC())
                 a.crashseq(g2);
