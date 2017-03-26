@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a982279-90c2-4a2e-b6c9-f65cc74e971a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/.Start.java.swo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/states/.NodeState.java.swp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/airplanes/Airplane.class" afterPath="$PROJECT_DIR$/src/airplanes/Airplane.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/airplanes/AirplaneState.class" afterPath="$PROJECT_DIR$/src/airplanes/AirplaneState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Start.class" afterPath="$PROJECT_DIR$/src/main/Start.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/airplanes/Airplane.java" afterPath="$PROJECT_DIR$/src/airplanes/Airplane.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Start.java" afterPath="$PROJECT_DIR$/src/main/Start.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,21 +26,19 @@
       <file leaf-file-name="Airplane.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/airplanes/Airplane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#710#726#0" expanded="true" />
-                <element signature="e#1221#1222#0" expanded="true" />
-                <element signature="e#1298#1299#0" expanded="true" />
-                <element signature="e#1626#1627#0" expanded="true" />
-                <element signature="e#1654#1655#0" expanded="true" />
-                <element signature="e#1718#1719#0" expanded="true" />
-                <element signature="e#1782#1783#0" expanded="true" />
-                <element signature="e#1846#1847#0" expanded="true" />
-                <element signature="e#1910#1911#0" expanded="true" />
-                <element signature="method#drawPlane#0;class#Airplane#0" expanded="false" />
-                <element signature="method#drawGBar#0;class#Airplane#0" expanded="false" />
+                <element signature="e#1226#1227#0" expanded="true" />
+                <element signature="e#1303#1304#0" expanded="true" />
+                <element signature="e#1631#1632#0" expanded="true" />
+                <element signature="e#1659#1660#0" expanded="true" />
+                <element signature="e#1723#1724#0" expanded="true" />
+                <element signature="e#1787#1788#0" expanded="true" />
+                <element signature="e#1851#1852#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -598,21 +600,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/airplanes/Airplane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#710#726#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-            <element signature="e#1626#1627#0" expanded="true" />
-            <element signature="e#1654#1655#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
-            <element signature="e#1782#1783#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1910#1911#0" expanded="true" />
-            <element signature="method#drawPlane#0;class#Airplane#0" expanded="false" />
-            <element signature="method#drawGBar#0;class#Airplane#0" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1659#1660#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
           </folding>
         </state>
       </provider>
