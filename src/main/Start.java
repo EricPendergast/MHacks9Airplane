@@ -19,7 +19,6 @@ import java.util.*;
 
 public class Start {
     public static Color[] niceColors = {new Color(0x89C73E), new Color(0xBAC5CC)};
-    public static Color[] planeColors = {new Color(0x95BBED), new Color(0xED95E7)};
     AirplaneState[] levels = new AirplaneState[10];
 
     public static void main(String[] args) throws IOException{
@@ -34,6 +33,10 @@ public class Start {
         airplaneState.addEnviros(new enviro(40, 90, true, 1, Color.DARK_GRAY ));
 
         game.addState(airplaneState);
+        
+        TitleState title = new TitleState();
+        
+        game.addState(title);
         game.start();
         //game.addState(cells);
         //game.addState(new StartMenu(cells.getRunner(),game));
