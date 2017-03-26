@@ -22,12 +22,11 @@ public class Start {
 
     public static void main(String[] args) throws IOException{
         Game game = new Game(1200, 750, Integer.parseInt(args[0]));
+
         AirplaneState airplaneState = new AirplaneState(.01, 100, 20, 30);
-        airplaneState.addEnviros(new enviro(2000, 0, true, 1, Color.GREEN ));
-        airplaneState.addAirplane(new Airplane());
-        airplaneState.addAirplane(new Airplane(500, 500, 700, 300, 100, Color.orange));
-        airplaneState.addAirplane(new Airplane(500, 500, 100, 300, 50, Color.cyan));
         airplaneState.addRunway(new Runway(500, 500, 300, 50, Color.gray));
+        airplaneState.addEnviros(new enviro(2000, 0, true, 1, new Color(12, 173, 12)));
+        airplaneState.addEnviros(new enviro(40, 40, true, 1 , Color.orange));
         airplaneState.addEnviros(new enviro(40, 40, true, 1, Color.DARK_GRAY ));
         airplaneState.addEnviros(new enviro(40, 600, true, 1, Color.DARK_GRAY ));
         airplaneState.addEnviros(new enviro(40, 90, true, 1, Color.DARK_GRAY ));

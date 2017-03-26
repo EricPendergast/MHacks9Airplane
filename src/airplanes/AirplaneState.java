@@ -188,6 +188,7 @@ public class AirplaneState extends NodeState {
         for (enviro e: enviros){
             e.render(g2);
         }
+
         for (Runway r : runways) {
             r.render(g2);
         }
