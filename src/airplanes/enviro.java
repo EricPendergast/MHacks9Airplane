@@ -17,7 +17,14 @@ public class enviro {
     int x_level1_tower1[] = {0, 40, 40, 0};
     int y_level1_tower1[] = {0, 0, 40, 40};
     public enviro(int size, int center, boolean hitbox, int level){
-
+        x_level1_tower1[0] = center;
+        x_level1_tower1[1] = center + size;
+        x_level1_tower1[2] = center + size;
+        x_level1_tower1[3] = center;
+        y_level1_tower1[0] = center;
+        y_level1_tower1[1] = center;
+        y_level1_tower1[2] = center + size;
+        y_level1_tower1[3] = center + size;
     }
 
     void render(Graphics2D g) {
