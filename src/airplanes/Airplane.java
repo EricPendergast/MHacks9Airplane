@@ -12,11 +12,13 @@ public class Airplane {
     //x pos and y pos
     double x = 500;
     double y = 300;
-    double speed = 100;
+    private double speed = 100;
     double theta = 0;   // Theta is zero when plane is pointing right
-    double girth = 10;   // Radius of the plane
-    double dTheta = .01;
-    Color color;
+    private double girth = 10;   // Radius of the plane
+    private double dTheta = .01;
+    private final double defFuel = 3000;
+    private double fuel = defFuel;
+    private Color color;
     
     // Queue of positions. This is reset whenever the player draws a new path
     // for the plane.
@@ -65,7 +67,11 @@ public class Airplane {
     //MODIFIES: g2
     //EFFECTS: renders the airplane to g2
     void render(Graphics2D g) {
+        AffineTransform oldXForm = g.getTransform();
         drawPlane(g);
+        g.setTransform(oldXForm);
+        drawGBar(g);
+        //drawRBar(g);
     }
     
     private void drawPlane(Graphics2D g2) {
@@ -74,6 +80,7 @@ public class Airplane {
         int x1Points[] = {0, 10, 0, -10, 0};
         int y1Points[] = {-10,10,5,10, -10};
 
+        // Rotate shape
         for (int i = 0; i < x1Points.length; i++) {
             double newX = rotateX(x1Points[i], y1Points[i], theta + Math.PI / 2);
             double newY = rotateY(x1Points[i], y1Points[i], theta + Math.PI / 2);
@@ -81,7 +88,7 @@ public class Airplane {
             y1Points[i] = (int) newY;
         }
 
-
+        // Drawing Airplane
         GeneralPath polygon =
                 new GeneralPath(GeneralPath.WIND_EVEN_ODD,
                         x1Points.length);
@@ -100,7 +107,71 @@ public class Airplane {
 
         g2.translate(-inx, -iny);
     }
-    
+
+    private void drawGBar(Graphics2D g2) {
+        double barLen = 30;
+        int barHeight = 5;
+        double gLen = (fuel / defFuel) * barLen;
+        double rLen = (fuel / defFuel) * barLen;
+
+        int x1 = (int) (-barLen / 2);
+        int x2 = (int) (barLen / 2);
+        int y1 = 25;
+        int y2 = y1 - barHeight;
+
+        int x1gPoints[] = {x1, (int) (x1 + gLen), (int) (x1 + gLen), x1};
+        int x1rPoints[] = {(int) (x1 + gLen), (int) (x1 + gLen), x2, x2};
+        int y1Points[] = {y1, y1, y2, y2};
+
+        // Drawing Green
+        GeneralPath polygon =
+                new GeneralPath(GeneralPath.WIND_EVEN_ODD,
+                        x1gPoints.length);
+        polygon.moveTo(x1gPoints[0], y1Points[0]);
+
+        for (int index = 1; index < x1gPoints.length; index++) {
+            polygon.lineTo(x1gPoints[index], y1Points[index]);
+        };
+
+        polygon.closePath();
+        g2.translate(x, y);
+        g2.setColor(Color.green);
+        g2.draw(polygon);
+        g2.fill(polygon);
+
+        // Drawing Red
+    }
+
+    private void drawRBar(Graphics2D g2) {
+        double barLen = 30;
+        int barHeight = 5;
+        double gLen = (fuel / defFuel) * barLen;
+
+        int x1 = (int) (-barLen / 2);
+        int x2 = (int) (barLen / 2);
+        int y1 = 25;
+        int y2 = y1 - barHeight;
+
+        int x1gPoints[] = {x2, (int) (x1 + gLen), (int) (x1 + gLen), x2};
+        int y1Points[] = {y1, y1, y2, y2};
+
+        // Drawing Green
+        GeneralPath polygon =
+                new GeneralPath(GeneralPath.WIND_EVEN_ODD,
+                        x1gPoints.length);
+        polygon.moveTo(x1gPoints[0], y1Points[0]);
+
+        for (int index = 1; index < x1gPoints.length; index++) {
+            polygon.lineTo(x1gPoints[index], y1Points[index]);
+        };
+
+        polygon.closePath();
+        g2.translate(x, y);
+        g2.setColor(Color.red);
+        g2.draw(polygon);
+        g2.fill(polygon);
+    }
+
     private void drawPath() {
         for(int i = 0; i+1 < path.size(); i++) {
             
@@ -113,7 +184,15 @@ public class Airplane {
         double dy = speed * Math.sin(theta) * dt;
         x += dx;
         y += dy;
-        
+
+        // Reduce fuel
+
+        fuel -= 1;
+        if (fuel <= 0) {
+            System.out.println("PLANE CRASHED");
+        }
+
+        // Either go to destination, or move in a circle
         if (path.size() > 0) {
             rotateTowards(path.get(0).x, path.get(0).y);
 
