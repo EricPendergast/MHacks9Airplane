@@ -13,10 +13,9 @@ public class Airplane {
     double x = 500;
     double y = 300;
     double speed = 100;
-    // Theta is zero 
-    double theta = 0;
-    // The radius of the plane
-    double girth = 0;
+    double theta = 0;   // Theta is zero when plane is pointing right
+    double girth = 10;   // Radius of the plane
+    Color color;
     
     // Queue of positions. This is reset whenever the player draws a new path
     // for the plane.
@@ -27,19 +26,16 @@ public class Airplane {
         path.add(new Point2D.Double(100, 100));
     }
     
-    public Airplane(double x, double y) {
+    public Airplane(double x, double y, double destX, double destY, double speed, Color color) {
         this.x = x;
         this.y = y;
 
-        path.add(new Point2D.Double(100, 300));
-        path.add(new Point2D.Double(100, 100));
+        path.add(new Point2D.Double(destX, destY));
+
+        this.speed = speed;
+        this.color = color;
     }
-    public Airplane(double x, double y, double theta) {
-        this.x = x;
-        this.y = y;
-        this.theta = theta;
-    }
-    
+
     //EFFECTS: returns the distance from 'this' to 'airplane'
     double getDistance(double x, double y) {
         return Math.sqrt(Math.pow(this.x-x,2) + Math.pow(this.y-y,2));
@@ -96,7 +92,7 @@ public class Airplane {
 
         polygon.closePath();
         g2.translate(inx, iny);
-        g2.setColor(Color.BLUE);
+        g2.setColor(color);
         g2.setBackground(Color.darkGray);
         g2.draw(polygon);
         g2.fill(polygon);
