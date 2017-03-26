@@ -68,9 +68,7 @@ public class Airplane {
     //MODIFIES: g2
     //EFFECTS: renders the airplane to g2
     void render(Graphics2D g) {
-        //AffineTransform oldXForm = g.getTransform();
         drawPlane(g);
-        //g.setTransform(oldXForm);
         drawGBar(g);
         drawRBar(g);
         drawPath(g);

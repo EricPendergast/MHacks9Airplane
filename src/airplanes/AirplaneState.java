@@ -15,8 +15,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class AirplaneState extends NodeState {
-    
     ArrayList<Airplane> airplanes = new ArrayList<Airplane>();
+    ArrayList<Runway> runways = new ArrayList<>();
+
     //REQUIRES: game is valid
     //MODIFIES: this
     //EFFECTS: initializes 'this' with a game object
@@ -45,11 +46,17 @@ public class AirplaneState extends NodeState {
     public void addAirplane(Airplane plane) {
         airplanes.add(plane);
     }
+
+    public void addRunway(Runway runway) { runways.add(runway);}
     
     // EFFECTS: none
     public void render(Graphics2D g2) {
         for (Airplane a : airplanes) {
 			a.render(g2);
+		}
+
+		for (Runway r : runways) {
+			r.render(g2);
 		}
     }
     

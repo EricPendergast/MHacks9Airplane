@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7a982279-90c2-4a2e-b6c9-f65cc74e971a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/airplanes/Airplane.java" afterPath="$PROJECT_DIR$/src/airplanes/Airplane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/airplanes/AirplaneState.java" afterPath="$PROJECT_DIR$/src/airplanes/AirplaneState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/airplanes/Runway.java" afterPath="$PROJECT_DIR$/src/airplanes/Runway.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Start.java" afterPath="$PROJECT_DIR$/src/main/Start.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Airplane.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Airplane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/airplanes/Airplane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="74" column="7" lean-forward="false" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
+            <state relative-caret-position="0">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#710#726#0" expanded="true" />
@@ -43,9 +45,13 @@
       <file leaf-file-name="Runway.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/airplanes/Runway.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#869#870#0" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Start.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="25" column="80" lean-forward="false" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
+            <state relative-caret-position="120">
+              <caret line="26" column="55" lean-forward="false" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +81,8 @@
       <file leaf-file-name="AirplaneState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/airplanes/AirplaneState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+            <state relative-caret-position="240">
+              <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -102,10 +108,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/airplanes/Airplane.java" />
         <option value="$PROJECT_DIR$/src/airplanes/AirplaneState.java" />
         <option value="$PROJECT_DIR$/src/airplanes/Runway.java" />
         <option value="$PROJECT_DIR$/src/main/Start.java" />
-        <option value="$PROJECT_DIR$/src/airplanes/Airplane.java" />
       </list>
     </option>
   </component>
@@ -544,7 +550,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -560,20 +568,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/airplanes/Airplane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#710#726#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1659#1660#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/airplanes/AirplaneState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        <state relative-caret-position="240">
+          <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Start.java">
+    <entry file="file://$PROJECT_DIR$/src/airplanes/Runway.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" column="80" lean-forward="false" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
+        <state relative-caret-position="0">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -586,29 +615,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/airplanes/Runway.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/airplanes/Airplane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="74" column="7" lean-forward="false" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
+        <state relative-caret-position="120">
+          <caret line="26" column="55" lean-forward="false" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#710#726#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1851#1852#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
           </folding>
         </state>
       </provider>
