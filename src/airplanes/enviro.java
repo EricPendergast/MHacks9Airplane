@@ -22,24 +22,16 @@ public class enviro {
     int y_level1_tower1[] = {0, 0, 40, 40};
     int x_tree[] = {0, 2, 1, 1, 4, 5, 5, 4, 3, -3, -4, -5, -5, -4, -1, -1, -2};
     int y_tree[] = {-6, -7, -5, 1, 2, 4, 6, 8, 10, 10, 8, 6, 4, 2, 1, -5, -7};
-    public enviro(int size, int centerx, int centery, boolean hitbox, int level, Color inColor, int type){
-        if(type == 1) {
-            x_level1_tower1[0] = centerx;
-            x_level1_tower1[1] = centerx + size;
-            x_level1_tower1[2] = centerx + size;
-            x_level1_tower1[3] = centerx;
-            y_level1_tower1[0] = centery;
-            y_level1_tower1[1] = centery;
-            y_level1_tower1[2] = centery + size;
-            y_level1_tower1[3] = centery + size;
-            color = inColor;
-        }
-        if(type == 2){
-            for(int i = 0; i < x_tree.length; i++){
-                x_tree[i] += centerx;
-                y_tree[i] += centery;
-            }
-        }
+    public enviro(int size, int center, boolean hitbox, int level, Color inColor){
+        x_level1_tower1[0] = center;
+        x_level1_tower1[1] = center + size;
+        x_level1_tower1[2] = center + size;
+        x_level1_tower1[3] = center;
+        y_level1_tower1[0] = center;
+        y_level1_tower1[1] = center;
+        y_level1_tower1[2] = center + size;
+        y_level1_tower1[3] = center + size;
+        color = inColor;
     }
 
 //    public void drawTree(Graphics2D g2){
@@ -58,9 +50,9 @@ public class enviro {
 //        g2.fill(polygon);
 //        int[] x_tree_top = new int[12];
 //        int[] y_tree_top = new int[12];
-//        for(int i = 3; i < x_tree.length-3; i++){
-//            x_tree_top[i - 3] =x_tree[i];
-//            y_tree_top[i - 3] =y_tree[i];
+//        for(int i = 3; i < x_tree.length-2; i++){
+//            x_tree_top[i] =x_tree[i];
+//            y_tree_top[i] =y_tree[i];
 //        }
 //        polygon.moveTo(x_tree_top[0], y_tree_top[0]);
 //        for (int index = 1; index < x_tree_top.length; index++) {

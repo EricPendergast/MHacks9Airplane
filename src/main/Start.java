@@ -29,13 +29,14 @@ public class Start {
         
         AirplaneState airplaneState = new AirplaneState(.01, 100, 20, 30);
 
-        airplaneState.addRunway(new Runway(500, 500, 300, 50, niceColors[1]));
-        airplaneState.addEnviros(new enviro(2000, 0, 0, false, 1, niceColors[0], 1));
-        airplaneState.addEnviros(new enviro(40, 40, 40, true, 1 , Color.orange, 1));
-        airplaneState.addEnviros(new enviro(40, 40, 40, true, 1, Color.DARK_GRAY, 1 ));
-        airplaneState.addEnviros(new enviro(40, 600, 400, true, 1, Color.DARK_GRAY, 1 ));
-        airplaneState.addEnviros(new enviro(40, 90, 90, true, 1, Color.DARK_GRAY, 2 ));
-        airplaneState.addEnviros(new enviro(50, 200, 90, true, 1, Color.DARK_GRAY, 2 ));
+        airplaneState.addHud(new Hud());
+        airplaneState.addRunway(new Runway(500, 500, 300, 50, Color.blue));
+        airplaneState.addRunway(new Runway(800, 300, 300, 50, Color.red));
+        airplaneState.addEnviros(new enviro(2000, 0, true, 1, new Color(12, 173, 12)));
+        airplaneState.addEnviros(new enviro(40, 40, true, 1 , Color.orange));
+        airplaneState.addEnviros(new enviro(40, 40, true, 1, Color.DARK_GRAY ));
+        airplaneState.addEnviros(new enviro(40, 600, true, 1, Color.DARK_GRAY ));
+        airplaneState.addEnviros(new enviro(40, 90, true, 1, Color.DARK_GRAY ));
 
         game.addState(airplaneState);
         
